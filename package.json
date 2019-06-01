@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An app to teach you to write React",
   "main": "src/App.js",
-  "homepage": "https://seunzone.github.io/TD-React-Challenge-Test-1",
+  "homepage": "https://design-computing.github.io/courseOrg/",
   "scripts": {
     "test": "jest --silent",
     "test:coverage": "jest --coverage",
@@ -14,7 +14,8 @@
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "treex": "depcruise --exclude \"^node_modules\" --output-type dot src | dot -T svg > dependencyGraph.svg",
-    "tree": "depcruise --exclude \"^node_modules\" --output-type dot src > dependencyGraph.dot"
+    "tree": "depcruise --exclude \"^node_modules\" --output-type dot src > dependencyGraph.dot",
+    "deploy": "gh-pages -d dist"
   },
   "jest": {
     "transformIgnorePatterns": [
