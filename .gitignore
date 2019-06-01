@@ -1,0 +1,11 @@
+node_modules
+.cache/
+dist/
+.env
+.DS_Store
+coverage/
+.vscode/
+package-lock.json
+.env.local
+.env.yokel
+src/temp GH issues.md

@@ -1,0 +1,198 @@
+@import "./stylesheets/basics.css";
+@import "./stylesheets/layout-grid.css";
+@import "./stylesheets/dayrow.css";
+@import "./stylesheets/clock.css";
+@import "./stylesheets/star-rating.css";
+@import "./stylesheets/post-timer-report.css";
+@import "./stylesheets/InterruptionCounter.css";
+@import "./stylesheets/settings-page.css";
+@import "./stylesheets/login-page.css";
+
+.search,
+.details,
+.search-params {
+  background-color: #c4b2bc;
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.image-container {
+  clip-path: circle(50% at 50% 50%);
+  width: 12em;
+  height: 12em;
+  margin-left: 1em;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.disabled:before {
+  background-color: hsla(0, 0%, 100%, 0.95);
+  content: "coming soon";
+  cursor: wait;
+  height: 9em;
+  outline: 1px solid var(--tile-colour);
+  padding-top: 1em;
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 2 * var(--edge));
+  z-index: 100;
+}
+
+.debug {
+  display: none;
+}
+
+/* .g-history {
+  overflow: scroll;
+} */
+
+pre {
+  font-size: 0.7em;
+  line-height: 1.2;
+}
+
+header .search-btn {
+  float: right;
+}
+
+header {
+  background-color: var(--header-colour);
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: var(--header-height);
+}
+
+header img {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+}
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal:empty {
+  display: none;
+}
+
+#modal > div {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.close-modal-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 300%;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: none;
+}
+
+/* Generic Tile */
+.tile {
+  border-radius: 0.2em;
+  background-color: white;
+  border: 1px solid var(--tile-colour);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 2 * var(--edge));
+  justify-content: space-around;
+  margin: var(--edge);
+  min-height: var(--tile-min-height);
+  padding: var(--edge);
+  page-break-inside: avoid;
+  position: relative;
+  width: calc(100% - 2 * var(--edge));
+}
+
+@media screen and (min-width: 30em) and (orientation: landscape) {
+  /* .tile {  } */
+  .clock {
+    width: 100%;
+  }
+}
+
+/* Teammate */
+.teammate {
+  width: 8em;
+  display: inline-block;
+}
+
+.teammate button {
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+
+.teammate .hidden {
+  display: none;
+}
+
+.teammate svg:focus {
+  background: aliceblue;
+}
+
+.poke-action-button circle:hover {
+  fill: hsla(33, 100%, 50%, 0.5);
+}
+
+.team-settings {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.team-settings button {
+  background: transparent;
+  border: none;
+  font-size: 200%;
+  opacity: 0.6;
+}
+
+.drawer-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.drawer-app-content {
+  flex: auto;
+  overflow: auto;
+}
+
+.top-app-bar-fix-adjust {
+  display: flex;
+  width: 100%;
+}
+
+.mdc-drawer--dismissible {
+  /* There is a known issue with the dismissible drawer styles when putting the 
+  drawer below the top app bar. To get around this, you must update the 
+  .mdc-drawer--dismissible class in your CSS stylesheets. */
+  top: auto;
+}

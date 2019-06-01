@@ -1,0 +1,18 @@
+/* Clock */
+.clock {
+  width: 20em;
+}
+
+.clock svg text {
+  font-family: "Blender-book";
+}
+
+path#ProgressRing {
+  transition: stroke-dasharray 1s;
+}
+
+g:focus path {
+  stroke: orange;
+  stroke-width: 2px;
+  outline: none;
+}
