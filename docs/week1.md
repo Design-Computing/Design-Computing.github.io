@@ -72,6 +72,7 @@ In the last hour we will familiarise ourselves with each bit of software we have
 
 - Ensure you have your dev environment set up.
 - In the week1 folder, complete: - exercise1.py - write your journal in README.md
+- That means that if you kept up in class, no homework this week! It's a great chance to read some of the articles below. They won't teach you python, but they _will_ broaden your mind.
 
 #### Readings
 
