@@ -4,42 +4,57 @@ Us: [https://design-computing.github.io/code1161/guess_who_poster.html](https://
 
 ## Course Outline:
 
-This course focuses on using programming as a means of  problem solving, storytelling and creative expression for people in non-computer science fields.
- 
-Programming is simultaneously a vocational skill, a branch of philosophy, a culture, and the glue that holds the modern world together. By the end of this course you will have the philosophical tools needed to **design solutions and the technical skill** to implement them.
+This course focuses on using programming as a way to solve problems, to amplify your storytelling, and to give you a means of creative expression. It's for people in non-computer and engineering science fields.
 
-In the same way that being able to hold a pen doesn't make you a writer, being able to type code doesn't make you a programmer. So we'll learn how to manipulate symbols (type code), what those symbols mean, and how to decide which symbols to type in the first place. We'll learn simple logic and strategies for decomposing problems. We'll learn about the history and culture of computers in general, and in art and architecture.
+Programming is simultaneously a vocational skill, a branch of philosophy, a culture, and the glue that holds the modern world together. By the end of this course you will have the philosophical tools needed to **design solutions** and the **technical skill** to implement them.
 
-The course will be taught through three sections.
-The first will be becoming proficient in the [Python](https://en.wikipedia.org/wiki/Python_(programming_language)).
-Second is will be a machine learning project which utilises your newfound problem solving and programming skills.
-The third section will be the Open Data Project: a data analysis and story telling telling task.
+In the same way that being able to hold a pen doesn't make you a writer, being able to type code doesn't make you a programmer. We'll learn how to manipulate symbols (type code), what those symbols mean, and how to decide which symbols to type in the first place. We'll learn simple logic and strategies for decomposing problems. We'll learn about the history and culture of computers in general, and in art and architecture.
 
+You'll learn these ideas and skills three sections.
+
+1. The first will be becoming proficient in the [Python](<https://en.wikipedia.org/wiki/Python_(programming_language)>).
+1. Second is will be a machine learning project which uses your newfound problem solving and programming skills.
+1. The third section will be the Open Data Project: a data exploration, analysis and story telling task.
 
 ## Course Communication
 
-### Course website: 
-[https://design-computing.github.io/code1161/](https://design-computing.github.io/code1161/)
+### Course website:
 
-### Course repository
-[https://github.com/Design-Computing/code1161](https://github.com/Design-Computing/code1161)
+[https://design-computing.github.io/courseOrg/](https://design-computing.github.io/courseOrg/)
+
+### Course repositories
+
+We've broken the course into three repos. (Who wants to say _repository_ when all the cool people say _repo_?)
+
+1. [https://github.com/Design-Computing/course](https://github.com/Design-Computing/course) This is where the active bit of the course lives. This contains the code that checks your answers, that means that you can see what's going on under the covers.
+1. [https://github.com/Design-Computing/courseOrg](https://github.com/Design-Computing/courseOrg) This has the code that we need to run the course, including the words that you're reading now. You don't ever _need_ to look at the code underneath all this, but it's there if you ever wanted to look. That's the magic of open source!
+1. [https://github.com/Design-Computing/me](https://github.com/Design-Computing/me) This is where you write code, except it isn't! Sounds tricky doesn't it. If everyone wrote their code in the same place then it'd get messy. You write your code in your own personal copy of this repo. In git language, we call copy a _fork_.
 
 ### Piazza
-- Forum for your questions about the material and the course.
-- Annoucements, updates and my errors will be posted here invitations after I have your emails
+
+This is a forum for your questions about the course. You can ask questions here, and answer each other's problems. We _really_ like you to ask questions here. If you're stuck on a problem, the odds are that lots of other people are. Because everyone can see the question we can answer it once and help lots of people at the same time.
+
+Announcements and updates to the course will be there too, so keep a regular eye on it.
+
+We need to invite you to join the class, so make sure that you finish the week 1 exercises so that we know about you.
 
 ### Email
+
 - Ishaan Varshney: ishaan.varshney@unsw.edu.au
 - Aiden Ray: z3460907@ad.unsw.edu.au
 
 ### Slack
+
 - General chit-chat about comp design and computing.
 
 ## Assessments
+
 ### [View in full](./admin/diagrams.html)
+
 <iframe src="./admin/diagrams.html" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Schedule
+
 ### Week 1: Welcome to CODE1161 and Your dev environment
 
 #### Introduction
@@ -47,7 +62,7 @@ The third section will be the Open Data Project: a data analysis and story telli
 - **An introduction to the world of computing** as it is in 2018. This should provide some context to what this course aims to teach and why.
 
 - **Learning the 3 step** process that will help to start your journey as a problem solver.
- 
+
 - Setting up your development environment.
 
 #### Requirements
@@ -60,21 +75,22 @@ The third section will be the Open Data Project: a data analysis and story telli
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTH0wxz0Vy61NXaS6g2Nmot2w0qhhOkz1km_2g2TnrLGRyB0OBOlELz6uQ6_Sh5FYWkffY_KKECBpgF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 #### Lab
+
 Instructions:
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQED50HjjGZhZ8Nv_9m8dSij1-eVpzuT3jBh3Djd6axm6guCc0H9gWpk9OJwfSIfbIiwGOSPDDz75qG/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-		
 Attempt exercises in trinket.io if you have finished.
 
-In the last hour we will familiarise ourselves with each bit of software we have installed and what purpose it serves in the course. After that we will cover how to write your lab books and push them to github.
+In the last hour we will familiarise ourselves with each bit of software we have installed and what purpose it serves in the course. After that we will cover how to write your lab books and push them to GitHub.
 
 #### Homework
+
 - Ensure you have your dev environment set up.
-- In the week1 folder, complete:
-	- exercise1.py
-	- write your journal in README.md
+- In the week1 folder, complete: - exercise1.py - write your journal in README.md
 
 #### Readings
+
 <dd>
 <p class="reference"><strong>Graham, P.</strong> (2009). <a href="http://paulgraham.com/makersschedule.html"><em>Maker’s Schedule, Manager’s Schedule.</em></a></p>
 <p class="reference"><strong>Case, N.</strong> (2016). <a href="http://ncase.me/simulating/"><em>Simulating The World (In Emoji 😘).</em></a></p>
@@ -83,12 +99,11 @@ In the last hour we will familiarise ourselves with each bit of software we have
 <p class="reference"><strong>Noll, A. M.</strong> (1967). <a href="http://noll.uscannenberg.org/Art%20Papers/Creative%20Medium.pdf">The digital computer as a creative medium</a>. IEEE Spectrum, 4(10), 89–95.</p>
 </dd>
 
-
 ### Week 2: All of Python in three hours
 
 #### Introduction
 
-- This week we will obtain an overview of all the components of the Python syntax. Theoretically, you will be able to do __any__ programming task after this week ;-).
+- This week we will get an overview of all the components of the Python syntax. Theoretically, you will be able to do **any** programming task after this week ;-).
 
 - More details about the development environment.
 
@@ -101,19 +116,22 @@ In the last hour we will familiarise ourselves with each bit of software we have
 - Maybe some snacks for the lab. Keep it low GI if you can.
 
 #### Lecture
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSJzgHnvLKcSJPt5nfXaz314GprB-fnuoHpLDdafF5Mn4STjs370X7lMdDhn0fZClijt9tDG_lBVOI1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 #### Lab
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR17tPHvj11C7pOFkuTTxZ_2rcepz0PHUOa8h_wnzTHTRPBoTBBCrgrZVjn5V3NcYDM-s-kmaVOLfzf/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 #### Homework
+
 - The first two readings
 - homework exercises in week2 folder
 
 #### Readings
-https://automatetheboringstuff.com/#toc: chapters 1-5 Really awesome book
-https://programminghistorian.org/lessons/getting-started-with-github-desktop: Clarification for the github stuff
 
+https://automatetheboringstuff.com/#toc: chapters 1-5 Really awesome book
+https://programminghistorian.org/lessons/getting-started-with-github-desktop: Clarification for the GitHub stuff
 
 ### Week 3: Useful Programs and Algorithms
 
@@ -122,21 +140,22 @@ https://programminghistorian.org/lessons/getting-started-with-github-desktop: Cl
 This week in the lecture we will cover loops, collections and functions and taking user input by building a hangman game.
 
 #### Lecture
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQvpQvKiZyXyKCck-vJxxY2N7ONCfv08Yy5AtpxSu_8zG47yVlDwAfkk1LbAWvanX2NKJV1e7KEGWt/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-
 #### Lab
+
 Instructions for week3:
 
-- *pull from upstream/master*
-- run *week3/setup.py* to install required libraries
+- _pull from upstream/master_
+- run _week3/setup.py_ to install required libraries
 - start working through the lab exercises
 
 #### Homework
+
 - Khan Academy Algorithms Course: [https://www.khanacademy.org/computing/computer-science/algorithms](https://www.khanacademy.org/computing/computer-science/algorithms). 'Intro to Algorithms' and 'Binary Search' sections
 - Lab book for week3x
 - homework exercises in week3 folder
-
 
 ### Week 4: Dictionaries and File I/O
 
@@ -145,17 +164,19 @@ Instructions for week3:
 This week in the lecture we will build on our hangman game by saving the highest scores and introducing a leader board.
 
 #### Lecture
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8BkNrDW08ySOr44rQSxrAeht7Avm6PXHclCuAdzUtLn1SMNO8oywMFJI4dKIN3k_rPKbXy0keXUVc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 #### Lab
+
 Instructions:
 
-- *pull from upstream/master*
+- _pull from upstream/master_
 
 #### Homework
+
 - ensure you have completed all labs from week 1, 2, 3
 - run through the hangman.py and understand what each line does.
-
 
 ### Week 5: More File I/O and the Internet
 
@@ -164,22 +185,24 @@ Instructions:
 This week we will extend on our hangman game by getting the word to guess from the internet.
 
 #### Lecture
+
 - go over saving and reading from file again
 - what is JSON?
 - reading stuff from the internet with programs
 - recursion
 - [add video link if we successfully manage to record it]
+
 #### Lab
+
 Instructions:
 
-- *pull from upstream/master*
+- _pull from upstream/master_
 - run week4/setup.py
-- complete week 4 file I/O exercises
-	- run through the `hangman_leaderboard_word_from_internet.py` for some hints.
-- complete week 5 refactoring and recursion exercises
-	- You may need to look at other examples of recursion to develop a fuller understanding of how it works.
+- complete week 4 file I/O exercises - run through the `hangman_leaderboard_word_from_internet.py` for some hints.
+- complete week 5 refactoring and recursion exercises - You may need to look at other examples of recursion to develop a fuller understanding of how it works.
 
 #### Homework Due 10/04/2018 @ 12pm
+
 - ensure you have completed all labs from weeks 4 and 5
 - lab books for both weeks
 - Prepare for the programming exam on 17/04/2018 at 3pm.
@@ -189,68 +212,77 @@ Instructions:
 ### Week 7: Also non-teaching week
 
 ### Week 8: Exam
+
 In the lectures we will revise what so far in preparation for the exam in the labs. After the exam we will start looking at the software project due in
+
 #### Lab (exam)
+
 Instructions:
+
 - Promptly fire up your laptops
 - At ~15:15, the exam will be pushed
 - You will have 90 minutes to complete the exam, commit it and push it to your repository.
 
 ### Week 9: Machine Learning
+
 #### Lecture
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRLNFC0gxS4xh2wztQmuwmPQkNmrNe4YLlYeoPOyGaTPc1sZIFL7PxSuJadvM4Cn1RyLRsEf2EgFNbV/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 #### Lab
+
 Machine learning assignment to be demonstrated on 1 May 2018 in the labs.
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQTErz4xhwXpQFJ9808NHSZZKrc3Rf_g_P8yXMdMkOSmzfUHeZdFGU5hzlcQ4e_F5tADRRn5ClyAldY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-
 ### Week 10: OpenData Introduction
+
 #### Lecture
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTXNkJCGDstDeRNc_jbHt7Y-TO1-Fj_oB1taSWwtrksUfr1RhRYwK5RmrcueLtly4EFFjoZSc9s0faB/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 #### Lab
+
 While we are marking the projects:
 
-- Create a kaggle account
-	- Fork this: https://www.kaggle.com/kanncaa1/data-sciencetutorial-for-beginners
-	- Run: 
-		- up to the start of 2. Python Data Science Toolbox
-		- 3.Cleaning Data
-		- 4.Pandas Foundation.
-		- 5.Manipulating Data Frames with Pandas.
-	- Absorb all the possibilities of these tools
+- Create a Kaggle account - Fork this: https://www.kaggle.com/kanncaa1/data-sciencetutorial-for-beginners - Run: - up to the start of 2. Python Data Science Toolbox - 3.Cleaning Data - 4.Pandas Foundation. - 5.Manipulating Data Frames with Pandas. - Absorb all the possibilities of these tools
 - Start looking for data and thinking about a question you want to answer
 - Get first hand experience using pandas and visualisation skills.
-https://www.kaggle.com/residentmario/welcome-to-data-visualization
+  https://www.kaggle.com/residentmario/welcome-to-data-visualization
 
 #### Homework
+
 - Pull from upstream to get the latest lab books
 - Complete the lab book in the week10 folder
-- Get acquainted with pandas and matplotlib
+- Get acquainted with pandas and matPlotLib
 - Research what questions you would like to answer and datasets.
 
 ### Week 11: OpenData: Deciding on a dataset and topic
+
 #### Lecture
+
 Guest Lecture: Rachel Bunder, Data Scientist at Solar Analytics
 
 #### Lab
-- Decide on a dataset or question. Might be worthwhile doing some quick exploratory data analyses. 
-- Going deeper with pandas and matplotlib
 
+- Decide on a dataset or question. Might be worthwhile doing some quick exploratory data analyses.
+- Going deeper with pandas and matPlotLib
 
 #### Homework
+
 - Complete this form by next Tuesday 15 May @ 12pm. These results will be used in the marking sheet. <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeG8uQ6mCdnHlZcxFKL8--oLQrL35L-nFRwH5EbswPRZ-tmhw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 - lab book in week11 folder
- 
- 
+
 ### Week 13: Final Week–Review
+
 #### Lecture
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTc32kGt2vOuBBrpFEnwyaQHruLYWBeTCXfpvtlK0HjrGT7ndC8RGlRp8e1PsJA-MecHa6GGuJoZfUz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 #### Lab
+
 - OpenData Project
 
-
 #### Homework
+
 - None, you're free now.
