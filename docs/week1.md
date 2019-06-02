@@ -1,6 +1,6 @@
 # Week 1:
 
-##Python and Your Dev Environment
+## Python and Your Dev Environment
 
 ### Introduction
 
