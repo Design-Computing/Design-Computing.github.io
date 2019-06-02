@@ -1,5 +1,6 @@
 1.  Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
-1.  install it, be patient
+1.  install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
+1.  Be patient
 1.  Open anaconda navigator
 1.  Click install on the VS Code box, be patient again
 1.  Go to https://git-scm.com/downloads and download the latest git
