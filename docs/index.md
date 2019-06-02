@@ -32,23 +32,38 @@ We've broken the course into three repos. (Who wants to say _repository_ when al
 
 ### Piazza
 
-This is a forum for your questions about the course. You can ask questions here, and answer each other's problems. We _really_ like you to ask questions here. If you're stuck on a problem, the odds are that lots of other people are. Because everyone can see the question we can answer it once and help lots of people at the same time.
+This is a forum for your questions about the course. You can ask questions here, and answer each other's problems. We _really_ like you to ask questions here. If you're stuck on a problem, the odds are that lots of other people are. Because everyone can see the question we can answer it once and help lots of people at the same time. We'll talk about how to write a good question in class.
 
 Announcements and updates to the course will be there too, so keep a regular eye on it.
 
-We need to invite you to join the class, so make sure that you finish the week 1 exercises so that we know about you.
+We need to invite you to join the piazza class, so make sure that you finish the week 1 exercises so that we know about you.
 
 ### Email
 
-- Ishaan Varshney: ishaan.varshney@unsw.edu.au
+Email is uncool, but sometimes it's necessary. If you absolutely need to email then
+
+- Ben Doherty: b.doherty@unsw.edu.au
 - Aiden Ray: z3460907@ad.unsw.edu.au
+
+_BUT_ before you email, if it's something to do with the course, make sure you use [this template](email_template)
 
 ### Slack
 
-- General chit-chat about comp design and computing.
+Slack's for general chit-chat about comp design and computing. We'll invite you to this too. The team is here https://unsw-code.slack.com
 
 ## Assessments
+
+TODO: update this graph
 
 ### [View in full](./admin/diagrams.html)
 
 <iframe src="./admin/diagrams.html" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Weeks:
+
+1. [Week 1](week1)
+1. [Week 2](week2)
+1. [Week 3](week3)
+1. [Week 4](week4)
+1. [Week 5](week5)
+1. [Week 6+](theRest)
