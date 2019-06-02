@@ -7,15 +7,16 @@
 1.  Install git with all the default values, except make vs code be the default editor
 1.  restart vs code
 1.  type [ctrl]+[`] that's a backtick, it's to the left of 1 on most keyboards
-1.  Your prompt should say something like: 
+1.  Your prompt should say something like:
 1.  `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
 1.  type `mkdir 1161`
 1.  then `cd 1161`
 1.  then `git clone https://github.com/Design-Computing/CODE1161-2019 course`
 1.  then `https://github.com/Design-Computing/courseOrg.git org`
-1. Go to https://github.com/Design-Computing/me and fork yourself a copy of the _me_ repo
-1.  then `git clone https://github.com/`_your name_`/me.git` 
-1. now type `dir` you should get something that looks like:
+1.  Go to https://github.com/Design-Computing/me and fork yourself a copy of the _me_ repo
+1.  then `git clone https://github.com/`_your name_`/me.git`
+1.  now type `dir` you should get something that looks like:
+
     ```
     C:\Users\ben\1161>dir
 
@@ -29,4 +30,7 @@
 
     C:\Users\ben\1161>
     ```
-1. Now you're ready to start! 
+
+1.  Last thing: type `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun
+
+1.  Now you're ready to start the lab for real!
