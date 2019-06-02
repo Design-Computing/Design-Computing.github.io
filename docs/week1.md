@@ -1,8 +1,8 @@
 # Week 1:
 
-##Welcome to CODE1161 and Your dev environment
+##Python and Your Dev Environment
 
-#### Introduction
+### Introduction
 
 - **An introduction to the world of computing** as it is in 2018. This should provide some context to what this course aims to teach and why.
 
@@ -10,24 +10,24 @@
 
 - Setting up your development environment.
 
-#### Requirements
+### Requirements
 
 - Please bring a portable computer to the lab as you will be setting up your dev environment.
 - An open mind and a willingness to trade some privacy for automation of boring tasks and quicker processes.
 
-#### Lecture
+### Lecture
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTH0wxz0Vy61NXaS6g2Nmot2w0qhhOkz1km_2g2TnrLGRyB0OBOlELz6uQ6_Sh5FYWkffY_KKECBpgF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-#### Lab
-
-Instructions:
+### Lab
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQED50HjjGZhZ8Nv_9m8dSij1-eVpzuT3jBh3Djd6axm6guCc0H9gWpk9OJwfSIfbIiwGOSPDDz75qG/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 Attempt exercises in trinket.io if you have finished.
 
-In the last hour we will familiarise ourselves with each bit of software we have installed and what purpose it serves in the course. After that we will cover how to write your lab books and push them to GitHub.
+#### Steps to set up your dev environment
+
+We'll go through this together, but if you need to setup a new dev environment then these are the steps:
 
 1.  Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
 1.  install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
@@ -65,6 +65,8 @@ In the last hour we will familiarise ourselves with each bit of software we have
 1.  Last thing: type `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun
 
 1.  Now you're ready to start the lab for real!
+
+In the last hour we will familiarise ourselves with each bit of software we have installed and what purpose it serves in the course. After that we will cover how to write your lab books and push them to GitHub.
 
 #### Homework
 
