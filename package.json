@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An app to teach you to write React",
   "main": "src/App.js",
-  "homepage": "https://design-computing.github.io/courseOrg/",
+  "homepage": "https://github.com/btholt/complete-intro-to-react-v4#readme",
   "scripts": {
     "test": "jest --silent",
     "test:coverage": "jest --coverage",
@@ -32,7 +32,6 @@
   "bugs": {
     "url": "https://github.com/btholt/complete-intro-to-react-v4/issues"
   },
-  "homepage": "https://github.com/btholt/complete-intro-to-react-v4#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
