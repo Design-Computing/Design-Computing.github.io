@@ -22,6 +22,12 @@
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR17tPHvj11C7pOFkuTTxZ_2rcepz0PHUOa8h_wnzTHTRPBoTBBCrgrZVjn5V3NcYDM-s-kmaVOLfzf/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+### Engineering Flowchart
+
+In `fix_it` it asks about an engineeringFlowchart. This is it:
+
+![](engineeringFlowchart.png)
+
 #### Homework
 
 - The first two readings
