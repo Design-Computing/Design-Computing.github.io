@@ -1,8 +1,6 @@
-# Week 1:
+# Week 1 Lab: Python and Your Dev Environment
 
-## Python and Your Dev Environment
-
-### Introduction
+## Introduction
 
 - **An introduction to the world of computing** as it is in 2018. This should provide some context to what this course aims to teach and why.
 
@@ -10,22 +8,22 @@
 
 - Setting up your development environment.
 
-### Requirements
+## Requirements
 
 - Please bring a portable computer to the lab as you will be setting up your dev environment.
 - An open mind and a willingness to trade some privacy for automation of boring tasks and quicker processes.
 
-### Lecture
+## Lecture
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTH0wxz0Vy61NXaS6g2Nmot2w0qhhOkz1km_2g2TnrLGRyB0OBOlELz6uQ6_Sh5FYWkffY_KKECBpgF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-### Lab
+## Lab
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQED50HjjGZhZ8Nv_9m8dSij1-eVpzuT3jBh3Djd6axm6guCc0H9gWpk9OJwfSIfbIiwGOSPDDz75qG/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 Attempt exercises in trinket.io if you have finished.
 
-#### Steps to set up your dev environment
+### Steps to set up your dev environment
 
 We'll go through this together, but if you need to setup a new dev environment then these are the steps:
 
@@ -68,13 +66,19 @@ We'll go through this together, but if you need to setup a new dev environment t
 
 In the last hour we will familiarise ourselves with each bit of software we have installed and what purpose it serves in the course. After that we will cover how to write your lab books and push them to GitHub.
 
-#### Homework
+### Homework
 
 - Ensure you have your dev environment set up.
-- In the week1 folder, complete: - exercise1.py - write your journal in README.md
+
+- In the week1 folder, complete: - exercise1.py
+
+- write your journal in README.md
+
+  Check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) for an intro to how formatting works in markdown (`.md`) files.
+
 - That means that if you kept up in class, no homework this week! It's a great chance to read some of the articles below. They won't teach you python, but they _will_ broaden your mind.
 
-#### Readings
+### Readings
 
 <dd>
 <p class="reference"><strong>Graham, P.</strong> (2009). <a href="http://paulgraham.com/makersschedule.html"><em>Maker’s Schedule, Manager’s Schedule.</em></a></p>
