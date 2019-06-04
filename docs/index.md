@@ -38,6 +38,8 @@ Announcements and updates to the course will be there too, so keep a regular eye
 
 We need to invite you to join the piazza class, so make sure that you finish the week 1 exercises so that we know about you.
 
+There's a [template here](piazzaQuestionTemplate.md) to help you write good piazza questions.
+
 ### Email
 
 Email is uncool, but sometimes it's necessary. If you absolutely need to email then
