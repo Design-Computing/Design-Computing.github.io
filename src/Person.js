@@ -39,19 +39,23 @@ class Person extends React.Component {
   render() {
     if (this.props.forkData) {
       return (
-        <div>
+        <div className="person">
           <img
             alt={`${this.state.name}'s face`}
             src={`https://avatars.githubusercontent.com/${
               this.props.forkData.login
             }`}
           />
-          <h1>{this.state.name}</h1>
-          <p>{this.state.studentNumber}</p>
-          <p>{this.state.officialEmail}</p>
-          <p>{this.state.contactEmail}</p>
+          <div className="info">
+            <h1>
+              <a href={this.props.forkData.html_url}>{this.state.name}</a>
+            </h1>
+            <p>{this.state.studentNumber}</p>
+            <p>{this.state.officialEmail}</p>
+            <p>{this.state.contactEmail}</p>
 
-          <pre>{JSON.stringify(this.props, null, 2)}</pre>
+            {/* <pre>{JSON.stringify(this.props, null, 2)}</pre> */}
+          </div>
         </div>
       );
     } else {

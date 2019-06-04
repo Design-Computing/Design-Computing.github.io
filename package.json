@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An app to teach you to write React",
   "main": "src/App.js",
-  "homepage": "https://github.com/btholt/complete-intro-to-react-v4#readme",
+  "homepage": "https://design-computing.github.io/courseOrg/mugs",
   "scripts": {
     "test": "jest --silent",
     "test:coverage": "jest --coverage",
@@ -11,11 +11,10 @@
     "test:watch": "jest --watch",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html --out-dir ../docs/mug",
+    "build": "parcel build src/index.html --out-dir ../docs/mug",
     "treex": "depcruise --exclude \"^node_modules\" --output-type dot src | dot -T svg > dependencyGraph.svg",
-    "tree": "depcruise --exclude \"^node_modules\" --output-type dot src > dependencyGraph.dot",
-    "deploy": "gh-pages -d dist"
+    "tree": "depcruise --exclude \"^node_modules\" --output-type dot src > dependencyGraph.dot"
   },
   "jest": {
     "transformIgnorePatterns": [
