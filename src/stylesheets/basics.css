@@ -14,16 +14,12 @@
 
   --background-colour: hsl(0, 0%, 97%);
   --tile-colour: hsla(0, 0%, 0%, 0.1);
-  --ms-teams-colour: hsl(238, 37%, 51%);
   --alert-colour: hsl(166, 100%, 50%);
   --fontStack: "Blender-book", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
   --edge: 0.5em;
 
-  /* calendar */
-  --day-row-height: 2.5em;
-
-  --tile-min-height: 23em;
+  --tile-dim: 25em;
 }
 
 body,
@@ -31,14 +27,4 @@ div.flowspace#root {
   background-color: var(--background-colour);
   margin: 0;
   font-family: var(--fontStack);
-}
-
-h1,
-h2,
-h3,
-svg text,
-input {
-  /* Needed to override the MDL fonts */
-  font-family: var(--fontStack);
-  margin: 0;
 }
