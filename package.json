@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An app to teach you to write React",
   "main": "src/App.js",
-  "homepage": "https://design-computing.github.io/courseOrg/mugs",
+  "homepage": "https://design-computing.github.io/courseOrg",
   "scripts": {
     "test": "jest --silent",
     "test:coverage": "jest --coverage",
@@ -12,7 +12,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html --out-dir docs --out-file mug.html",
-    "build": "parcel build src/index.html --out-dir docs --out-file mug.html",
+    "build": "parcel build src/index.html --out-dir docs --out-file mug.html --no-minify",
     "treex": "depcruise --exclude \"^node_modules\" --output-type dot src | dot -T svg > dependencyGraph.svg",
     "tree": "depcruise --exclude \"^node_modules\" --output-type dot src > dependencyGraph.dot"
   },
@@ -50,6 +50,7 @@
   "dependencies": {
     "@reach/router": "^1.1.1",
     "cross-fetch": "^3.0.2",
+    "dotenv": "^8.0.0",
     "enzyme": "^3.9.0",
     "gh-pages": "^2.0.1",
     "js-yaml": "^3.13.1",
