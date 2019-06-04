@@ -8,6 +8,8 @@ def get_or_update(path, url):
     try:
         # try to clone the repo
         repo = git.Repo.clone_from(me_url, "marking/tempMe")
+        a = ""
+
     except git.GitCommandError as e:
         # If the repo is already there, update it.
         # This is unlikely if we're in a lambda
@@ -24,8 +26,8 @@ def get_or_update(path, url):
 me_url = "https://github.com/Design-Computing/me.git"
 course_url = "https://github.com/Design-Computing/course.git"
 
-# me_repo = get_or_update("marking/tempMe", me_url)
-# course_repo = get_or_update("marking/course", course_url)
+me_repo = get_or_update("marking/tempMe", me_url)
+course_repo = get_or_update("marking/course", course_url)
 
 
 print("We're starting in", os.getcwd())
@@ -33,7 +35,7 @@ meWorkingDir = os.path.join(os.getcwd(), "marking", "tempMe")
 print("changing to", meWorkingDir)
 os.chdir(meWorkingDir)
 print("Now we're in", os.getcwd())
-for i in range(1, 2):
-    cmd = "python ../course/week{weekNumber}/tests.py".format(weekNumber=i)
-    os.system(cmd)
+# for i in range(1, 2):
+#     cmd = "python ../course/week{weekNumber}/tests.py".format(weekNumber=i)
+#     os.system(cmd)
 
