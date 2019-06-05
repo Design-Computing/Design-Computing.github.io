@@ -11,8 +11,8 @@
     "test:watch": "jest --watch",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html --out-dir docs ",
-    "build": "parcel build src/index.html --out-dir docs",
+    "dev": "parcel src/index.html --out-dir .",
+    "build": "parcel build src/index.html --out-dir .",
     "treex": "depcruise --exclude \"^node_modules\" --output-type dot src | dot -T svg > dependencyGraph.svg",
     "tree": "depcruise --exclude \"^node_modules\" --output-type dot src > dependencyGraph.dot"
   },
