@@ -43,14 +43,14 @@ We'll go through this together, but if you need to setup a new dev environment t
    1. Install git with all the default values, except make vs code be the default editor
 1. Anaconda:
    1. Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
-   1. install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
+   1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
    1. Be patient
    1. Open anaconda navigator
    1. Click install on the VS Code box, be patient again
 1. VS Code
 
    1. Open VS Code, bask in its glory
-   1. inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of 1 on most keyboards. That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
+   1. Inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of 1 on most keyboards. That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
    1. Your prompt should say something like:
 
       `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
@@ -58,14 +58,14 @@ We'll go through this together, but if you need to setup a new dev environment t
       Whatever it is, now we need to write some magic spells.
 
 1. Getting your content
-   1. type `mkdir 1161`
-   1. then `cd 1161`
-   1. then `git clone https://github.com/Design-Computing/CODE1161-2019 course`
+   1. Type `mkdir 1161`
+   1. Then `cd 1161`
+   1. Then `git clone https://github.com/Design-Computing/CODE1161-2019 course`
 1. Clone
 
    1. Go to https://github.com/Design-Computing/me and [fork](https://help.github.com/en/articles/fork-a-repo) yourself a copy of the _me_ repo
    1. Then, back in the terminal `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
-   1. now type `dir` you should get something that looks like:
+   1. Now type `dir` you should get something that looks like:
 
    ```
    C:\Users\ben\1161>dir
@@ -91,7 +91,7 @@ We'll go through this together, but if you need to setup a new dev environment t
    1. Take a deep breath
    1. Say "You've got this" to yourself
    1. Smile
-   1. go to `File`&rarr;`Open Folder` and then choose `me`
+   1. Go to `File`&rarr;`Open Folder` and then choose `me`
    1. Look at all those neat folder ready for you to work on!
 
 1. Now you're ready to start the lab for real!
