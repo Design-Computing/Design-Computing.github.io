@@ -22,6 +22,8 @@ You'll learn these ideas and skills three sections.
 
 [design-computing.github.io](https://design-computing.github.io/)
 
+This has everything you need to know. We update it a lot, so keep looking. [ctrl]+[d] will bookmark it.
+
 ### Course repositories
 
 We've broken the course into three repos. (Who wants to say _repository_ when all the cool people say _repo_?)
