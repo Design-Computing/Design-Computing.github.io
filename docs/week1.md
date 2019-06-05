@@ -2,48 +2,56 @@
 
 ## Introduction
 
-- **An introduction to the world of computing** as it is in 2018. This should provide some context to what this course aims to teach and why.
+This week's lab is in two parts. One's administrative and the other's creative. But don't let that lull you into thinking that the first part is boring! Managing your dev environment is something you'll keep doing for your whole career. (_dev_ is short for _development_.) You can think of it like a chef choosing and sharpening their knives&mdash;it's a never ending process.
 
-- **Learning the 3 step** process that will help to start your journey as a problem solver.
+Part one will involve a lot of doing things without really knowing why. It'll be confusing, but it will get you going, then you can look back and understand.
 
-- Setting up your development environment.
+Part two is a low-barrier-to-entry way to start flexing your computational thinking.
 
-## Requirements
+## Your dev environment
 
-- Please bring a portable computer to the lab as you will be setting up your dev environment.
-- An open mind and a willingness to trade some privacy for automation of boring tasks and quicker processes.
+Part of your dev environment is going to be on your computer, and some of it will be in the cloud.
 
-## Lecture
+You'll year us use the word _local_ to mean _on your computer_ and _remote_ to mean _in the cloud_.
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTH0wxz0Vy61NXaS6g2Nmot2w0qhhOkz1km_2g2TnrLGRyB0OBOlELz6uQ6_Sh5FYWkffY_KKECBpgF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+### Cloud environment
 
-## Lab
+**But first:** You might have an email address that's like `unicorn.sparkles@gmail.com` or `i_am_so_cool03@hotmail.com`. If you do, think about writing that on your CV. Do you want Norman Foster to read that?
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQED50HjjGZhZ8Nv_9m8dSij1-eVpzuT3jBh3Djd6axm6guCc0H9gWpk9OJwfSIfbIiwGOSPDDz75qG/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+Your email address, for better or worse, is your central identity. Don't use your university or work email address to sign up for things, you'll still be using your GitHub account long after you've severed ties with that organisation. Get a good personal email address, and look after it.
 
-Attempt exercises in trinket.io if you have finished.
+#### Get a GitHub account!
+
+1. Go to [github.com](https://github.com/) and **Sign Up**.
+2. Fill in your real name
+3. Upload a photo of your face as your profile picture. We need this so that we can work out who you are.
+
+Once you've done those steps, you can refresh this page and you should see yourself at the bottom!
+
+#### Get a StackOverflow account!
 
 ### Steps to set up your dev environment
 
 We'll go through this together, but if you need to setup a new dev environment then these are the steps:
 
+1.  Go to https://git-scm.com/downloads and download the latest git
+1.  Install git with all the default values, except make vs code be the default editor
 1.  Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
 1.  install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
 1.  Be patient
 1.  Open anaconda navigator
 1.  Click install on the VS Code box, be patient again
-1.  Go to https://git-scm.com/downloads and download the latest git
-1.  Install git with all the default values, except make vs code be the default editor
-1.  restart vs code
-1.  type [ctrl]+[`] that's a backtick, it's to the left of 1 on most keyboards
+1.  Open VS Code, bask in its glory
+1.  inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of 1 on most keyboards
 1.  Your prompt should say something like:
-1.  `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
+
+    `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
+
 1.  type `mkdir 1161`
 1.  then `cd 1161`
 1.  then `git clone https://github.com/Design-Computing/CODE1161-2019 course`
-1.  then `https://github.com/Design-Computing/courseOrg.git org`
 1.  Go to https://github.com/Design-Computing/me and fork yourself a copy of the _me_ repo
-1.  then `git clone https://github.com/`_your name_`/me.git`
+1.  then `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
 1.  now type `dir` you should get something that looks like:
 
     ```
@@ -60,11 +68,15 @@ We'll go through this together, but if you need to setup a new dev environment t
     C:\Users\ben\1161>
     ```
 
-1.  Last thing: type `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun
+1.  Last thing: type `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a mac, call someone over to help.
 
 1.  Now you're ready to start the lab for real!
 
 In the last hour we will familiarise ourselves with each bit of software we have installed and what purpose it serves in the course. After that we will cover how to write your lab books and push them to GitHub.
+
+### Then
+
+Computing is mainly a mindset, not a typing skill. That mindset trinket.io if you have finished.
 
 ### Homework
 
