@@ -30,47 +30,62 @@ Once you've done those steps, you can refresh this page and you should see yours
 
 #### Get a StackOverflow account!
 
+1. Go to [stackoverflow.com](https://stackoverflow.com/) and **Sign Up**.
+
+You'll need this to help you out. As a way of 'paying' for that help, it's good manners to upvote the questions and answers that you find useful. Being a programmer without SO is unthinkable!
+
 ### Steps to set up your dev environment
 
 We'll go through this together, but if you need to setup a new dev environment then these are the steps:
 
-1.  Go to https://git-scm.com/downloads and download the latest git
-1.  Install git with all the default values, except make vs code be the default editor
-1.  Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
-1.  install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
-1.  Be patient
-1.  Open anaconda navigator
-1.  Click install on the VS Code box, be patient again
-1.  Open VS Code, bask in its glory
-1.  inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of 1 on most keyboards
-1.  Your prompt should say something like:
+1. Git:
+   1. Go to https://git-scm.com/downloads and download the latest git
+   1. Install git with all the default values, except make vs code be the default editor
+1. Anaconda:
+   1. Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
+   1. install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
+   1. Be patient
+   1. Open anaconda navigator
+   1. Click install on the VS Code box, be patient again
+1. VS Code
 
-    `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
+   1. Open VS Code, bask in its glory
+   1. inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of 1 on most keyboards. That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
+   1. Your prompt should say something like:
 
-1.  type `mkdir 1161`
-1.  then `cd 1161`
-1.  then `git clone https://github.com/Design-Computing/CODE1161-2019 course`
-1.  Go to https://github.com/Design-Computing/me and fork yourself a copy of the _me_ repo
-1.  then `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
-1.  now type `dir` you should get something that looks like:
+      `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
 
-    ```
-    C:\Users\ben\1161>dir
+      Whatever it is, now we need to write some magic spells.
 
-    01/06/2019  16:20    <DIR>          .
-    01/06/2019  16:20    <DIR>          ..
-    01/06/2019  16:20    <DIR>          course
-    01/06/2019  16:20    <DIR>          org
-    01/06/2019  16:20    <DIR>          me
-                0 File(s)              0 bytes
-                5 Dir(s)  308,818,493,440 bytes free
+1. Getting your content
+   1. type `mkdir 1161`
+   1. then `cd 1161`
+   1. then `git clone https://github.com/Design-Computing/CODE1161-2019 course`
+1. Clone
 
-    C:\Users\ben\1161>
-    ```
+   1. Go to https://github.com/Design-Computing/me and fork yourself a copy of the _me_ repo
+   1. Then, back in the terminal `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
+   1. now type `dir` you should get something that looks like:
 
-1.  Last thing: type `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a mac, call someone over to help.
+   ```
+   C:\Users\ben\1161>dir
 
-1.  Now you're ready to start the lab for real!
+   01/06/2019  16:20    <DIR>          .
+   01/06/2019  16:20    <DIR>          ..
+   01/06/2019  16:20    <DIR>          course
+   01/06/2019  16:20    <DIR>          org
+   01/06/2019  16:20    <DIR>          me
+               0 File(s)              0 bytes
+               5 Dir(s)  308,818,493,440 bytes free
+
+   C:\Users\ben\1161>
+   ```
+
+1. Finish up
+
+   1. Last thing: type `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a mac, call someone over to help.
+
+1. Now you're ready to start the lab for real!
 
 In the last hour we will familiarise ourselves with each bit of software we have installed and what purpose it serves in the course. After that we will cover how to write your lab books and push them to GitHub.
 
