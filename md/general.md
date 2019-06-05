@@ -65,9 +65,9 @@ TODO: update this graph
 
 ## Weeks:
 
-1. [Week 1](week1)
-1. [Week 2](week2)
-1. [Week 3](week3)
-1. [Week 4](week4)
-1. [Week 5](week5)
-1. [Week 6+](theRest)
+1. [Week 1](md/week1)
+1. [Week 2](md/week2)
+1. [Week 3](md/week3)
+1. [Week 4](md/week4)
+1. [Week 5](md/week5)
+1. [Week 6+](md/theRest)

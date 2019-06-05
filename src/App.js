@@ -28,7 +28,7 @@ class App extends React.Component {
         this.setState({ repos: x });
       });
 
-    url = `${api}/repos/${org}/Design-Computing.github.io/contents/general.md`;
+    url = `${api}/repos/${org}/Design-Computing.github.io/contents/md/general.md`;
     fetch(url, {
       method: "GET",
       headers: {

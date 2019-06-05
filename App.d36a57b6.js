@@ -39374,7 +39374,7 @@ function (_React$Component) {
           repos: x
         });
       });
-      url = "".concat(api, "/repos/").concat(org, "/Design-Computing.github.io/contents/general.md");
+      url = "".concat(api, "/repos/").concat(org, "/Design-Computing.github.io/contents/md/general.md");
       fetch(url, {
         method: "GET",
         headers: {
