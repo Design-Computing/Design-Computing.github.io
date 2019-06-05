@@ -85,13 +85,110 @@ We'll go through this together, but if you need to setup a new dev environment t
 
    1. Last thing: type `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a mac, call someone over to help.
 
+1. Prepare your workspace.
+
+   1. Get out a pen and notebook
+   1. Take a deep breath
+   1. Say "You've got this" to yourself
+   1. Smile
+   1. go to `File`&rarr;`Open Folder` and then choose `me`
+   1. Look at all those neat folder ready for you to work on!
+
 1. Now you're ready to start the lab for real!
 
-In the last hour we will familiarise ourselves with each bit of software we have installed and what purpose it serves in the course. After that we will cover how to write your lab books and push them to GitHub.
+## My first programming
 
-### Then
+In this task you're going to do a full cycle of work.
 
-Computing is mainly a mindset, not a typing skill. That mindset trinket.io if you have finished.
+1. Think
+1. Test
+1. Do
+1. Save
+1. Test
+1. Commit
+1. Push
+1. Test
+
+That's a lot to think about but it'll become easy soon. If we break that down individually:
+
+#### Think
+
+This is the _most_ important thing. Spending a long time doing the wrong thing is painful. So thinking means discussing with your peers, drawing diagrams, closing your eyes and dancing out the steps, whatever helps you understand.
+
+Each week has a folder. It'll show up in the tree view on the left. We're in week 1, so look in the folder `week1`.
+
+We're interested in `exercise1.py` and `readme.md` I like to have them both open at the same time.
+
+In `exercise1.py` look at the instructions in the _doc-string_. That's the bit at the top of the file.
+
+```
+"""Your very first python program!
+
+TODO: write a python script that first prints "Hello world!"
+"""
+```
+
+Now do some thinking.
+
+#### Test
+
+In this course, at least to begin with, the tests are already written for you. They check if your code does what it's supposed to do. To run the tests, you write, at the terminal:
+
+> `python ../course/week1/tests.py`
+
+Then press enter.
+
+Resist the urge to copy and paste this, you're going to be doing it a lot, and it'll be much better if you just learn to type it.
+
+The test produce a lot of output, so you'll want to pull up your terminal; there's an up arrow (**^**) on the right that makes it get much bigger.
+
+Most of your tests will fail. This is good because you haven't done any work yet!
+
+#### Do
+
+Now you do the work! This is going to be a back and forth with google, What we tell you in the lab, and conversations with yourself and your notebook.
+
+#### Save
+
+Save your work, it won't do anything otherwise.
+
+#### Test
+
+Again, write, at the terminal:
+
+> `python ../course/week1/tests.py`
+
+Then press enter.
+
+What did the tests say? What passed? What didn't?
+
+The last two tests this week can't pass until you've pushed.
+
+#### Commit
+
+TODO: get some screenshots in here
+
+#### Push
+
+TODO: get some screenshots in here
+
+#### Test
+
+Hopefully, for the last time, write, at the terminal:
+
+> `python ../course/week1/tests.py`
+
+Then press enter.
+
+What happens? Do you need to go back a few steps and have another go? If you can get a full suite of green ticks, then move onto Trinket
+
+## Then: Trinket
+
+Computing is mainly a mindset, not a typing skill. That mindset doesn't really care about languages. Programmers love to argue about which language is better, but in reality they have more in common than you'd think. The ideas cross boundaries.
+
+Syntax, the way we type letters to make words and symbols, easy to get wrong. Let's start with an environment that makes the syntax easier.
+
+Have a play with [trinket.io](https://hourofpython.trinket.io/from-blocks-to-code-with-trinket#/blocks/dragging-and-dropping) , follow the tutorial, or just try making the first letter of your name with a turtle, or even both!
 
 ### Homework
 
@@ -107,10 +204,8 @@ Computing is mainly a mindset, not a typing skill. That mindset trinket.io if yo
 
 ### Readings
 
-<dd>
-<p class="reference"><strong>Graham, P.</strong> (2009). <a href="http://paulgraham.com/makersschedule.html"><em>Maker’s Schedule, Manager’s Schedule.</em></a></p>
-<p class="reference"><strong>Case, N.</strong> (2016). <a href="http://ncase.me/simulating/"><em>Simulating The World (In Emoji 😘).</em></a></p>
-<p class="reference"><strong>Davis, D.</strong> (2015). <a href="http://www.architectmagazine.com/technology/why-architects-cant-be-automated_o"><em>Why Architects Can’t Be Automated.</em></a></p>
-<p class="reference"><strong>Doherty, B.</strong> (2015). <a href="https://notionparallax.co.uk/2015/architects-getting-automated"><em>Architects getting automated?</em></a></p>
-<p class="reference"><strong>Noll, A. M.</strong> (1967). <a href="http://noll.uscannenberg.org/Art%20Papers/Creative%20Medium.pdf">The digital computer as a creative medium</a>. IEEE Spectrum, 4(10), 89–95.</p>
-</dd>
+- **Graham, P.** (2009). _[Maker’s Schedule, Manager’s Schedule.](http://paulgraham.com/makersschedule.html)_</a>
+- **Case, N.** (2016). _[Simulating The World (In Emoji 😘).](http://ncase.me/simulating/)_</a>
+- **Davis, D.** (2015). _[Why Architects Can’t Be Automated.](http://www.architectmagazine.com/technology/why-architects-cant-be-automated_o)_</a>
+- **Doherty, B.** (2015). _[Architects getting automated?](https://notionparallax.co.uk/2015/architects-getting-automated)_</a>
+- **Noll, A. M.** (1967). <a href="http://noll.uscannenberg.org/Art%20Papers/Creative%20Medium.pdf">The digital computer as a creative medium</a>. IEEE Spectrum, 4(10), 89–95.
