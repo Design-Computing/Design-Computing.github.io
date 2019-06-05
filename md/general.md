@@ -6,7 +6,7 @@
 
 This course focuses on using programming as a way to solve problems, to amplify your storytelling, and to give you a means of creative expression. It's for people in non-computer and engineering science fields.
 
-Programming is simultaneously a vocational skill, a branch of philosophy, a culture, and the glue that holds the modern world together. By the end of this course you will have the philosophical tools needed to **design solutions** and the **technical skill** to implement them.
+Programming is a vocational skill, a branch of philosophy, a culture, and the glue that holds the modern world together. By the end of this course you will have the philosophical tools needed to **design solutions** and the **technical skill** to implement them.
 
 In the same way that being able to hold a pen doesn't make you a writer, being able to type code doesn't make you a programmer. We'll learn how to manipulate symbols (type code), what those symbols mean, and how to decide which symbols to type in the first place. We'll learn simple logic and strategies for decomposing problems. We'll learn about the history and culture of computers in general, and in art and architecture.
 
@@ -40,7 +40,7 @@ Announcements and updates to the course will be there too, so keep a regular eye
 
 We need to invite you to join the piazza class, so make sure that you finish the week 1 exercises so that we know about you.
 
-There's a [template here](piazzaQuestionTemplate.md) to help you write good piazza questions.
+There's a [template here](piazzaQuestionTemplate) to help you write good piazza questions.
 
 ### Email
 
@@ -54,14 +54,6 @@ _BUT_ before you email, if it's something to do with the course, make sure you u
 ### Slack
 
 Slack's for general chit-chat about comp design and computing. We'll invite you to this too. The team is here https://unsw-code.slack.com
-
-## Assessments
-
-TODO: update this graph
-
-### [View in full](./admin/diagrams.html)
-
-<iframe src="./admin/diagrams.html" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Weeks:
 
