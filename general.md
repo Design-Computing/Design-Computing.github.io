@@ -18,17 +18,17 @@ You'll learn these ideas and skills three sections.
 
 ## Course Communication
 
-### Course website:
+### Course website
 
-[https://design-computing.github.io/courseOrg/](https://design-computing.github.io/courseOrg/)
+[design-computing.github.io](https://design-computing.github.io/)
 
 ### Course repositories
 
 We've broken the course into three repos. (Who wants to say _repository_ when all the cool people say _repo_?)
 
-1. [https://github.com/Design-Computing/course](https://github.com/Design-Computing/course) This is where the active bit of the course lives. This contains the code that checks your answers, that means that you can see what's going on under the covers.
-1. [https://github.com/Design-Computing/courseOrg](https://github.com/Design-Computing/courseOrg) This has the code that we need to run the course, including the words that you're reading now. You don't ever _need_ to look at the code underneath all this, but it's there if you ever wanted to look. That's the magic of open source!
-1. [https://github.com/Design-Computing/me](https://github.com/Design-Computing/me) This is where you write code, except it isn't! Sounds tricky doesn't it. If everyone wrote their code in the same place then it'd get messy. You write your code in your own personal copy of this repo. In git language, we call copy a _fork_.
+1. [course](https://github.com/Design-Computing/course) This is where the active bit of the course lives. This contains the code that checks your answers, that means that you can see what's going on under the covers.
+1. [me](https://github.com/Design-Computing/me) This is where _you_ write code, except it isn't! Sounds tricky doesn't it. If everyone wrote their code in the same place then it'd get messy. You write your code in your own personal copy of this repo. In git language, we call copy a _[fork](https://help.github.com/en/articles/fork-a-repo)_.
+1. [Design-Computing.github.io](https://github.com/Design-Computing/Design-Computing.github.io) This has the code that _we_ need to run the course, including the words that you're reading now. You don't ever _need_ to look at the code underneath all this, but it's there if you ever wanted to look. That's the magic of open source!
 
 ### Piazza
 
@@ -42,7 +42,7 @@ There's a [template here](piazzaQuestionTemplate.md) to help you write good piaz
 
 ### Email
 
-Email is uncool, but sometimes it's necessary. If you absolutely need to email then
+Email is uncool, but sometimes it's necessary. If you absolutely need to email then:
 
 - Ben Doherty: b.doherty@unsw.edu.au
 - Aiden Ray: z3460907@ad.unsw.edu.au

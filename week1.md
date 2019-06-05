@@ -63,7 +63,7 @@ We'll go through this together, but if you need to setup a new dev environment t
    1. then `git clone https://github.com/Design-Computing/CODE1161-2019 course`
 1. Clone
 
-   1. Go to https://github.com/Design-Computing/me and fork yourself a copy of the _me_ repo
+   1. Go to https://github.com/Design-Computing/me and [fork](https://help.github.com/en/articles/fork-a-repo) yourself a copy of the _me_ repo
    1. Then, back in the terminal `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
    1. now type `dir` you should get something that looks like:
 
