@@ -39374,7 +39374,7 @@ function (_React$Component) {
           repos: x
         });
       });
-      url = "".concat(api, "/repos/").concat(org, "/Design-Computing.github.io/contents/docs/general.md");
+      url = "".concat(api, "/repos/").concat(org, "/Design-Computing.github.io/contents/general.md");
       fetch(url, {
         method: "GET",
         headers: {
@@ -39393,15 +39393,18 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement(_reactMarkdown.default, {
-        source: this.state.general
-      }), this.state.repos.map(function (r) {
+        source: this.state.general,
+        className: "writing"
+      }), _react.default.createElement("div", {
+        className: "facebook"
+      }, this.state.repos.map(function (r) {
         if ("owner" in r) {
           return _react.default.createElement(_Person.default, {
             key: r.id,
             forkData: r.owner
           });
         }
-      }));
+      })));
     }
   }]);
 
@@ -39437,7 +39440,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49274" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52172" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

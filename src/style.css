@@ -1,6 +1,11 @@
 @import "./stylesheets/basics.css";
 @import "./stylesheets/layout-grid.css";
 
+.writing {
+  max-width: 30em;
+  margin: 0 auto;
+}
+
 .person {
   display: inline-block;
   height: var(--tile-dim);
@@ -18,4 +23,10 @@
   left: var(--edge);
   position: absolute;
   width: calc(100% - (var(--edge) * 2));
+}
+
+.person img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

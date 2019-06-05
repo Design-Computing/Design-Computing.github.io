@@ -19,12 +19,13 @@
 
   --edge: 0.5em;
 
-  --tile-dim: 25em;
+  --tile-dim: 15em;
 }
 
 body,
 div.flowspace#root {
   background-color: var(--background-colour);
-  margin: 0;
   font-family: var(--fontStack);
+  font-size: 24px;
+  margin: 0 auto;
 }

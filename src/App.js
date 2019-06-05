@@ -45,12 +45,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <ReactMarkdown source={this.state.general} />
-        {this.state.repos.map(r => {
-          if ("owner" in r) {
-            return <Person key={r.id} forkData={r.owner} />;
-          }
-        })}
+        <ReactMarkdown source={this.state.general} className="writing" />
+        <div className="facebook">
+          {this.state.repos.map(r => {
+            if ("owner" in r) {
+              return <Person key={r.id} forkData={r.owner} />;
+            }
+          })}
+        </div>
         {/* <pre>{JSON.stringify(this.state.repos, null, 2)}</pre> */}
       </div>
     );

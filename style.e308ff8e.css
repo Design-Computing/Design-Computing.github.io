@@ -19,14 +19,20 @@
 
   --edge: 0.5em;
 
-  --tile-dim: 25em;
+  --tile-dim: 15em;
 }
 
 body,
 div.flowspace#root {
   background-color: var(--background-colour);
-  margin: 0;
   font-family: var(--fontStack);
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.writing {
+  max-width: 30em;
+  margin: 0 auto;
 }
 
 .person {
@@ -46,6 +52,12 @@ div.flowspace#root {
   left: var(--edge);
   position: absolute;
   width: calc(100% - (var(--edge) * 2));
+}
+
+.person img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 

@@ -1,6 +1,6 @@
-# CODE1161 Design Computing Homepage S1 2018
+# Design Computing 2019
 
-Us: [https://design-computing.github.io/code1161/guess_who_poster.html](https://design-computing.github.io/code1161/guess_who_poster.html)
+#### CODE1161
 
 ## Course Outline:
 
