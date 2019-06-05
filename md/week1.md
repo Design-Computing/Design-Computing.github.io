@@ -192,7 +192,7 @@ Have a play with [trinket.io](https://hourofpython.trinket.io/from-blocks-to-cod
 
 ### Homework
 
-- Ensure you have your dev environment set up.
+- Make sure that you have your dev environment set up.
 
 - In the week1 folder, complete: - exercise1.py
 
@@ -201,6 +201,8 @@ Have a play with [trinket.io](https://hourofpython.trinket.io/from-blocks-to-cod
   Check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) for an intro to how formatting works in markdown (`.md`) files.
 
 - That means that if you kept up in class, no homework this week! It's a great chance to read some of the articles below. They won't teach you python, but they _will_ broaden your mind.
+
+In theory, you can't get a full set of green ticks without everything going right. If you get all the ticks, then you have finished your homework. _Don't_ leave class if you don't have a full set of green ticks
 
 ### Readings
 
