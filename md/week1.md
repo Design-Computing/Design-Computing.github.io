@@ -199,6 +199,8 @@ Syntax, the way we type letters to make words and symbols, easy to get wrong. Le
 
 Have a play with [trinket.io](https://hourofpython.trinket.io/from-blocks-to-code-with-trinket#/blocks/dragging-and-dropping) , follow the tutorial, or just try making the first letter of your name with a turtle, or even both!
 
+Put a link to your trinket results into your lab book (readme.md file).
+
 ### Homework
 
 - Make sure that you have your dev environment set up.
