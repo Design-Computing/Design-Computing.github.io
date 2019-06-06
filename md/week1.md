@@ -38,15 +38,17 @@ You'll need this to help you out. As a way of 'paying' for that help, it's good 
 
 We'll go through this together, but if you need to setup a new dev environment then these are the steps:
 
-1. Git:
-   1. Go to https://git-scm.com/downloads and download the latest git
-   1. Install git with all the default values, except make vs code be the default editor
 1. Anaconda:
    1. Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
    1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
    1. Be patient
    1. Open anaconda navigator
    1. Click install on the VS Code box, be patient again
+
+1. Git:
+   1. Go to https://git-scm.com/downloads and download the latest git
+   1. Install git with all the default values, except make vs code be the default editor
+
 1. VS Code
 
    1. Open VS Code, bask in its glory
