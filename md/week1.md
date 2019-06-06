@@ -67,19 +67,28 @@ We'll go through this together, but if you need to setup a new dev environment t
    1. Then, back in the terminal `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
    1. Now type `dir` you should get something that looks like:
 
-   ```
-   C:\Users\ben\1161>dir
+      ```
+      C:\Users\ben\1161>dir
 
-   01/06/2019  16:20    <DIR>          .
-   01/06/2019  16:20    <DIR>          ..
-   01/06/2019  16:20    <DIR>          course
-   01/06/2019  16:20    <DIR>          org
-   01/06/2019  16:20    <DIR>          me
-               0 File(s)              0 bytes
-               5 Dir(s)  308,818,493,440 bytes free
+      01/06/2019  16:20    <DIR>          .
+      01/06/2019  16:20    <DIR>          ..
+      01/06/2019  16:20    <DIR>          course
+      01/06/2019  16:20    <DIR>          org
+      01/06/2019  16:20    <DIR>          me
+                  0 File(s)              0 bytes
+                  5 Dir(s)  308,818,493,440 bytes free
 
-   C:\Users\ben\1161>
-   ```
+      C:\Users\ben\1161>
+      ```
+
+   1. Last thing here: Associate your fork with it's upstream version; that's the one you forked from. This means that if we make a change, you can pull it into your repo.
+
+      ```
+      git remote add upstream https://github.com/Design-Computing/me.git
+
+      ```
+
+      Now you've done that, you can do a `git pull upstream master` to get the latest changes. If you need to do this, we'll tell you about it.
 
 1. Finish up
 
