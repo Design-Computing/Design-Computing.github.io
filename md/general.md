@@ -2,6 +2,18 @@
 
 #### CODE1161
 
+## Questions!
+
+These questions are all anonymous. They're separate forms so that we can't tie the responses together. We'll talk about this kind of thing in one of the later lectures in this course.
+
+We're going to pause the lecture for you to fill these in.
+
+[Learning about you](https://docs.google.com/forms/d/e/1FAIpQLSdBZjEULRJh4CVWgfJhsGqQLNv7efpV82TxxyJpDrhYi5PpTg/viewform?usp=sf_link)
+
+[What does _programming_ mean to you?](https://docs.google.com/forms/d/e/1FAIpQLSetpJp8n1CvvqSuZKs6YH-VQ0fRFGYx3jonDt-eHCMI9A85Ng/viewform?usp=sf_link)
+
+[Why did you do this course?](https://docs.google.com/forms/d/e/1FAIpQLScwSwCPxFWixn_ioJM_YiR0DyKMAKsn0oqYEwH1Ad4Kia_sIQ/viewform?usp=sf_link)
+
 ## Course Outline:
 
 This course focuses on using programming as a way to solve problems, to amplify your storytelling, and to give you a means of creative expression. It's for people in non-computer and engineering science fields.
