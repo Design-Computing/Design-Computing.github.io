@@ -39268,11 +39268,17 @@ function (_React$Component) {
       }).then(function (x) {
         var a = _jsYaml.default.load(atob(x.content));
 
+        var contactEmail = "I broke the yaml";
+
+        if (a.contactEmail && a.contactEmail.firstBit && a.contactEmail.otherBit) {
+          contactEmail = "".concat(a.contactEmail.firstBit, "@").concat(a.contactEmail.otherBit);
+        }
+
         _this2.setState({
           name: a.name,
           studentNumber: a.studentNumber,
           officialEmail: a.officialEmail,
-          contactEmail: "".concat(a.contactEmail.firstBit, "@").concat(a.contactEmail.otherBit)
+          contactEmail: contactEmail
         });
       });
     }
@@ -39440,7 +39446,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52172" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57574" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

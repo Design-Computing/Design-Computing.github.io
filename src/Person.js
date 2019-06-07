@@ -27,11 +27,21 @@ class Person extends React.Component {
       .then(x => x.json())
       .then(x => {
         const a = jsyaml.load(atob(x.content));
+        let contactEmail = "I broke the yaml";
+        if (
+          a.contactEmail &&
+          a.contactEmail.firstBit &&
+          a.contactEmail.otherBit
+        ) {
+          contactEmail = `${a.contactEmail.firstBit}@${
+            a.contactEmail.otherBit
+          }`;
+        }
         this.setState({
           name: a.name,
           studentNumber: a.studentNumber,
           officialEmail: a.officialEmail,
-          contactEmail: `${a.contactEmail.firstBit}@${a.contactEmail.otherBit}`
+          contactEmail: contactEmail
         });
       });
   }

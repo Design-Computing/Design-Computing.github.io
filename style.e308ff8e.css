@@ -33,6 +33,7 @@ div.flowspace#root {
 .writing {
   max-width: 30em;
   margin: 0 auto;
+  padding: 1em;
 }
 
 .person {
