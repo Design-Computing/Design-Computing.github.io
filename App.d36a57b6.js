@@ -39286,16 +39286,23 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       if (this.props.forkData) {
-        return _react.default.createElement("div", {
-          className: "person"
-        }, _react.default.createElement("img", {
-          alt: "".concat(this.state.name, "'s face"),
-          src: "https://avatars.githubusercontent.com/".concat(this.props.forkData.login)
-        }), _react.default.createElement("div", {
-          className: "info"
-        }, _react.default.createElement("h1", null, _react.default.createElement("a", {
-          href: this.props.forkData.html_url
-        }, this.state.name)), _react.default.createElement("p", null, this.state.studentNumber), _react.default.createElement("p", null, this.state.officialEmail), _react.default.createElement("p", null, this.state.contactEmail)));
+        try {
+          return _react.default.createElement("div", {
+            className: "person"
+          }, _react.default.createElement("img", {
+            alt: "".concat(this.state.name, "'s face"),
+            src: "https://avatars.githubusercontent.com/".concat(this.props.forkData.login)
+          }), _react.default.createElement("div", {
+            className: "info"
+          }, _react.default.createElement("h1", null, _react.default.createElement("a", {
+            href: this.props.forkData.html_url
+          }, this.state.name)), _react.default.createElement("p", null, this.state.studentNumber), _react.default.createElement("p", null, this.state.officialEmail), _react.default.createElement("p", null, this.state.contactEmail)));
+        } catch (error) {
+          console.log(error);
+          return _react.default.createElement("div", {
+            className: "person"
+          }, JSON.stringify(this.props.forkData, null, 2));
+        }
       } else {
         return null;
       }
@@ -39366,7 +39373,7 @@ function (_React$Component) {
 
       var api = "https://api.github.com";
       var org = "design-computing";
-      var url = "".concat(api, "/repos/").concat(org, "/me/forks");
+      var url = "".concat(api, "/repos/").concat(org, "/me/forks?per_page=100");
       fetch(url, {
         method: "GET",
         headers: {
@@ -39446,7 +39453,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57574" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61307" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
