@@ -12,7 +12,7 @@ Part two is a low-barrier-to-entry way to start flexing your computational think
 
 Part of your dev environment is going to be on your computer, and some of it will be in the cloud.
 
-You'll year us use the word _local_ to mean _on your computer_ and _remote_ to mean _in the cloud_.
+You'll hear us use the word _local_ to mean _on your computer_ and _remote_ to mean _in the cloud_.
 
 ### Cloud environment
 
