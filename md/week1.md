@@ -252,8 +252,32 @@ Some things are different for you. Here's how we fix them:
 
   To do this, type [cmd]+[shift]+[p]. This will open the command pallet. Then type `shell` which will narrow the commands down to three or four. Then pick **Terminal: Allow Workspace Shell Configuration**. This now means that you can launch VS Code from inside the folder that you want it to launch in. E.g. if I'm inside my `Me` folder, then you can type `code .` and it'll launch, all ready to work.
 
-* You can't run `startup.bat` because `bat`s are only for Windows; you need a `.sh`. There's a file called `startup.sh` all ready for you to use. It should install a bunch of things, and set some aliases so that when you type `python` it knows what you mean.
+* You can't run `startup.bat` because `bat`s are only for Windows; you need a `.sh`. There's a file called `startup.sh` all ready for you to use. It should install a bunch of things, and set some aliases so that when you type `python` it knows what you mean. _Don't run this file yet, it's untested._
 
 * You need to get a grasp of your file system. [This might be helpful to read](https://www.dummies.com/computers/macs/mac-operating-systems/basics-of-the-os-x-folder-structure/). I'll ask some mac people for advice on where to keep your `1161` folder.
 
 * To open a folder in mac VS Code, there isn't a separate menu option, you just click _Open_ and then choose a folder instead of a file. This will make your version control work properly.
+
+* your last three tests won't pass. I'm still working on this.
+
+# General trouble shooting
+
+## Git
+
+To get a good grasp of how to use version control in VS Code, [this is a pretty good place to start](https://code.visualstudio.com/docs/editor/versioncontrol).
+
+If your version control tab isn't showing a provider, check that you have your `Me` folder open.
+
+![highlighting the me title](../pictures/meFolderOpen.png)
+
+This means that the `me` folder is the active environment. There are fancy ways around this, but this is the easiest way to make it work.
+
+If your git still seems to be totally broken, even if you're doing this, then you can try Zack's fix:
+
+> The fix for the git problem on VSCode (windows only, haven’t checked if there’s a solution for it on Mac but Mac people had the same problem) was to get into the settings.json file (File&rarr;Preferences&rarr;Settings then scroll down until it says ‘edit settings.json’) and add:
+>
+> `"git.enabled": true;`
+>
+> `"git.path": "C:\\path\\to\\git.exe"`
+
+I don't really know how this works yet because I haven't tried it myself.
