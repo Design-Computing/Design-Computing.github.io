@@ -25,7 +25,7 @@ In the same way that being able to hold a pen doesn't make you a writer, being a
 You'll learn these ideas and skills three sections.
 
 1. The first will be becoming proficient in the [Python](<https://en.wikipedia.org/wiki/Python_(programming_language)>).
-1. Second is will be a machine learning project which uses your newfound problem solving and programming skills.
+1. Second will be a machine learning project which uses your newfound problem solving and programming skills.
 1. The third section will be the Open Data Project: a data exploration, analysis and story telling task.
 
 ## Course Communication
