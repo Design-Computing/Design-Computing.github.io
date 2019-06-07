@@ -118,6 +118,8 @@ In this task you're going to do a full cycle of work.
 1. Push
 1. Test
 
+![my dev environment setup](pictures/vs_code_week_1.png)
+
 That's a lot to think about but it'll become easy soon. If we break that down individually:
 
 #### Think
@@ -232,3 +234,13 @@ In theory, you can't get a full set of green ticks without everything going righ
 ## Lab
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQFMw9WsAuZ43GoF3OGs1pCJq1NzEEgpp1GknWwRrFq1_qizdkPGAPZ-5Ar2mkDwkpflIWv0n2n6KLj/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+# Are you a Mac user?
+
+Some things are different for you. Here's how we fix them:
+
+- You need to make VS Code be able to run as a command in your terminal.
+
+  ![terminal access](pictures/macShellAccess.png)
+
+  To do this, type [cmd]+[shift]+[p]. This will open the command pallete. Then type `shell` which will narrow the commands down to three or four. Then pick
