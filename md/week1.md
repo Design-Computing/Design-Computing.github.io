@@ -39,6 +39,7 @@ You'll need this to help you out. As a way of 'paying' for that help, it's good 
 We'll go through this together, but if you need to setup a new dev environment then these are the steps:
 
 1. Anaconda:
+
    1. Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
    1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
    1. Be patient
@@ -46,6 +47,7 @@ We'll go through this together, but if you need to setup a new dev environment t
    1. Click install on the VS Code box, be patient again
 
 1. Git:
+
    1. Go to https://git-scm.com/downloads and download the latest git
    1. Install git with all the default values, except make vs code be the default editor
 
@@ -82,6 +84,7 @@ We'll go through this together, but if you need to setup a new dev environment t
 
       C:\Users\ben\1161>
       ```
+
    1. Now use cd (change directory) to move into the 'me' repo - type `cd me`
    1. Last thing here: Associate your fork with it's upstream version; that's the one you forked from. This means that if we make a change, you can pull it into your repo.
 
@@ -120,9 +123,11 @@ In this task you're going to do a full cycle of work.
 1. Push
 1. Test
 
-![my dev environment setup](pictures/vs_code_week_1.png)
-
 That's a lot to think about but it'll become easy soon. If we break that down individually:
+
+![my dev environment setup](../pictures/vs_code_week_1.png)
+
+This is how I set up my workspace for doing this kind of work. To split the screen, drag the tab all the way across to the right side of the screen.
 
 #### Think
 
@@ -243,6 +248,12 @@ Some things are different for you. Here's how we fix them:
 
 - You need to make VS Code be able to run as a command in your terminal.
 
-  ![terminal access](pictures/macShellAccess.png)
+  ![terminal access](../pictures/macShellAccess.png)
 
-  To do this, type [cmd]+[shift]+[p]. This will open the command pallete. Then type `shell` which will narrow the commands down to three or four. Then pick
+  To do this, type [cmd]+[shift]+[p]. This will open the command pallet. Then type `shell` which will narrow the commands down to three or four. Then pick **Terminal: Allow Workspace Shell Configuration**. This now means that you can launch VS Code from inside the folder that you want it to launch in. E.g. if I'm inside my `Me` folder, then you can type `code .` and it'll launch, all ready to work.
+
+* You can't run `startup.bat` because `bat`s are only for Windows; you need a `.sh`. There's a file called `startup.sh` all ready for you to use. It should install a bunch of things, and set some aliases so that when you type `python` it knows what you mean.
+
+* You need to get a grasp of your file system. [This might be helpful to read](https://www.dummies.com/computers/macs/mac-operating-systems/basics-of-the-os-x-folder-structure/). I'll ask some mac people for advice on where to keep your `1161` folder.
+
+* To open a folder in mac VS Code, there isn't a separate menu option, you just click _Open_ and then choose a folder instead of a file. This will make your version control work properly.
