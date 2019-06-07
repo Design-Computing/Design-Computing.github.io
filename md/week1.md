@@ -82,7 +82,7 @@ We'll go through this together, but if you need to setup a new dev environment t
 
       C:\Users\ben\1161>
       ```
-
+   1. Now use cd (change directory) to move into the 'me' repo - type `cd me`
    1. Last thing here: Associate your fork with it's upstream version; that's the one you forked from. This means that if we make a change, you can pull it into your repo.
 
       ```
