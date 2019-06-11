@@ -244,21 +244,37 @@ In theory, you can't get a full set of green ticks without everything going righ
 
 # Are you a Mac user?
 
-Some things are different for you. Here's how we fix them:
+Some things are different for you. Here's what to do:
 
-- You need to make VS Code be able to run as a command in your terminal.
+### First, get some things working
 
-  ![terminal access](../pictures/macShellAccess.png)
+Make sure you have VS Code, Git and Anaconda installed and working. You probably do already or you wouldn't know that things are astray.
 
-  To do this, type [cmd]+[shift]+[p]. This will open the command pallet. Then type `shell` which will narrow the commands down to three or four. Then pick **Terminal: Allow Workspace Shell Configuration**. This now means that you can launch VS Code from inside the folder that you want it to launch in. E.g. if I'm inside my `Me` folder, then you can type `code .` and it'll launch, all ready to work.
+You need to get a grasp of your file system. [This might be helpful to read](https://www.dummies.com/computers/macs/mac-operating-systems/basics-of-the-os-x-folder-structure/). I'll ask some mac people for advice on where to keep your `1161` folder.
 
-* You can't run `startup.bat` because `bat`s are only for Windows; you need a `.sh`. There's a file called `startup.sh` all ready for you to use. It should install a bunch of things, and set some aliases so that when you type `python` it knows what you mean. _Don't run this file yet, it's untested._
+To open a folder in Mac VS Code, there isn't a separate menu option, you just click _Open_ and then choose a folder instead of a file. This will make your version control work properly.
 
-* You need to get a grasp of your file system. [This might be helpful to read](https://www.dummies.com/computers/macs/mac-operating-systems/basics-of-the-os-x-folder-structure/). I'll ask some mac people for advice on where to keep your `1161` folder.
+### The steps
 
-* To open a folder in mac VS Code, there isn't a separate menu option, you just click _Open_ and then choose a folder instead of a file. This will make your version control work properly.
+1. You need to make VS Code be able to run as a command in your terminal.
 
-* your last three tests won't pass. I'm still working on this.
+   ![terminal access](../pictures/macShellAccess.png)
+
+   To do this, type [cmd]+[shift]+[p]. This will open the command pallet. Then type `shell` which will narrow the commands down to three or four. Then pick **Terminal: Allow Workspace Shell Configuration**. This now means that you can launch VS Code from inside the folder that you want it to launch in. E.g. if I'm inside my `Me` folder, then you can type `code .` and it'll launch, all ready to work.
+
+1. You can't run `startup.bat` because `bat`s are only for Windows; you need a `.sh`. There's a file called `startup.sh` all ready for you to use. It should install a bunch of things, and set some aliases so that when you type `python` it knows what you mean. To get it:
+
+   - Open the `course` folder in VS Code. For Macs, there isn't an _open folder_ option, the OS doesn't force a distinction between files and folders, so go to _open_, click _course_ and then don't click a file. This feels tricky so it might take you a couple of goes.
+   - Open your terminal by typing [ctrl]+[`] (that's a backtick, it's to the left of 1 on most keyboards). That will pop up the section at the bottom of the screen.
+
+     Your prompt should say something like: `C:\Users\ben\course>`
+
+   - type `bash startup.sh` and press enter
+   - A _lot_ of text will start scrolling past.
+   - When it has finished, type `python --version` it should say `Python 3.7.3` or at least `3.`.
+   - If it does say that, then you are set!
+
+1. run your tests by opening the `me` folder and typing `python ../course/week1/tests.py` in the terminal.
 
 # General trouble shooting
 
