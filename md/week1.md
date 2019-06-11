@@ -77,10 +77,9 @@ We'll go through this together, but if you need to setup a new dev environment t
       01/06/2019  16:20    <DIR>          .
       01/06/2019  16:20    <DIR>          ..
       01/06/2019  16:20    <DIR>          course
-      01/06/2019  16:20    <DIR>          org
       01/06/2019  16:20    <DIR>          me
                   0 File(s)              0 bytes
-                  5 Dir(s)  308,818,493,440 bytes free
+                  5 Dir(s)  314,159,265,359 bytes free
 
       C:\Users\ben\1161>
       ```
