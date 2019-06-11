@@ -277,6 +277,12 @@ To open a folder in Mac VS Code, there isn't a separate menu option, you just cl
 
 1. run your tests by opening the `me` folder and typing `python ../course/week1/tests.py` in the terminal.
 
+   If that doesn't work, try `python`**_`3`_**`../course/week1/tests.py` to call the tests explicitly with python 3
+
+### Why is this a problem anyway?
+
+Macs come with python already, but it's 2.7, not 3.7. Going from 3.7 to 3.8 is a minor version change (I call it a "version bump"), but going from 2.x to 3.x is a major version change. In a major version change, there are breaking changes, which means that python 2.x can't handle our code. We need to change to 3.x so that it works. This is easy in windows where we don't need to worry about the old version of python, but on macs there's some confusion to clear up.
+
 # General trouble shooting
 
 ## Git

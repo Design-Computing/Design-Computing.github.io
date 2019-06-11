@@ -16,7 +16,38 @@
 
 # Clinic
 
+Getting the basics right is the key to being able to do this course. It's vital that you finish week 1's work as soon as possible.
+
 If you didn't get a suite of beautiful green ticks last week, then the first thing we're going to do is fix that for you.
+
+### _Your Name_
+
+A lot of people are still called _Your Name_. Let's fix that first!
+
+Your name in the faces means that we can learn your names faster. It also means that when you push your work to GitHub and we mark it, we know who has done the work. If you don't give us the information, the repo has marks, but you don't.
+
+The information is in your `me` repo, the file is `aboutMe.yml`. Mine looks like:
+
+```yml
+name: Ben Doherty
+studentNumber: z1234567
+officialEmail: b.doherty@unsw.edu.au
+contactEmail:
+  firstBit: ben # this avoids spam, the @ is implied
+  otherBit: notionparallax.co.uk
+```
+
+The `contactEmail:` line is blank because it's before an indented block. That'll all make sense by the end of this week, but for now, go with it.
+
+Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/).
+
+### Can't get a wall of ticks?
+
+#### Mac person?
+
+We feel your pain, let's all get together at the start of the lab to work it out. A far as I can tell, [these tips will fix you up](https://design-computing.github.io/md/week1#are-you-a-mac-user).
+
+There might be a more elegant fix, but at least to begin with, it should fix the biggest problems.
 
 # How to do the exercises
 
