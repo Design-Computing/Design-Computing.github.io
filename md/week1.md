@@ -269,6 +269,8 @@ To open a folder in Mac VS Code, there isn't a separate menu option, you just cl
 
      Your prompt should say something like: `C:\Users\ben\course>`
 
+   - type `git pull` and press enter
+   - A little bit of text will scroll past, it will tell you about what's changed in the repo since you were there last.
    - type `bash startup.sh` and press enter
    - A _lot_ of text will start scrolling past.
    - When it has finished, type `python --version` it should say `Python 3.7.3` or at least `3.`.
