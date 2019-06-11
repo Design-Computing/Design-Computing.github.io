@@ -249,7 +249,7 @@ Some things are different for you. Here's what to do:
 
 Make sure you have VS Code, Git and Anaconda installed and working. You probably do already or you wouldn't know that things are astray.
 
-You need to get a grasp of your file system. [This might be helpful to read](https://www.dummies.com/computers/macs/mac-operating-systems/basics-of-the-os-x-folder-structure/). I'll ask some mac people for advice on where to keep your `1161` folder.
+You need to get a grasp of your file system. [This might be helpful to read](https://www.dummies.com/computers/macs/mac-operating-systems/basics-of-the-os-x-folder-structure/). I'll ask some mac people for advice on where to keep your `1161` folder. It doesn't _really_ matter, as long as you know where to find it.
 
 To open a folder in Mac VS Code, there isn't a separate menu option, you just click _Open_ and then choose a folder instead of a file. This will make your version control work properly.
 
