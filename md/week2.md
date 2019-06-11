@@ -14,6 +14,10 @@
 - List of questions from last week's lab
 - Maybe some snacks for the lab. Keep it low GI if you can.
 
+# Clinic
+
+If you didn't get a suite of beautiful green ticks last week, then the first thing we're going to do is fix that for you.
+
 # How to do the exercises
 
 Each file starts with a section of writing, wrapped in """triple quotes""". It tells you what the we want you to do. There's another one in each function that is more specific.
