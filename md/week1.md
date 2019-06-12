@@ -261,21 +261,22 @@ To open a folder in Mac VS Code, there isn't a separate menu option, you just cl
 
    To do this, type [cmd]+[shift]+[p]. This will open the command pallet. Then type `shell` which will narrow the commands down to three or four. Then pick **Terminal: Allow Workspace Shell Configuration**. This now means that you can launch VS Code from inside the folder that you want it to launch in. E.g. if I'm inside my `Me` folder, then you can type `code .` and it'll launch, all ready to work.
 
-1. You can't run `startup.bat` because `bat`s are only for Windows; you need a `.sh`. There's a file called `startup.sh` all ready for you to use. It should install a bunch of things, and set some aliases so that when you type `python` it knows what you mean. To get it:
+1. You can't run `startup.bat` because `bat`s are only for Windows; you need a `.sh`. There's a file called `startup.sh` all ready for you to use. It should install a bunch of things, and set some aliases so that when you type `python` it knows what you mean. I haven't worked out how to make this work for your VS Code terminal, so you'll have to use your computer's terminal for the moment.
 
-   - Open the `course` folder in VS Code. For Macs, there isn't an _open folder_ option, the OS doesn't force a distinction between files and folders, so go to _open_, click _course_ and then don't click a file. This feels tricky so it might take you a couple of goes.
-   - Open your terminal by typing [ctrl]+[`] (that's a backtick, it's to the left of 1 on most keyboards). That will pop up the section at the bottom of the screen.
-
-     Your prompt should say something like: `C:\Users\ben\course>`
-
+   - Click on the 🔍 next to the clock. Search for `terminal` and press enter.
+   - A white window will open. If you type `pwd` it'll tell you where you are. Probably `/Users/yourName`
+   - If you followed the instructions, then you put your `1161` folder here. Type `ls` and look for it.
+   - If it's there, great. If not, grab a tutor. Actually, if anything in these instructions breaks, grab a tutor. Assuming that it _is_ there, then type `cd course`
    - type `git pull` and press enter
    - A little bit of text will scroll past, it will tell you about what's changed in the repo since you were there last.
    - type `bash startup.sh` and press enter
    - A _lot_ of text will start scrolling past.
-   - When it has finished, type `python --version` it should say `Python 3.7.3` or at least `3.`.
+   - Wait for it to finish.
+   - Close the terminal, and open a new one. ([cmd]+[n] if that's your kind of thing.)
+   - Type `python --version` it should say `Python 3.7.3` or at least `3.`.
    - If it does say that, then you are set!
 
-1. run your tests by opening the `me` folder and typing `python ../course/week1/tests.py` in the terminal.
+1. run your tests by opening the `me` folder in your mac terminal (the white one) and typing `python ../course/week1/tests.py` in the terminal.
 
    If that doesn't work, try `python`**_`3`_**`../course/week1/tests.py` to call the tests explicitly with python 3
 
@@ -304,3 +305,10 @@ If your git still seems to be totally broken, even if you're doing this, then yo
 > `"git.path": "C:\\path\\to\\git.exe"`
 
 I don't really know how this works yet because I haven't tried it myself.
+
+<!---
+   - Open the `course` folder in VS Code. For Macs, there isn't an _open folder_ option, the OS doesn't force a distinction between files and folders, so go to _open_, click _course_ and then don't click a file. This feels tricky so it might take you a couple of goes.
+   - Open your terminal by typing [ctrl]+[`] (that's a backtick, it's to the left of 1 on most keyboards). That will pop up the section at the bottom of the screen.
+
+     Your prompt should say something like: `C:\Users\ben\course>`
+-->
