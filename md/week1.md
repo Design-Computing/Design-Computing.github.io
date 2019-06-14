@@ -305,10 +305,3 @@ If your git still seems to be totally broken, even if you're doing this, then yo
 > `"git.path": "C:\\path\\to\\git.exe"`
 
 I don't really know how this works yet because I haven't tried it myself.
-
-<!---
-   - Open the `course` folder in VS Code. For Macs, there isn't an _open folder_ option, the OS doesn't force a distinction between files and folders, so go to _open_, click _course_ and then don't click a file. This feels tricky so it might take you a couple of goes.
-   - Open your terminal by typing [ctrl]+[`] (that's a backtick, it's to the left of 1 on most keyboards). That will pop up the section at the bottom of the screen.
-
-     Your prompt should say something like: `C:\Users\ben\course>`
--->
