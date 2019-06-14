@@ -31,3 +31,7 @@
   height: 100%;
   object-fit: cover;
 }
+
+pre {
+  font-size: 45%;
+}

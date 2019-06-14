@@ -5,10 +5,11 @@ class Person extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Your Name",
+      name: undefined,
       studentNumber: "z1234567",
       officialEmail: "noIdea@unsw.edu.au",
-      contactEmail: "firstName.Lastname@whereIwork.com"
+      contactEmail: "firstName.Lastname@whereIwork.com",
+      errorMessage: undefined
     };
   }
 
@@ -21,32 +22,59 @@ class Person extends React.Component {
       method: "GET",
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "User-Agent": "notionparallax"
       }
     })
       .then(x => x.json())
       .then(x => {
-        const a = jsyaml.load(atob(x.content));
-        let contactEmail = "I broke the yaml";
-        if (
-          a.contactEmail &&
-          a.contactEmail.firstBit &&
-          a.contactEmail.otherBit
-        ) {
-          contactEmail = `${a.contactEmail.firstBit}@${
-            a.contactEmail.otherBit
-          }`;
+        let a;
+        try {
+          a = jsyaml.load(atob(x.content));
+          const e = a.contactEmail;
+          if (e && e.firstBit && e.otherBit) {
+            this.setState({
+              name: a.name,
+              studentNumber: a.studentNumber,
+              officialEmail: a.officialEmail,
+              contactEmail: `${e.firstBit}@${e.otherBit}`
+            });
+          } else {
+            this.setState({
+              errorMessage: "aboutMe.yml not updated " + JSON.stringify(a)
+            });
+          }
+        } catch (error) {
+          this.setState({ errorMessage: error });
         }
-        this.setState({
-          name: a.name,
-          studentNumber: a.studentNumber,
-          officialEmail: a.officialEmail,
-          contactEmail: contactEmail
-        });
       });
   }
 
   render() {
+    const goodInfo = (
+      <div>
+        <h1>
+          <a href={this.props.forkData.html_url}>
+            {this.state.name || this.props.forkData.html_url}
+          </a>
+        </h1>
+        <p>{this.state.studentNumber}</p>
+        <p>{this.state.officialEmail}</p>
+        <p>{this.state.contactEmail}</p>
+      </div>
+    );
+    const badInfo = (
+      <div>
+        <p>{this.errorMessage}</p>
+        <pre>{JSON.stringify(this.props, null, 2)}</pre>
+        <h1>
+          <a href={this.props.forkData.html_url}>
+            {this.props.forkData.html_url.split("/")[3]}
+          </a>
+        </h1>
+      </div>
+    );
+
     if (this.props.forkData) {
       try {
         return (
@@ -57,16 +85,7 @@ class Person extends React.Component {
                 this.props.forkData.login
               }`}
             />
-            <div className="info">
-              <h1>
-                <a href={this.props.forkData.html_url}>{this.state.name}</a>
-              </h1>
-              <p>{this.state.studentNumber}</p>
-              <p>{this.state.officialEmail}</p>
-              <p>{this.state.contactEmail}</p>
-
-              {/* <pre>{JSON.stringify(this.props, null, 2)}</pre> */}
-            </div>
+            <div className="info">{this.state.name ? goodInfo : badInfo}</div>
           </div>
         );
       } catch (error) {
