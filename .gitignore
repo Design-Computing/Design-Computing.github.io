@@ -10,3 +10,9 @@ package-lock.json
 .env.local
 .env.yokel
 src/temp GH issues.md
+marking_and_admin/credentials.json
+*.pickle
+*.pyc
+log.txt
+temp_results.json
+marks.csv
