@@ -442,6 +442,8 @@ if not os.path.exists(rootdir):
     os.makedirs(rootdir)
 print("listdir(rootdir):\n", os.listdir(rootdir))
 
+start_time = datetime.datetime.utcnow()
+
 students = None
 if os.path.exists("student.pickle"):
     with open("student.pickle", "rb") as sp:
@@ -451,8 +453,8 @@ else:
     with open("student.pickle", "wb") as sp:
         pickle.dump(students, sp)
 
-# for student in students:
-#     update_repos(student, hardcore_pull=False)
+for student in students:
+    update_repos(student, hardcore_pull=True)
 
 mark_sheet = pd.DataFrame(students)
 
@@ -462,11 +464,17 @@ mark_sheet = mark_sheet.merge(deets, on="owner")
 mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1,), axis=1)
 mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2,), axis=1)
 mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3,), axis=1)
+mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4,), axis=1)
+mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5,), axis=1)
+mark_sheet["exam"] = mark_sheet.apply(test_in_clean_environment, args=(8,), axis=1)
 mark_sheet.to_csv("marks.csv")
 
-service = build_spreadsheet_service()
 data = [list(x) for x in mark_sheet.to_numpy()]
+service = build_spreadsheet_service()
 write(service, data=data)
+
+end_time = datetime.datetime.utcnow()
+print("that took", end_time - start_time)
 
 # dirList = os.listdir(rootdir)  # do we know if everyone's work got in?
 # print("dir list", dirList, len(dirList))
