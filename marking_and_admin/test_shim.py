@@ -10,36 +10,54 @@ the repo changes for each student.
 
 """
 from importlib import import_module
+import importlib.util
+
+import json
 import sys
+import os
 
 
-def do_the_test(test_path, repo_path):
+def do_the_test(repo_path):
     """Run tests on a student's repo."""
     try:
-        test = import_module(TEST_PATH, package="code1161base")
+        spec = importlib.util.spec_from_file_location("tests", TEST_PATH)
+        test = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(test)
+        print("about to test", repo_path)
         r = test.theTests(repo_path)
         r["localError"] = ":)"
         return r
     except Exception as e:
-        return {"of_total": 0,
-                "mark": 0,
-                "localError": str(e).replace(",", "~").encode('utf-8')}
+        return {
+            "of_total": 0,
+            "mark": 0,
+            "localError": str(e).replace(",", "~"),  # .encode("utf-8"),
+        }
         # the comma messes with the csv
 
 
-def results_as_json(test_path, repo_path):
+def results_as_json(repo_path):
     """Save the results to a temporary json file."""
-    import json
-    results = do_the_test(test_path, repo_path)
-    p = ""
-    p = repo_path.split("/")[-1]
-    results["name"] = p
+    results = do_the_test(repo_path)
+    results["name"] = OWNER
+    print("results:", results)
     return json.dumps(results)
 
 
-TEST_PATH = sys.argv[1]
-REPO_PATH = sys.argv[2]
+TEST_PATH = os.path.normpath(sys.argv[1])
+REPO_PATH = os.path.normpath(sys.argv[2])
+OWNER = sys.argv[3]
 
-temp_results = open('temp_results.json', 'w')
-temp_results.write(results_as_json(TEST_PATH, REPO_PATH))
+
+# 0:'C:\\Users\\ben\\Anaconda3\\python.exe'
+# TEST_PATH = "C:\\Users\\ben\\code1161\\course\\week1\\tests.py"
+# REPO_PATH = "C:\\Users\\ben\\code1161\\StudentRepos\\notionparallax"
+# OWNER = "notionparallax"
+
+
+print("\n\n\n\n", "in the shim", TEST_PATH, REPO_PATH, OWNER, "\n", sep="\n")
+
+temp_results = open("temp_results.json", "w")
+results = results_as_json(REPO_PATH)
+temp_results.write(results)
 temp_results.close()
