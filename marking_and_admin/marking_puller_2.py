@@ -324,8 +324,8 @@ def log_progress(message, logfile_name):
 def test_in_clean_environment(
     row,
     week_number,
-    logfile_name="log.txt",
     timeout=5,
+    logfile_name="log.txt",
     temp_file_path="temp_results.json",
     test_file_path="test_shim.py",
 ):
@@ -465,12 +465,12 @@ mark_sheet = pd.DataFrame(students)
 deets = pd.DataFrame(list(mark_sheet.apply(get_details, axis=1)))
 mark_sheet = mark_sheet.merge(deets, on="owner")
 
-mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1,), axis=1)
-mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2,), axis=1)
-mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3,), axis=1)
-mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4,), axis=1)
-mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5,), axis=1)
-mark_sheet["exam"] = mark_sheet.apply(test_in_clean_environment, args=(8,), axis=1)
+mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
+mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2, 5), axis=1)
+mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3, 25), axis=1)
+mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4, 45), axis=1)
+mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), axis=1)
+mark_sheet["exam"] = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
 mark_sheet.to_csv("marks.csv")
 
 data = [list(x) for x in mark_sheet.to_numpy()]
@@ -478,27 +478,3 @@ service = build_spreadsheet_service()
 write(service, data=data)
 
 print("that took", time.time() - start_time)
-
-# dirList = os.listdir(rootdir)  # do we know if everyone's work got in?
-# print("dir list", dirList, len(dirList))
-
-# print("\nMark week 1's work")
-# mark_work(dirList, 1, rootdir, dfPlease=False, timeout=5)
-
-# print("\nMark week 2's work")
-# mark_work(dirList, 2, rootdir, dfPlease=False, timeout=5)
-
-# print("\nMark week 3's work")
-# mark_work(dirList, 3, rootdir, dfPlease=False, timeout=25)
-
-# print("\nMark week 4's work")
-# mark_work(dirList, 4, rootdir, dfPlease=False, timeout=45)
-
-# print("\nMark week 5's work")
-# mark_work(dirList, 5, rootdir, dfPlease=False, timeout=45)
-# return mark_sheet
-
-
-# if __name__ == "__main__":
-# do_marking()
-
