@@ -221,11 +221,15 @@ def update_repos(student, chatty=False, hardcore_pull=False):
         if "already exists and is not an empty directory" in e.stderr:
             try:
                 repo = git.cmd.Git(path)
-                if hardcore_pull:
+                try:
+                    response = repo.pull()  # probably not needed, but belt and braces
+                    print(
+                        "{t}: pulled {s}'s repo: {r}".format(t=t, s=owner, r=response)
+                    )
+                except Exception as e:
                     repo.execute(["git", "fetch", "--all"])
                     repo.execute(["git", "reset", "--hard", "origin/master"])
-                response = repo.pull()  # probably not needed, but belt and braces
-                print("{t}: pulled {s}'s repo: {r}".format(t=t, s=owner, r=response))
+                    print(e)
             except Exception as e:
                 if chatty:
                     print("pull error:", student, e)
