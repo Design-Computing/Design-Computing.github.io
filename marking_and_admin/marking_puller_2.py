@@ -446,7 +446,7 @@ if not os.path.exists(rootdir):
     os.makedirs(rootdir)
 print("listdir(rootdir):\n", os.listdir(rootdir))
 
-start_time = datetime.datetime.utcnow()
+start_time = time.time()
 
 students = None
 if os.path.exists("student.pickle"):
@@ -477,8 +477,7 @@ data = [list(x) for x in mark_sheet.to_numpy()]
 service = build_spreadsheet_service()
 write(service, data=data)
 
-end_time = datetime.datetime.utcnow()
-print("that took", end_time - start_time)
+print("that took", time.time() - start_time)
 
 # dirList = os.listdir(rootdir)  # do we know if everyone's work got in?
 # print("dir list", dirList, len(dirList))
