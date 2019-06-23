@@ -34,9 +34,7 @@ Do these things in order, it'll be better that way, I promise.
     width: 10vw;
     float: right;
   }
-  .language-python {
-    font-size: 70%;
-  }
+  .language-python {}
 </style>
 
 With that out of the way, [let's talk about](https://www.youtube.com/watch?v=ydrtF45-y-g) week 2 exercise 3 `loops_7`. You probably struggled a fair bit with this one. These are the instruction:
