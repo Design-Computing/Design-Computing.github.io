@@ -26,7 +26,7 @@ import threading
 import time
 
 rootdir = "../StudentRepos"
-CHATTY = True
+CHATTY = False
 
 
 class RunCmd(threading.Thread):
