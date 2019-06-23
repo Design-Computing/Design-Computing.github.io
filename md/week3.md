@@ -1,6 +1,6 @@
 # Week 3: Useful Programs and Algorithms
 
-If you are interested in your marks as we go, you can look here: https://bit.ly/2WTLRux
+If you are interested in your marks as we go, you can look here: [bit.ly/2WTLRux](https://bit.ly/2WTLRux)
 This is updated most days, so if you don't see your values changing, it's probably because you aren't `push`ing to GitHub.
 
 ## Lecture
