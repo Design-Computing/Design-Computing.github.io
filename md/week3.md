@@ -30,14 +30,6 @@ Do these things in order, it'll be better that way, I promise.
 # A code reading experience!
 
 <style>
-  iframe {
-      width: 100%;
-      height: 820px;
-      border: 0;
-  }
-  .all_the_code{
-
-  }
   h3 img {
     width: 10vw;
     float: right;
