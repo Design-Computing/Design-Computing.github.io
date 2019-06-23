@@ -308,7 +308,7 @@ def loops_7():
 def loops_7():
 
     baseLength = 9
-    starting = int(baseLength / 2)  ### Get ![](https://github.com/Get/code1161base/raw/master/mugshot.png) middle index
+    starting = int(baseLength / 2)  ### Get middle index
     printNum = 1
     height = starting + 1
     pyramidArray = []
@@ -492,24 +492,6 @@ def loops_7():
     return pyramidList
     pass
 ```
-
-<!-- Solutions to the w3 exercises -->
-<!--
-# How to do...
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y6gGuLbfMLk" frameborder="0" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3YHXf8dmoiA" frameborder="0" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2FlCOC2QK4k" frameborder="0" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9U94fy1bQgg" frameborder="0" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BsJwH-CiOrM" frameborder="0" allowfullscreen></iframe>
-
-<iframe height="400" src="https://www.youtube-nocookie.com/embed/9U94fy1bQgg?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
-
--->
 
 # A rundown on last week's exercises
 
