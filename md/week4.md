@@ -1,4 +1,4 @@
-# Week 4: I/O
+# Week 4: History and I/O
 
 ## Lecture
 
@@ -32,7 +32,7 @@ if r.status_code is 200:
 
 Although this reading is optional, it'll make a you a way better CoDe person! Maybe re-read the early readings, they might make more sense now.
 
-**Coates, P.** (2010). [Programming.Architecture](https://www.amazon.com/Programming-Architecture-Paul-Coates/dp/0415451884) :book:
+**[Coates, P.](https://generativedesign.wordpress.com/2010/08/04/book-review-programming-architecture/)** (2010). [Programming.Architecture](https://www.amazon.com/Programming-Architecture-Paul-Coates/dp/0415451884) :book:
 
 **Victor, B.** (2013). [_The Future of Programming._](http://worrydream.com/dbx)
 
