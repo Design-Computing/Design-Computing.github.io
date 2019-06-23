@@ -38,11 +38,11 @@ Do these things in order, it'll be better that way, I promise.
   .all_the_code{
 
   }
-  .all_the_code img {
-    width: 10vh;
+  h3 img {
+    width: 10vw;
     float: right;
   }
-  .all_the_code code {
+  .language-python {
     font-size: 70%;
   }
 </style>
