@@ -26,6 +26,7 @@ import threading
 import time
 
 rootdir = "../StudentRepos"
+CHATTY = True
 
 
 class RunCmd(threading.Thread):
@@ -206,49 +207,54 @@ def rate_limit_message(r):
     )
 
 
-def update_repos(student, chatty=False, hardcore_pull=False):
+def update_repos(row):
     """Git clone a repo, or if already cloned, git pull."""
-    url = student["git_url"]
-    owner = student["owner"]
+    url = row["git_url"]
+    owner = row["owner"]
     path = os.path.join(rootdir, owner)
     t = datetime.now().strftime("%H:%M:%S")
     try:
         git.Repo.clone_from(url, path)
         print("{t}: new repo for {s}".format(t=t, s=owner))
     except git.GitCommandError as e:
-        if chatty:
+        if CHATTY:
             print("We already have {s}, trying a pull. ({e})".format(s=owner, e=e))
         if "already exists and is not an empty directory" in e.stderr:
             try:
                 repo = git.cmd.Git(path)
                 try:
-                    response = repo.pull()  # probably not needed, but belt and braces
+                    response = repo.pull()
                     print(
                         "{t}: pulled {s}'s repo: {r}".format(t=t, s=owner, r=response)
                     )
+                    return str(response)
                 except Exception as e:
                     repo.execute(["git", "fetch", "--all"])
                     repo.execute(["git", "reset", "--hard", "origin/master"])
                     print(e)
+                    return "hard reset"
             except Exception as e:
-                if chatty:
+                if CHATTY:
                     print("pull error:", student, e)
+                return str(e)
     except Exception as e:
-        if chatty:
-            print("clone error other than existing repo:", student, e)
+        message = "clone error other than existing repo"
+        if CHATTY:
+            print(message, student, e)
+        return message
 
 
-def try_to_kill(file_path, chatty=False):
+def try_to_kill(file_path, CHATTY=False):
     """Attempt to delete the file specified by file_path."""
     try:
         os.remove(file_path)
         print("deleted {}".format(file_path))
     except Exception as e:
-        if chatty:
+        if CHATTY:
             print(file_path, e)
 
 
-def pull_all_repos(dirList, chatty=False, hardcore_pull=False):
+def pull_all_repos(dirList, CHATTY=False, hardcore_pull=False):
     """Pull latest version of all repos."""
     of_total = len(dirList)
     for i, student_repo in enumerate(dirList):
@@ -340,18 +346,24 @@ def test_in_clean_environment(
     The logging is just to see real time progress as this can run for a long
     time and hang the machine.
     """
+    if "Already up to date" in row.updated:
+        print(
+            "We don't _actually_ need to mark this one,",
+            "but we need to do it for the moment becasue there isn't a place ",
+            "to get the existing value from yet.",
+        )
+    else:
+        print("We need to mark this one")
     results_dict = {}
     log_progress(row.owner, logfile_name)
     start_time = time.time()
 
     python = sys.executable
-    path_to_test_shim = os.path.abspath(
-        os.path.join("marking_and_admin", test_file_path)
+    path_to_test_shim = get_safe_path("marking_and_admin", test_file_path)
+    path_to_tests = get_safe_path(
+        "..", "course", "week{}".format(week_number), "tests.py"
     )
-    path_to_tests = os.path.abspath(
-        os.path.join("..", "course", "week{}".format(week_number), "tests.py")
-    )
-    path_to_repo = os.path.abspath(os.path.join(rootdir, row.owner))
+    path_to_repo = get_safe_path(rootdir, row.owner)
 
     test_args = [python, path_to_test_shim, path_to_tests, path_to_repo, row.owner]
 
@@ -376,6 +388,12 @@ def test_in_clean_environment(
     elapsed_time = time.time() - start_time
     results_dict["time"] = elapsed_time
     return results_dict
+
+
+def get_safe_path(*parts):
+    joined = os.path.join(*parts)
+    abs_path = os.path.abspath(joined)
+    return abs_path
 
 
 def prepare_log(logfile_name, firstLine="here we go:\n"):
@@ -441,13 +459,15 @@ def get_details(row):
         return {"error": "|".join(str(e).splitlines()), "owner": row.owner}
 
 
-# def do_marking():
 if not os.path.exists(rootdir):
     os.makedirs(rootdir)
 print("listdir(rootdir):\n", os.listdir(rootdir))
 
 start_time = time.time()
 
+# TODO: instead of loading the pickle, load the marks.csv file so that
+# the dataframe is preloaded with values. Then it doesn't need to mark students
+# that haven't updated their work.
 students = None
 if os.path.exists("student.pickle"):
     with open("student.pickle", "rb") as sp:
@@ -457,13 +477,13 @@ else:
     with open("student.pickle", "wb") as sp:
         pickle.dump(students, sp)
 
-for student in students:
-    update_repos(student, hardcore_pull=True)
-
 mark_sheet = pd.DataFrame(students)
+
 
 deets = pd.DataFrame(list(mark_sheet.apply(get_details, axis=1)))
 mark_sheet = mark_sheet.merge(deets, on="owner")
+
+mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
 
 mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
 mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2, 5), axis=1)
