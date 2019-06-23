@@ -507,7 +507,11 @@ def loops_7():
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9U94fy1bQgg" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BsJwH-CiOrM" frameborder="0" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BsJwH-CiOrM" frameborder="0" allowfullscreen></iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/9U94fy1bQgg?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+-->
 
 # A rundown on last week's exercises
 
@@ -544,7 +548,3 @@ Don't just copy the results of these, think about what I'm doing, and why.
 <iframe height="400" src="https://www.youtube-nocookie.com/embed/v3fjYZq3-jQ?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
 <iframe height="400" src="https://www.youtube-nocookie.com/embed/wsHflhgIGpg?rel=0" frameborder="0" allowfullscreenShould be a video here> </iframe>
-
-<iframe height="400" src="https://www.youtube-nocookie.com/embed/9U94fy1bQgg?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
-
-<iframe height="400" src="https://www.youtube-nocookie.com/embed/Gz0ki9DSUAE?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
