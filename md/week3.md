@@ -83,7 +83,7 @@ Below are some solutions from a previous year that passed the test. This functio
 
 _Reading_ code is _at least_ as important as writing it, take the time to go through these examples of different ways of doing the same thing and think about which you like. Which is most readable? Which is most elegant? This is a great example of what we mean by choosing a good algorithm. There are almost always _many_ ways to do things, so you need to be able to make a call about which one to pick and why.
 
-##### Rizo007 ![](https://github.com/Rizo007/code1161base/raw/master/mugshot.png)
+### Rizo007 ![](https://github.com/Rizo007/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -101,7 +101,7 @@ def loops_7():
     return columns
 ```
 
-##### pennypangCODE ![](https://github.com/pennypangCODE/code1161base/raw/master/mugshot.png)
+### pennypangCODE ![](https://github.com/pennypangCODE/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -120,7 +120,7 @@ def loops_7():
     pass
 ```
 
-##### FlimEden ![](https://github.com/FlimEden/code1161base/raw/master/mugshot.png)
+### FlimEden ![](https://github.com/FlimEden/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -148,7 +148,7 @@ def loops_7():
     return pyramidArray
 ```
 
-##### sheldakristie ![](https://github.com/sheldakristie/code1161base/raw/master/mugshot.png)
+### sheldakristie ![](https://github.com/sheldakristie/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -167,7 +167,7 @@ def loops_7():
     return ihatepyramids_box
 ```
 
-##### RangoRay ![](https://github.com/RangoRay/code1161base/raw/master/mugshot.png)
+### RangoRay ![](https://github.com/RangoRay/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -183,7 +183,7 @@ def loops_7():
     return numberfield
 ```
 
-##### lorniashi ![](https://github.com/lorniashi/code1161base/raw/master/mugshot.png)
+### lorniashi ![](https://github.com/lorniashi/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -196,7 +196,7 @@ def loops_7():
     return pyramid
 ```
 
-##### atiredturtle ![](https://github.com/atiredturtle/code1161base/raw/master/mugshot.png)
+### atiredturtle ![](https://github.com/atiredturtle/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -219,7 +219,7 @@ def loops_7():
     return arr
 ```
 
-##### alanw410 ![](https://github.com/alanw410/code1161base/raw/master/mugshot.png)
+### alanw410 ![](https://github.com/alanw410/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -244,7 +244,7 @@ def loops_7():
     pass
 ```
 
-##### Matchalism ![](https://github.com/Matchalism/code1161base/raw/master/mugshot.png)
+### Matchalism ![](https://github.com/Matchalism/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -260,7 +260,7 @@ def loops_7():
     return pyramidList
 ```
 
-##### TerryAg ![](https://github.com/TerryAg/code1161base/raw/master/mugshot.png)
+### TerryAg ![](https://github.com/TerryAg/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -272,7 +272,7 @@ def loops_7():
     return returnedList
 ```
 
-##### sherry0303 ![](https://github.com/sherry0303/code1161base/raw/master/mugshot.png)
+### sherry0303 ![](https://github.com/sherry0303/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -291,7 +291,7 @@ def loops_7():
     return star_pyramid
 ```
 
-##### AkisukeY ![](https://github.com/AkisukeY/code1161base/raw/master/mugshot.png)
+### AkisukeY ![](https://github.com/AkisukeY/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -312,13 +312,13 @@ def loops_7():
     return pyramid
 ```
 
-##### 872815554 ![](https://github.com/872815554/code1161base/raw/master/mugshot.png)
+### 872815554 ![](https://github.com/872815554/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
 
     baseLength = 9
-    starting = int(baseLength / 2)  ##### Get ![](https://github.com/Get/code1161base/raw/master/mugshot.png) middle index
+    starting = int(baseLength / 2)  ### Get ![](https://github.com/Get/code1161base/raw/master/mugshot.png) middle index
     printNum = 1
     height = starting + 1
     pyramidArray = []
@@ -340,7 +340,7 @@ def loops_7():
     return pyramidArray
 ```
 
-##### dbisazza ![](https://github.com/dbisazza/code1161base/raw/master/mugshot.png)
+### dbisazza ![](https://github.com/dbisazza/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -366,7 +366,7 @@ def loops_7():
     pass
 ```
 
-##### timtamtinyman999 ![](https://github.com/timtamtinyman999/code1161base/raw/master/mugshot.png)
+### timtamtinyman999 ![](https://github.com/timtamtinyman999/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -383,7 +383,7 @@ def loops_7():
     return columns
 ```
 
-##### DarkPurple141 ![](https://github.com/DarkPurple141/code1161base/raw/master/mugshot.png)
+### DarkPurple141 ![](https://github.com/DarkPurple141/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -398,7 +398,7 @@ def loops_7():
     return temp
 ```
 
-##### zingjanet ![](https://github.com/zingjanet/code1161base/raw/master/mugshot.png)
+### zingjanet ![](https://github.com/zingjanet/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -416,7 +416,7 @@ def loops_7():
     return the_pyramid
 ```
 
-##### tomwyb ![](https://github.com/tomwyb/code1161base/raw/master/mugshot.png)
+### tomwyb ![](https://github.com/tomwyb/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -435,7 +435,7 @@ def loops_7():
     return pyr
 ```
 
-##### matthewpoytress ![](https://github.com/matthewpoytress/code1161base/raw/master/mugshot.png)
+### matthewpoytress ![](https://github.com/matthewpoytress/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -448,7 +448,7 @@ def loops_7():
     return pyramid
 ```
 
-##### BaptisteHiggs ![](https://github.com/BaptisteHiggs/code1161base/raw/master/mugshot.png)
+### BaptisteHiggs ![](https://github.com/BaptisteHiggs/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -465,7 +465,7 @@ def loops_7():
     return pyramidList
 ```
 
-##### DanielHeh ![](https://github.com/DanielHeh/code1161base/raw/master/mugshot.png)
+### DanielHeh ![](https://github.com/DanielHeh/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
@@ -486,7 +486,7 @@ def loops_7():
     return pyr
 ```
 
-##### OneMoreN ![](https://github.com/OneMoreN/code1161base/raw/master/mugshot.png)
+### OneMoreN ![](https://github.com/OneMoreN/code1161base/raw/master/mugshot.png)
 
 ```python
 def loops_7():
