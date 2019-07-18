@@ -459,6 +459,13 @@ def get_details(row):
         return {"error": "|".join(str(e).splitlines()), "owner": row.owner}
 
 
+def get_last_commit(row):
+    path = os.path.join(rootdir, row.owner)
+    repo = git.cmd.Git(path)
+    d = repo.execute(["git", "log", "-1", "--format=%cd"])
+    return d
+
+
 if not os.path.exists(rootdir):
     os.makedirs(rootdir)
 print("listdir(rootdir):\n", os.listdir(rootdir))
@@ -485,6 +492,7 @@ mark_sheet = mark_sheet.merge(deets, on="owner")
 
 mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
 
+mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
 mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
 mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2, 5), axis=1)
 mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3, 25), axis=1)
@@ -493,8 +501,10 @@ mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), 
 mark_sheet["exam"] = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
 mark_sheet.to_csv("marks.csv")
 
+
 data = [list(x) for x in mark_sheet.to_numpy()]
 service = build_spreadsheet_service()
 write(service, data=data)
 
-print("that took", time.time() - start_time)
+print("that took", (time.time() - start_time) / 60, "minutes")
+
