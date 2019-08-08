@@ -75,4 +75,5 @@ Slack's for general chit-chat about comp design and computing. We'll invite you 
 1. [Week 4](md/week4)
 1. [Week 5](md/week5)
 1. [Week 6](md/week6)
-1. [Week 7+](md/theRest)
+1. [Week 7](md/week7)
+1. [Week 8+](md/theRest)
