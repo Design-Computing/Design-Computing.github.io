@@ -1,5 +1,7 @@
 # Python in Grasshopper
 
+There's a demo file in course/week10
+
 ## The filter
 
 ![](https://media.giphy.com/media/SkQWNwFRLOKCk/giphy.gif)
