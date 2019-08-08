@@ -1,33 +1,6 @@
----
-layout: post
-title: Lecture 9&#58; Python in x, exam
-date: 2017-01-13 00:00:00  PDT
-type: post
-published: true
-status: publish
-categories: []
-tags: []
+# Python in Grasshopper
 
-#this goes on the index page, and into facebook shares
-description: How do we use Python in Grasshopper and Dynamo? AND the exam!
-
-# This is what twitter will pick up if someone tweets the link to this page
-# 110 marker 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
-twitter-body:
-#Twitter and facebook will pick up this image. you can also use it in a post with:
-# ![alt text]({{ site.baseurl }}/assets/{{page.featuredimg}})
-featuredimg:
----
-
-<style>
-iframe {
-  width: 100%;
-  height: 820px;
-  border: 0;
-}
-</style>
-
-# The filter
+## The filter
 
 ![](https://media.giphy.com/media/SkQWNwFRLOKCk/giphy.gif)
 
@@ -42,11 +15,11 @@ it'd give you `[point, point, null, point]`, and Grasshopper only puts spheres o
 
 This is cool'n'all, but it's a lot of nodes to achieve a simple thing. In real life we'd probably just make a cluster to handle this, but for now, let's imagine that this is actually a really logic intensive operation that would require _loads_ of nodes, and can be achieved in just a few lines of python. (You'd be surprised how often this kind of thing happens once you start looking.)
 
-# Getting Python in Rhino
+## Getting Python in Rhino
 
 Get the python plugin [from here](http://www.food4rhino.com/app/ghpython) and install it. That's it. Now you can use it by putting a python node onto the canvas from the _math_ panel.
 
-# Simple Python Filter
+## Simple Python Filter
 
 ![]({{ site.baseurl }}/assets/17/empty_python.png)
 
@@ -96,7 +69,7 @@ if points_to_filter.X > x_cutoff:
 
 Which is much more readable.
 
-# Performance
+## Performance
 
 We could stop here, it works, so why do more. In most cases in the wild this _is_ where you'd stop. But if we look at the performance indicators on the bottom of the nodes, and we see that our python node is a resource hog, there are things we can do to speed it up.
 
@@ -139,11 +112,11 @@ for p in points_to_filter:
         filtered_points.append(p)
 ```
 
-so for minimal extra work, we get a big performance improvement. For simple tasks like this where the bulk of the work is in setup and teardown it can be more than three times faster! :racehorse:
+So for minimal extra work, we get a big performance improvement. For simple tasks like this where the bulk of the work is in setup and teardown it can be more than three times faster! :racehorse:
 
 [^1]: I know that only an enemy of quality would keep their strawberries in the fridge, but it's just a metaphor.
 
-# Documentation
+## Documentation
 
 Remember how much of a jerk past-you is? Let's work with present-you to make future-you happy.
 
@@ -153,9 +126,9 @@ A python node in grasshopper can have as many inputs and outputs as you like.
 
 ![]({{ site.baseurl }}/assets/17/add_inputs.png)
 
-if we zoom in a really long way we get `+` & `-` buttons. Click a `+` and rename it docstring.
+If we zoom in a really long way we get `+` & `-` buttons. Click a `+` and rename it docstring.
 
-Then we can just make a variable called `docstring` and assign a string to it.
+Then we can make a variable called `docstring` and assign a string to it.
 
 ```python
 docstring = """Filter Points, return those with X > x_cutoff.
@@ -171,9 +144,9 @@ for p in points_to_filter:
         filtered_points.append(p)
 ```
 
-So now you'll get some help from the docstring output. You can hover over it, or you can put it into a panel.
+Now you'll get some help from the docstring output. You can hover over it, or you can put it into a panel.
 
-# Maintainability
+## Maintainability
 
 Something to remember is that your python inside grasshopper isn't under source control. You _can_ get it _out_ of Grasshopper and keep it in a `.py` file on your computer (or network) somewhere. That feels a bit safer and more maintainable.
 
@@ -185,7 +158,7 @@ Another thing to think about is that if you make a sweet python node that does c
 
 If you pop your python node into a cluster and _then_ copy it you only need to edit the inside of the cluster once. You can also make the docstring available to the outside of the cluster.
 
-# Doing geometry things and other rhino stuff
+## Doing geometry things and other rhino stuff
 
 So far we've only talked in terms of managing data. I find that managing data is what python nodes do best, but they can do _anything_ that you can do with grasshopper, and a bit more too. I'm not going to go into too much depth, because there are lots of tutorials already on RhinoScript. The only differences are that this is python-flavoured-RhinoScript, and that whenever you see examples, they are usually a bit easier in grasshopper. E.g. This is the full RhinoScript [example for drawing a line](http://developer.rhino3d.com/api/RhinoScriptSyntax/win/#curve-AddLine):
 
@@ -208,7 +181,3 @@ a = rs.AddLine(start, end)
 assuming that you have inputs called `start` and `end`, and an output called `a`.
 
 The [RhinoScript 101 document](https://wiki.mcneel.com/developer/rhinoscript101) is a good place to learn how this all works. There's also a full set of API docs for [how the python version works](http://developer.rhino3d.com/api/RhinoScriptSyntax/win/).
-
-# This week's reading :books:
-
-**Victor, B.** [_Inventing On Principle_](http://worrydream.com/InventingOnPrinciple).
