@@ -1,10 +1,12 @@
 # What is this?
 
-It's a template post for you to use so that your issues get dealt with quickly and with minimal back-and-forth. Filling it in carefully will make it so much easier for me to get through lots of emails while still giving each of them the attention it deserves.
+It's a template post for you to use so that your issues get dealt with quickly and with minimal back-and-forth. Filling it in carefully will make it so much easier for me to get through lots of emails/messages while still giving each of them the attention it deserves.
 
 Make sure that you fill in the template carefully, and that you spell check it. This isn't because I'm some sort of grammar ogre, it signals to me that you care about my time enough to communicate clearly. This will make me feel disposed to do the same for you.
 
 # The template
+
+---
 
 ### useful title
 
@@ -14,7 +16,7 @@ My head is on fire [This is probably the same as the description below, just a b
 
 ### Description of situation
 
-My head is on fire
+My head is on fire, I was trying to straighten my hair with a burning stick and then it got a bit out of control.
 
 ### What have you tried already?
 

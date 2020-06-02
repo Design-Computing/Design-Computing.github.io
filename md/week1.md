@@ -8,13 +8,17 @@ Part one will involve a lot of doing things without really knowing why. It'll be
 
 Part two is a low-barrier-to-entry way to start flexing your computational thinking.
 
+---
+
+# Part 1
+
 ## Your dev environment
 
 Part of your dev environment is going to be on your computer, and some of it will be in the cloud.
 
 You'll hear us use the word _local_ to mean _on your computer_ and _remote_ to mean _in the cloud_.
 
-### Cloud environment
+### Cloud service accounts
 
 **But first:** You might have an email address that's like `unicorn.sparkles@gmail.com` or `i_am_so_cool03@hotmail.com`. If you do, think about writing that on your CV. Do you want Norman Foster to read that?
 
@@ -26,7 +30,7 @@ Your email address, for better or worse, is your central identity. Don't use you
 2. Fill in your real name
 3. Upload a photo of your face as your profile picture. We need this so that we can work out who you are.
 
-Once you've done those steps, you can refresh this page and you should see yourself at the bottom!
+Once you've done those steps, you can refresh _this_ page and you should see yourself at the bottom!
 
 #### Get a StackOverflow account!
 
@@ -36,38 +40,49 @@ You'll need this to help you out. As a way of 'paying' for that help, it's good 
 
 ### Steps to set up your dev environment
 
+First we need to download some software:
+
+#### Get software
+
 We'll go through this together, but if you need to setup a new dev environment then these are the steps:
+
+1. VS Code
+
+   1. Download VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
 
 1. Anaconda:
 
-   1. Download anaconda from https://www.anaconda.com/distribution/#download-section get the Python 3.7 version
+   1. Download Anaconda from [anaconda.com](https://www.anaconda.com/products/individual#Downloads) get the **Python 3.7** version
    1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
    1. Be patient
-   1. Open anaconda navigator
+   1. Open Anaconda navigator
    1. Click install on the VS Code box, be patient again
 
 1. Git:
 
-   1. Go to https://git-scm.com/downloads and download the latest git
-   1. Install git with all the default values, except make vs code be the default editor
+   1. Go to [git-scm.com](https://git-scm.com/downloads) and download the latest git
+   1. Install git with all the default values, except make **VS Code** be the default editor
 
-1. VS Code
+#### Pull in the course resources
 
-   1. Open VS Code, bask in its glory
-   1. Inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of 1 on most keyboards. That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
-   1. Your prompt should say something like:
+I've you've been doing this before the class as prep, stop here!
 
-      `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
+1. Open VS Code, bask in its glory
+1. Inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of `1` on most keyboards. That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
+1. Your prompt should say something like:
 
-      Whatever it is, now we need to write some magic spells.
+`C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
+
+Whatever it is, now we need to write some magic spells. 🧙‍♂️
 
 1. Getting your content
-   1. Type `mkdir 1161`
-   1. Then `cd 1161`
-   1. Then `git clone https://github.com/Design-Computing/CODE1161-2019 course`
+   1. Make sure you're in a good place. If you're in Windows you'll be in your user `C:\Users\ben>`, if you're on a mac it might look like this: `MacBook-Pro:~ ben$` but, you know, check.
+   1. Type `mkdir 1161` &Larr; This **m**a**k**es a new **dir**ectory called _1161_
+   1. Then `cd 1161` &Larr; This **c**hanges the **d**irectory to _1161_
+   1. Then `git clone https://github.com/Design-Computing/CODE1161-2019 course` This pulls down the course repository
 1. Clone
 
-   1. Go to https://github.com/Design-Computing/me and [fork](https://help.github.com/en/articles/fork-a-repo) yourself a copy of the _me_ repo
+   1. Go to [https://github.com/Design-Computing/me](https://github.com/Design-Computing/me) and [fork](https://help.github.com/en/articles/fork-a-repo) yourself a copy of the _me_ repo
    1. Then, back in the terminal `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
    1. Now type `dir` you should get something that looks like:
 
@@ -92,7 +107,7 @@ We'll go through this together, but if you need to setup a new dev environment t
 
       ```
 
-      Now you've done that, you can do a `git pull upstream master` to get the latest changes. If you need to do this, we'll tell you about it.
+      Now you've done that, you can do a `git pull upstream master` to get the latest changes. If you need to do this, we'll tell you about it, it's not a usual thing that you'll need to do.
 
 1. Finish up
 
@@ -105,7 +120,7 @@ We'll go through this together, but if you need to setup a new dev environment t
    1. Say "You've got this" to yourself
    1. Smile
    1. Go to `File`&rarr;`Open Folder` and then choose `me`
-   1. Look at all those neat folder ready for you to work on!
+   1. Look at all those neat folders ready for you to work on!
 
 1. Now you're ready to start the lab for real!
 
@@ -141,7 +156,7 @@ In `exercise1.py` look at the instructions in the _doc-string_. That's the bit a
 ```
 """Your very first python program!
 
-TODO: write a python script that first prints "Hello world!"
+TODO: write a python script that prints Hello world!
 """
 ```
 
@@ -155,7 +170,7 @@ In this course, at least to begin with, the tests are already written for you. T
 
 Then press enter.
 
-Resist the urge to copy and paste this, you're going to be doing it a lot, and it'll be much better if you just learn to type it.
+Resist the urge to copy and paste this, you're going to be doing it a lot, and it'll be much better if you learn to type it.
 
 The test produce a lot of output, so you'll want to pull up your terminal; there's an up arrow (**^**) on the right that makes it get much bigger.
 
@@ -163,7 +178,7 @@ Most of your tests will fail. This is good because you haven't done any work yet
 
 #### Do
 
-Now you do the work! This is going to be a back and forth with google, What we tell you in the lab, and conversations with yourself and your notebook.
+Now you do the work! This is going to be a back and forth with Google, What we tell you in the lab, and conversations with yourself, your peers and your notebook.
 
 #### Save
 

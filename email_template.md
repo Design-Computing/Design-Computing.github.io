@@ -12,7 +12,7 @@ Make sure that you fill in the template carefully, and that you spell check it. 
 
 ---
 
-### Link to your repo
+### Link to your repo (even if it's not code related)
 
 [https://github.com/notionparallax/code1161base](https://github.com/notionparallax/code1161base)
 
