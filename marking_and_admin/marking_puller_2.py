@@ -327,6 +327,34 @@ def log_progress(message, logfile_name):
     completed_students_list.close()
 
 
+def get_readmes(row, output="mark"):
+    """Get the text, or the mark, or both related to log books."""
+    intro = "TODO: Reflect on what you learned this week and what is still unclear."
+    path = os.path.join(rootdir, row.owner)
+    mark = 0
+    all_readme = ""
+    for i in range(1, 11):
+        p = os.path.join(path, "week{}".format(i), "readme.md")
+        if os.path.isfile(p):
+            try:
+                with open(p, "r") as f:
+                    contents = f.read()
+                    new = contents.replace(intro, "").strip()
+                    # print(i,"|", new, "|", len(new))
+                    if len(new) > 0:
+                        mark += 1
+                        all_readme += "w{}: {}\n".format(i, new)
+            except UnicodeDecodeError:
+                mark += 1
+
+    if output == "mark":
+        return mark
+    elif output == "textList":
+        return str(all_readme)
+    else:
+        return [mark, all_readme]
+
+
 def test_in_clean_environment(
     row,
     week_number,
@@ -346,7 +374,7 @@ def test_in_clean_environment(
     The logging is just to see real time progress as this can run for a long
     time and hang the machine.
     """
-    if "Already up to date" in row.updated:
+    if "updated" in row.index and "Already up to date" in row.updated:
         print(
             "We don't _actually_ need to mark this one,",
             "but we need to do it for the moment becasue there isn't a place ",
@@ -490,21 +518,25 @@ mark_sheet = pd.DataFrame(students)
 deets = pd.DataFrame(list(mark_sheet.apply(get_details, axis=1)))
 mark_sheet = mark_sheet.merge(deets, on="owner")
 
-mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
-
+# mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
 mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
-mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
-mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2, 5), axis=1)
-mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3, 25), axis=1)
+
+# mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
+# mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2, 5), axis=1)
+# mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3, 25), axis=1)
 mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4, 45), axis=1)
 mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), axis=1)
-mark_sheet["exam"] = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
+# mark_sheet["exam"] = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
+
+# mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
+# mark_sheet["readme_text"] = mark_sheet.apply(get_readmes, args=("textList",), axis=1)
+
 mark_sheet.to_csv("marks.csv")
 
 
 data = [list(x) for x in mark_sheet.to_numpy()]
 service = build_spreadsheet_service()
-write(service, data=data)
+# write(service, data=data)
 
 print("that took", (time.time() - start_time) / 60, "minutes")
 
