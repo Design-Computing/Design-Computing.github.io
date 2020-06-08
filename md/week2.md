@@ -163,13 +163,13 @@ In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is
 
 1. We're going to teach you python, we promise, but why not make the most of the rest of the world?
 
-   Doing many tutorials will explain ideas in different ways. The two we'd recommend are:
+   Doing many tutorials on the same subject will explain ideas in different ways. The two we'd recommend are:
 
    1. [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/#toc:): Do chapters 1&ndash;5
 
-   1. [Codecademy: Learn Python](https://www.codecademy.com/learn/learn-python)
+   1. [Codecademy: Learn Python](https://www.codecademy.com/learn/learn-python) (This is python 2, the python 3 course is paid, but the content is basically the same.)
 
-   These will give you different perspectives on this python stuff. The more times you cover the material, the better it'll bed down.
+   These will give you different perspectives on this python stuff. The more times you cover the material, the better it'll bed down in your brain.
 
 ## Optional Reading:
 
