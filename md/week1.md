@@ -82,7 +82,10 @@ Whatever it is, now we need to write some magic spells. 🧙‍♂️
    1. Then `git clone https://github.com/Design-Computing/CODE1161-2019 course` This pulls down the course repository
 1. Clone
 
-   1. Go to [https://github.com/Design-Computing/me](https://github.com/Design-Computing/me) and [fork](https://help.github.com/en/articles/fork-a-repo) yourself a copy of the _me_ repo
+   1. Go to [https://github.com/Design-Computing/me](https://github.com/Design-Computing/me) and [fork](https://help.github.com/en/articles/fork-a-repo) yourself a copy of the _me_ repo.
+
+      **TIME OUT:** I make a lot of fuss about this in the lecture, but every year lots of people get stuck here. You _need_ to clone _your_ fork of the `me` repo, not the Design-Computing version. Be extra careful when you're doing this step. It'll pay off in the long term. I promise.
+
    1. Then, back in the terminal `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
    1. Now type `dir` you should get something that looks like:
 
