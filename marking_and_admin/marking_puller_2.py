@@ -27,6 +27,9 @@ from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
+PandasDataFrame = TypeVar("pandas.core.frame.DataFrame")
+PandasSeries = TypeVar("pandas.core.series.Series")
+
 rootdir = "../StudentRepos"
 CHATTY = False
 
@@ -166,7 +169,7 @@ def getDFfromCSVURL(url, columnNames=False):
         return pd.read_csv(StringIO(data))
 
 
-def get_forks(org="design-computing", repo="me"):
+def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
     """Get a list of dicts of the user names and the git url for all the forks.
     """
     api = "https://api.github.com"
@@ -209,7 +212,7 @@ def rate_limit_message(r):
     )
 
 
-def update_repos(row):
+def update_repos(row: PandasSeries) -> str:
     """Git clone a repo, or if already cloned, git pull."""
     url = row["git_url"]
     owner = row["owner"]
@@ -246,7 +249,7 @@ def update_repos(row):
         return message
 
 
-def try_to_kill(file_path, CHATTY=False):
+def try_to_kill(file_path: str, CHATTY: bool = False):
     """Attempt to delete the file specified by file_path."""
     try:
         os.remove(file_path)
@@ -256,7 +259,7 @@ def try_to_kill(file_path, CHATTY=False):
             print(file_path, e)
 
 
-def pull_all_repos(dirList, CHATTY=False, hardcore_pull=False):
+def pull_all_repos(dirList, CHATTY: bool = False, hardcore_pull: bool = False):
     """Pull latest version of all repos."""
     of_total = len(dirList)
     for i, student_repo in enumerate(dirList):
@@ -358,13 +361,13 @@ def get_readmes(row, output="mark"):
 
 
 def test_in_clean_environment(
-    row,
-    week_number,
-    timeout=5,
-    logfile_name="log.txt",
-    temp_file_path="temp_results.json",
-    test_file_path="test_shim.py",
-):
+    row: PandasSeries,
+    week_number: int,
+    timeout: int = 5,
+    logfile_name: str = "log.txt",
+    temp_file_path: str = "temp_results.json",
+    test_file_path: str = "test_shim.py",
+) -> dict:
     """Test a single student's work in a clean environment.
 
     This calls a subprocess that opens a fresh python environment, runs the
@@ -463,15 +466,7 @@ def mark_work(dirList, week_number, root_dir, dfPlease=True, timeout=5):
         return resultsDF
 
 
-def get_details(row):
-    path_to_aboutMe = os.path.abspath(os.path.join(rootdir, row.owner, "aboutMe.yml"))
-    details = open(path_to_aboutMe).read()
-    # who knows if I'll need this!?
-    # details = details.replace("@", "^AT^")
-    # details = re.sub(":(\w)", ": \g<1>", details)
-    # details = re.sub(" -", " None", details)
-    # details = details.replace("é", "e")
-    # details = details.replace("w:", "w: ")
+def get_details(row: PandasSeries) -> dict:
     try:
         details = yaml.load(details, yaml.RoundTripLoader)
         details["error"] = False
@@ -489,7 +484,7 @@ def get_details(row):
         return {"error": "|".join(str(e).splitlines()), "owner": row.owner}
 
 
-def get_last_commit(row):
+def get_last_commit(row: PandasSeries) -> str:
     path = os.path.join(rootdir, row.owner)
     repo = git.cmd.Git(path)
     d = repo.execute(["git", "log", "-1", "--format=%cd"])
