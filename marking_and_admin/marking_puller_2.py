@@ -186,7 +186,11 @@ def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
     r = requests.get(url)
     if r.status_code is 200:
         forks = r.json()
-        repos = [{"owner": f["owner"]["login"], "git_url": f["git_url"]} for f in forks]
+        repos = [
+            {"owner": f["owner"]["login"], "git_url": f["git_url"]}
+            for f in forks
+            if f["created_at"][:4] == "2020"  # filter for this year's repos
+        ]
         return repos
     else:
         rate_limit_message(r)
