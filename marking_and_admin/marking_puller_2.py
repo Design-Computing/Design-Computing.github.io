@@ -221,6 +221,7 @@ def update_repos(row: PandasSeries) -> str:
     try:
         git.Repo.clone_from(url, path)
         print(f"{t}: new repo for {owner}")
+        return ":) new"
     except git.GitCommandError as e:
         if CHATTY:
             print(f"We already have {owner}, trying a pull. ({e})")
