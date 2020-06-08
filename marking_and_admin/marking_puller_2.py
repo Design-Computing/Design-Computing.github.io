@@ -111,7 +111,7 @@ def write(service, data=[["These"], ["are"], ["some"], ["d", "entries"]]):
         )
         .execute()
     )
-    print("{0} cells updated.".format(result.get("updatedCells")))
+    print(f"{result.get('updatedCells')} cells updated.")
 
     # Write comments
     body = {"requests": comment_list}
@@ -120,7 +120,7 @@ def write(service, data=[["These"], ["are"], ["some"], ["d", "entries"]]):
         .batchUpdate(spreadsheetId=MARKING_SPREADSHEET_ID, body=body)
         .execute()
     )
-    print("{0} cells updated.".format(result.get("totalUpdatedCells")))
+    print(f"{result.get('totalUpdatedCells')} cells updated.")
 
 
 def process_for_writing(data):
@@ -174,17 +174,10 @@ def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
     """
     api = "https://api.github.com"
     url = (
-        "{api}/repos/{org}/{repo}/forks?"
-        "per_page={limit}&"
-        "client_id={id}&"
-        "client_secret={secret}'"
-    ).format(
-        api=api,
-        org=org,
-        repo=repo,
-        limit=100,
-        id="040e86e3feed633710a0",
-        secret="69588d73388091b5ff8635fd1a788ea79177bf69",
+        f"{api}/repos/{org}/{repo}/forks?"
+        f"per_page={limit}&"
+        f"client_id={client_id}&"
+        f"client_secret={secret}'"
     )
     print("get forks from:\n", url)
     r = requests.get(url)
@@ -220,18 +213,16 @@ def update_repos(row: PandasSeries) -> str:
     t = datetime.now().strftime("%H:%M:%S")
     try:
         git.Repo.clone_from(url, path)
-        print("{t}: new repo for {s}".format(t=t, s=owner))
+        print(f"{t}: new repo for {owner}")
     except git.GitCommandError as e:
         if CHATTY:
-            print("We already have {s}, trying a pull. ({e})".format(s=owner, e=e))
+            print(f"We already have {owner}, trying a pull. ({e})")
         if "already exists and is not an empty directory" in e.stderr:
             try:
                 repo = git.cmd.Git(path)
                 try:
                     response = repo.pull()
-                    print(
-                        "{t}: pulled {s}'s repo: {r}".format(t=t, s=owner, r=response)
-                    )
+                    print(f"{t}: pulled {owner}'s repo: {response}")
                     return str(response)
                 except Exception as e:
                     repo.execute(["git", "fetch", "--all"])
@@ -240,12 +231,12 @@ def update_repos(row: PandasSeries) -> str:
                     return "hard reset"
             except Exception as e:
                 if CHATTY:
-                    print("pull error:", student, e)
+                    print(f"pull error: {row.name} {row.contactEmail}", e)
                 return str(e)
     except Exception as e:
         message = "clone error other than existing repo"
         if CHATTY:
-            print(message, student, e)
+            print(message, f"{row.name} {row.contactEmail}", e)
         return message
 
 
@@ -253,7 +244,7 @@ def try_to_kill(file_path: str, CHATTY: bool = False):
     """Attempt to delete the file specified by file_path."""
     try:
         os.remove(file_path)
-        print("deleted {}".format(file_path))
+        print(f"deleted {file_path}")
     except Exception as e:
         if CHATTY:
             print(file_path, e)
@@ -271,7 +262,7 @@ def pull_all_repos(dirList, CHATTY: bool = False, hardcore_pull: bool = False):
                 repo.execute(["git", "reset", "--hard", "origin/master"])
             repo.pull()  # probably not needed, but belt and braces
             t = datetime.now().strftime("%H:%M:%S")
-            print("{}: {}/{} pulled {}'s repo".format(t, i, of_total, student_repo))
+            print(f"{t}: {i}/{of_total} pulled {student_repo}'s repo")
         except Exception as e:
             print(student_repo, e)
 
@@ -339,7 +330,7 @@ def get_readmes(row, output="mark"):
     mark = 0
     all_readme = ""
     for i in range(1, 11):
-        p = os.path.join(path, "week{}".format(i), "readme.md")
+        p = os.path.join(path, f"week{i}", "readme.md")
         if os.path.isfile(p):
             try:
                 with open(p, "r") as f:
@@ -348,7 +339,7 @@ def get_readmes(row, output="mark"):
                     # print(i,"|", new, "|", len(new))
                     if len(new) > 0:
                         mark += 1
-                        all_readme += "w{}: {}\n".format(i, new)
+                        all_readme += f"w{i}: {new}\n"
             except UnicodeDecodeError:
                 mark += 1
 
@@ -393,9 +384,7 @@ def test_in_clean_environment(
 
     python = sys.executable
     path_to_test_shim = get_safe_path("marking_and_admin", test_file_path)
-    path_to_tests = get_safe_path(
-        "..", "course", "week{}".format(week_number), "tests.py"
-    )
+    path_to_tests = get_safe_path("..", "course", f"week{week_number}", "tests.py")
     path_to_repo = get_safe_path(rootdir, row.owner)
 
     test_args = [python, path_to_test_shim, path_to_tests, path_to_repo, row.owner]
@@ -409,14 +398,14 @@ def test_in_clean_environment(
         results_dict = json.loads(contents)
         results_dict["bigerror"] = ":)"
         temp_results.close()
-        log_progress(" good for w{}\n".format(week_number), logfile_name)
+        log_progress(f" good for w{week_number}\n", logfile_name)
     except Exception as e:
         results_dict = {
             "bigerror": str(e).replace(",", "~"),
             "name": row.owner,
         }  # the comma messes with the csv
 
-        log_progress(" bad {} w{}\n".format(e, week_number), logfile_name)
+        log_progress(f" bad {e} w{week_number}\n", logfile_name)
 
     elapsed_time = time.time() - start_time
     results_dict["time"] = elapsed_time
@@ -454,7 +443,7 @@ def mark_work(dirList, week_number, root_dir, dfPlease=True, timeout=5):
     )
 
     resultsDF = pd.DataFrame(results)
-    csv_path = "csv/week{}marks.csv".format(week_number)
+    csv_path = f"csv/week{week_number}marks.csv"
     resultsDF.to_csv(os.path.join(CWD, csv_path), index=False)
     for _ in [1, 2, 3]:
         # this is pretty dirty, but it gets tricky when you have
