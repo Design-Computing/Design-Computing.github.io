@@ -4,26 +4,28 @@
 This pulls the latest copy of all the repos
 It can clone new repos if you set THERE_ARE_NEW_STUDENTS to true
 """
-from datetime import datetime
-from google.auth.transport.requests import Request
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
-from io import StringIO
-from itertools import repeat
-import git
 import json
 import math
 import os
 import os.path
-import pandas as pd
 import pickle
 import re
-import requests
-import ruamel.yaml as yaml
 import subprocess
 import sys
 import threading
 import time
+from datetime import datetime
+from io import StringIO
+from itertools import repeat
+from typing import Dict, List, Optional, Set, Tuple, TypeVar
+
+import git
+import pandas as pd
+import requests
+import ruamel.yaml as yaml
+from google.auth.transport.requests import Request
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
 
 rootdir = "../StudentRepos"
 CHATTY = False
