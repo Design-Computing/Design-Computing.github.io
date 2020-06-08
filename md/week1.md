@@ -256,9 +256,9 @@ Put a link to your trinket results into your lab book (readme.md file).
 
 - Make sure that you have your dev environment set up.
 
-- In the week1 folder, complete: - exercise1.py
+- In the week1 folder, complete: - `exercise1.py`
 
-- write your journal in README.md
+- Write your journal in README.md
 
   Check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) for an intro to how formatting works in markdown (`.md`) files.
 
