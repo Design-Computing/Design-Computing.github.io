@@ -281,7 +281,9 @@ def csvOfDetails(dirList):
     for student_repo in dirList:
         path = os.path.join(rootdir, student_repo, "aboutMe.yml")
         details = open(path).read()
+        # replaces the @ symbol
         details = details.replace("@", "^AT^")
+        # bumps unspaced values off the colon so that it parses
         details = re.sub(":(\w)", ": \g<1>", details)
         details = re.sub(" -", " None", details)
         details = details.replace("é", "e")
