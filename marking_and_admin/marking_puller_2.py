@@ -33,6 +33,10 @@ PandasSeries = TypeVar("pandas.core.series.Series")
 rootdir = "../StudentRepos"
 CHATTY = False
 
+# The ID and range of a sample spreadsheet.
+# MARKING_SPREADSHEET_ID = "1wtTAM7A--ka7Lnog43L6jjo9kMCnDElCrTOBllEg4dA" # 2019
+MARKING_SPREADSHEET_ID = "1AjDu51VX26bIcLNMsr2iHq2BtrNEj91krxWKqjDW5aA"  # 2020
+
 
 class RunCmd(threading.Thread):
     """Run a subprocess command, if it exceeds the timeout kill it.
@@ -56,10 +60,6 @@ class RunCmd(threading.Thread):
         if self.is_alive():
             self.p.terminate()  # use self.p.kill() if process needs a kill -9
             self.join()
-
-
-# The ID and range of a sample spreadsheet.
-MARKING_SPREADSHEET_ID = "1wtTAM7A--ka7Lnog43L6jjo9kMCnDElCrTOBllEg4dA"
 
 
 def build_spreadsheet_service():
