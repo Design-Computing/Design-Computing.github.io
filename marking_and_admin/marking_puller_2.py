@@ -64,7 +64,7 @@ class RunCmd(threading.Thread):
 
 def build_spreadsheet_service():
     # If modifying these scopes, delete the file token.pickle.
-    SCOPES = ["*", "https://www.googleapis.com/auth/spreadsheets"]
+    SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
