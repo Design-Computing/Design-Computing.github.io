@@ -515,15 +515,15 @@ mark_sheet = pd.DataFrame(students)
 deets = pd.DataFrame(list(mark_sheet.apply(get_details, axis=1)))
 mark_sheet = mark_sheet.merge(deets, on="owner")
 
-# mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
+mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
 mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
 
-# mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
+mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
 # mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2, 5), axis=1)
 # mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3, 25), axis=1)
-mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4, 45), axis=1)
-mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), axis=1)
-# mark_sheet["exam"] = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
+# mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4, 45), axis=1)
+# mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), axis=1)
+# mark_sheet["exam"]  = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
 
 # mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
 # mark_sheet["readme_text"] = mark_sheet.apply(get_readmes, args=("textList",), axis=1)
@@ -533,7 +533,7 @@ mark_sheet.to_csv("marks.csv")
 
 data = [list(x) for x in mark_sheet.to_numpy()]
 service = build_spreadsheet_service()
-# write(service, data=data)
+write(service, data=data)
 
 print("that took", (time.time() - start_time) / 60, "minutes")
 
