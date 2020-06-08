@@ -488,7 +488,7 @@ def get_details(row: PandasSeries) -> dict:
         #     details["mediumUsername"] = "^AT^" + details["mediumUsername"]
         return dict(details)
     except Exception as e:
-        print(details)
+        print(row)
         return {"error": "|".join(str(e).splitlines()), "owner": row.owner}
 
 
