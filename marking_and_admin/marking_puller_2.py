@@ -544,4 +544,3 @@ service = build_spreadsheet_service()
 write(service, data=data)
 
 print("that took", (time.time() - start_time) / 60, "minutes")
-
