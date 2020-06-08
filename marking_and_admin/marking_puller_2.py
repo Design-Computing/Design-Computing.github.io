@@ -465,6 +465,17 @@ def mark_work(dirList, week_number, root_dir, dfPlease=True, timeout=5):
 
 def get_details(row: PandasSeries) -> dict:
     try:
+        path_to_aboutMe = os.path.abspath(
+            os.path.join(rootdir, row.owner, "aboutMe.yml")
+        )
+        details = open(path_to_aboutMe).read()
+        # who knows if I'll need this!?
+        # details = details.replace("@", "^AT^")
+        # details = re.sub(":(\w)", ": \g<1>", details)
+        # details = re.sub(" -", " None", details)
+        # details = details.replace("é", "e")
+        # details = details.replace("w:", "w: ")
+
         details = yaml.load(details, yaml.RoundTripLoader)
         details["error"] = False
         details["owner"] = row.owner
