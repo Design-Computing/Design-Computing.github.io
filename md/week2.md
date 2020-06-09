@@ -8,12 +8,6 @@
 
 - How to ask questions and the three step process to general problem solving.
 
-## Requirements
-
-- A portable computer.
-- List of questions from last week's lab
-- Maybe some snacks for the lab. Keep it low GI if you can.
-
 # Clinic
 
 Getting the basics right is the key to being able to do this course. It's vital that you finish week 1's work as soon as possible.
@@ -24,7 +18,7 @@ If you didn't get a suite of beautiful green ticks last week, then the first thi
 
 A lot of people are still called _Your Name_. Let's fix that first!
 
-Your name in the faces means that we can learn your names faster. It also means that when you push your work to GitHub and we mark it, we know who has done the work. If you don't give us the information, the repo has marks, but you don't.
+Your name in the faces means that we can learn your names faster. It also means that when you push your work to GitHub and we mark it, we know who has done the work. If you don't give us the information, the _repo_ has marks, but _you_ don't.
 
 The information is in your `me` repo, the file is `aboutMe.yml`. Mine looks like:
 
@@ -32,12 +26,12 @@ The information is in your `me` repo, the file is `aboutMe.yml`. Mine looks like
 name: Ben Doherty
 studentNumber: z1234567
 officialEmail: b.doherty@unsw.edu.au
-contactEmail:
-  firstBit: ben # this avoids spam, the @ is implied
-  otherBit: notionparallax.co.uk
+contactEmail: # don't add anything to this line
+  firstBit: ben # the indent is important, as is the space after the :
+  otherBit: notionparallax.co.uk # this avoids spam, the @ is implied
 ```
 
-The `contactEmail:` line is blank because it's before an indented block. That'll all make sense by the end of this week, but for now, go with it.
+The `contactEmail:` line is blank because it's before an indented block. That'll all make sense by the end of this week, but for now, go with it. (if you want to read more about YAML, [here's a link](https://en.wikipedia.org/wiki/YAML))
 
 Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/).
 
@@ -90,11 +84,11 @@ def add_1(a_number):
 
 ### Name
 
-Like you have a name, that you've just added to your aboutMe.yml file, this function has a name too; it's `add_1`. You need to know a function's name to be able to _call_ it.
+Like you have a name, that you've just added to your `aboutMe.yml` file, this function has a name too; it's `add_1`. You need to know a function's name to be able to _call_ it.
 
 ### Argument or Arguments
 
-The function takes in some values to do something with. In this case the argument is called `a_number`. You can call it anything that's a valid variable name.
+The function takes in some values to do something with. In this case the argument is called `a_number`. You can call it anything that's a [valid variable name](https://realpython.com/python-variables/#:~:text=Officially%2C%20variable%20names%20in%20Python,name%20cannot%20be%20a%20digit.).
 
 People sometimes get confused about where the values come from. The argument name is an alias for the value that's _passed_ in.
 
@@ -102,10 +96,9 @@ If you were making a sandwich function, the code might be:
 
 ```python
 def make_sandwich(filling):
-  sandwich = ("=========\n"
-              "{filling}\n"
-              "=========\n")
-  print(sandwich.format(filling=filling))
+  print( "==========\n"
+        f" {filling}\n"
+         "==========\n")
 ```
 
 ![](https://imgs.xkcd.com/comics/sandwich.png)
@@ -117,12 +110,12 @@ def double(x):
   return x + x
 ```
 
-if we _call_ these: `double(4)` gives `8` and `make_sandwich("cheese")` will print:
+When we a function to run, the programmer language for that is to "_call_" it, so if we _call_ these: `double(4)` gives `8` and `make_sandwich("cheese")` will print:
 
 ```
-=========
-cheese
-=========
+==========
+  cheese
+==========
 ```
 
 The argument name wraps the incoming value so that you can think _abstractly_ about it.
