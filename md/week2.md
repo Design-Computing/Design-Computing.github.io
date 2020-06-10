@@ -2,21 +2,21 @@
 
 ## Introduction
 
-- This week we will get an overview of all the components of the Python syntax. Theoretically, you will be able to do **any** programming task after this week ;-).
+- This week we will get an overview of all the components of the Python syntax. _Theoretically_, you will be able to do **any** programming task after this week.
 
-- More details about the development environment.
+- More details about your development environment.
 
 - How to ask questions and the three step process to general problem solving.
 
 # Clinic
 
-Getting the basics right is the key to being able to do this course. It's vital that you finish week 1's work as soon as possible.
+Getting the basics right is the key to being able to do this course. It's vital that you finish week 1's work or you'll struggle with the rest of the course.
 
-If you didn't get a suite of beautiful green ticks last week, then the first thing we're going to do is fix that for you.
+If you didn't get a suite of beautiful green ticks last week, then you need to talk to a tutor as soon as you can.
 
 ### _Your Name_
 
-A lot of people are still called _Your Name_. Let's fix that first!
+Some people are still called _Your Name_. Let's fix that first!
 
 Your name in the faces means that we can learn your names faster. It also means that when you push your work to GitHub and we mark it, we know who has done the work. If you don't give us the information, the _repo_ has marks, but _you_ don't.
 
@@ -39,20 +39,18 @@ Update the file with your info, save, stage, write a good message, commit, and p
 
 #### Mac person?
 
-We feel your pain, let's all get together at the start of the lab to work it out. A far as I can tell, [these tips will fix you up](https://design-computing.github.io/md/week1#are-you-a-mac-user).
+We feel your pain, as far as I can tell, [these tips will fix you up](https://design-computing.github.io/md/week1#are-you-a-mac-user).
 
-There might be a more elegant fix, but at least to begin with, it should fix the biggest problems.
+There might be a more elegant fix, but at least to begin with, it should fix the biggest problems. If you've tried all of that and you're still stuck, post on Teams.
 
-# How to do the exercises
+# How to do the exercises: vocabulary and concepts
 
 Each file starts with a section of writing, wrapped in """triple quotes""". It tells you what the we want you to do. There's another one in each function that is more specific.
 
 ```python
-"""Modify each function until the tests the_answer = None
+"""Modify each function until the tests pass.
 
-    return the_answer.
-
-The command to run the tests is:
+The command to run the tests this week is:
 
 python ../course/week2/tests.py
 
@@ -66,7 +64,15 @@ replace None with the actual answer.
 """
 ```
 
-This block is an example of a completed exercise function. It has a name, `add_1`; an argument, `a_number`; a `"""docstring"""`; some code; and a `return` statement. Take a look and I'll explain it all below.
+The block below is an example of a completed exercise function. It's made of
+
+1. a _name_, `add_1`;
+1. an _argument_, `a_number`;
+1. a `"""docstring"""`;
+1. some code in the _function body_;
+1. with a `return` statement.
+
+Take a look and I'll explain it all below.
 
 ```python
 def add_1(a_number):
@@ -82,9 +88,15 @@ def add_1(a_number):
     return the_answer
 ```
 
+This is a good time to practice _reading_ the code. Read the code and try to decide what it'll do then you run it, or in programmer-speak, _call the function_.
+
+- Question: What would we get if we called the function as `add_1(4)`?
+- Question: What would we get if we called the function as `add_1(4)`?
+- Trick question: What would we get if we called the function as `add_1("do ")`?
+
 ### Name
 
-Like you have a name, that you've just added to your `aboutMe.yml` file, this function has a name too; it's `add_1`. You need to know a function's name to be able to _call_ it.
+Like you have a name&mdash;that you've just added to your `aboutMe.yml` file&mdash;this function has a name too; it's `add_1`. You need to know a function's name to be able to _call_ it.
 
 ### Argument or Arguments
 
@@ -120,6 +132,8 @@ When we a function to run, the programmer language for that is to "_call_" it, s
 
 The argument name wraps the incoming value so that you can think _abstractly_ about it.
 
+Functions can have any number of arguments, including zero.
+
 ### `"""docstring"""`
 
 The text in `"""triple quotes"""` is called the docstring; it's important in python functions because it explains to auto-documenters what your function does, and it also shows as context help in your editor.
@@ -142,7 +156,7 @@ half_a_dozen = double(3)
 
 ## Lecture
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEJTgnVfMDxqhq_GLux0lw4X3rWLM3cZk19otcxFgimTomh7dTq0Aq-D8aQuKqzaUMcE_01_ua-xpI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEJTgnVfMDxqhq_GLux0lw4X3rWLM3cZk19otcxFgimTomh7dTq0Aq-D8aQuKqzaUMcE_01_ua-xpI/pub?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Engineering Flowchart
 
@@ -177,3 +191,39 @@ In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is
 - **Noll, A. M.** (1967). _[The digital computer as a creative medium](http://noll.uscannenberg.org/Art%20Papers/Creative%20Medium.pdf)_. IEEE Spectrum, 4(10), 89–95.
 
   A really old paper, people have been thinking about this stuff for a _long_ time now.
+
+# The answers to this week's exercises
+
+I made these videos for Atom, which is the editor we used before we switched to VS Code, but the ideas are the same, mainly it just looks different.
+
+The way of solving these problems is not _the_ correct way, it's just _a_ correct way.
+
+Don't just copy the results of these, think about what I'm doing, and why. For example, if you watch the first video, don't just play along and roll straight into the second, see if you can use what you've learned to figure out the next problem _before_ watching the next video.
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/uEf4zcsdpek?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/hEk7YZ42NSU?rel=0" frameborder="0" allowfullscreenShould be a video here> </iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/HcG-KNYF6Iw?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/Gh9BzNdVNc0?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/0BOc0AnQnwk?rel=0" frameborder="0" allowfullscreenShould be a video here> </iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/GbC3fd21uJU?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/TVtuEOW-KDU?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/JP1-tBDjpik?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/5rnLnkyCPW4?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/vmwL84h0FF4?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/8B8zK55emaM?rel=0" frameborder="0" allowfullscreenShould be a video here> </iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/heyFEgCl5vA?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/v3fjYZq3-jQ?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
+
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/wsHflhgIGpg?rel=0" frameborder="0" allowfullscreenShould be a video here> </iframe>
