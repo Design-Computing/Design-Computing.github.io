@@ -2,7 +2,7 @@
 
 If you are interested in your marks as we go, you can [look here](https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubhtml?gid=1672893348&single=true)
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubhtml?gid=1672893348&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="700px"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubhtml?gid=1672893348&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="700px" frameless></iframe>
 
 This is updated most days, so if you don't see your values changing, it's probably because you aren't `push`ing to GitHub.
 
@@ -12,7 +12,7 @@ What I _really_ want you to do with this graph is to use it as an opportunity to
 
 This is the weighted graph, but it's not really worth looking at yet.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubchart?oid=17662914&amp;format=interactive" width="100%" height="700px"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubchart?oid=17662914&amp;format=interactive" width="100%" height="400px" frameless></iframe>
 
 ## Lecture
 
