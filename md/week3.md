@@ -32,7 +32,7 @@ Do these things in order, it'll be better that way, I promise.
 
    It looks like there's nothing to do to exercise 2, but actually that's a big deal! You need to work out a way to make a diagram of the code. It needs to be easy to understand, and help you keep track of what it's doing. There are lots of formal ways to diagram code ([UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), flow charts) but don't let that constrain you. Think about what makes the most sense to _you_ and also about how you could use it to explain it to someone else. Make sure that your diagram goes into your lab book. It will really help you to do the same thing for exercise 3 and 4 too.
 
-1. listen to this podcast: **Galef, J.** (2016). [_Tom Griffiths and Brian Christian on "Algorithms to Live By"_. :headphones: Rationally Speaking](http://rationallyspeakingpodcast.org/show/rs-161-tom-griffiths-and-brian-christian-on-algorithms-to-li.html).
+1. listen to this podcast: **Galef, J.** (2016). [_Tom Griffiths and Brian Christian on "Algorithms to Live By"_. 🎧 Rationally Speaking](http://rationallyspeakingpodcast.org/show/rs-161-tom-griffiths-and-brian-christian-on-algorithms-to-li.html).
 
 1. Read the _code reading experience_ section below. Write some thoughts in your lab book about why some of these solutions are better than others. Performance, readability, what else makes a function better.
 

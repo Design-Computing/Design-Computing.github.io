@@ -49,14 +49,14 @@ We can also `print x` and we'll get something that looks like this `e194b904-86a
 
 We want to give the input a type hint so we don't need to look after the GUID ourselves. As it's getting points, let's pick `Point3d`. Now if we look in the editor it prints `0.0553423445929505,8.63313403382578,1.51597924042306` which is the x,y,z values of the point.
 
-:blowfish: What? There's a hundred points. Why is is only showing one? This is some grasshopper magic. It's taking each one and running the python script for each element. We can use this to make our life easier. We can make the filter like this:
+🐡 What? There's a hundred points. Why is is only showing one? This is some grasshopper magic. It's taking each one and running the python script for each element. We can use this to make our life easier. We can make the filter like this:
 
 ```python
 if x.X > y:
     a = x
 ```
 
-So if we plug our spheres into the `a` output it works exactly like our cull-based filter. This is nice, super terse, but single letter variables are :poop:.
+So if we plug our spheres into the `a` output it works exactly like our cull-based filter. This is nice, super terse, but single letter variables are 💩.
 
 If we right click on the inputs and rename them then we need to do the same in the code, but doesn't this look nicer:
 
@@ -114,7 +114,7 @@ for p in points_to_filter:
         filtered_points.append(p)
 ```
 
-So for minimal extra work, we get a big performance improvement. For simple tasks like this where the bulk of the work is in setup and teardown it can be more than three times faster! :racehorse:
+So for minimal extra work, we get a big performance improvement. For simple tasks like this where the bulk of the work is in setup and teardown it can be more than three times faster! 🏇
 
 [^1]: I know that only an enemy of quality would keep their strawberries in the fridge, but it's just a metaphor.
 
