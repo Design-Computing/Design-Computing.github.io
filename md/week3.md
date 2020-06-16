@@ -1,11 +1,22 @@
 # Week 3: Useful Programs and Algorithms
 
-If you are interested in your marks as we go, you can look here: [bit.ly/2WTLRux](https://bit.ly/2WTLRux)
+If you are interested in your marks as we go, you can [look here](https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubhtml?gid=1672893348&single=true)
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubhtml?gid=1672893348&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
 This is updated most days, so if you don't see your values changing, it's probably because you aren't `push`ing to GitHub.
+
+It's important to note that this chart shows **un**weighted marks. I.e. it shows a longer bar for some parts than others. The mark you actually get is weighted, so don't get caught up in who's in what order, just use it to check that you're up to date.
+
+What I _really_ want you to do with this graph is to use it as an opportunity to help people. You might be crushing this class, but you're going to spend 3 years with these people and sooner or later, you're going to need their help! Also, more than that, the better the average competence of your cohort is, the better you'll all do when you graduate. This is a _non zero sum game!_
+
+This is the weighted graph, but it's not really worth looking at yet.
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubhtml?gid=1672893348&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ## Lecture
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSox_vZU2xprGNVi-fi_3cwwkLvAo6qfuYhITdgSawNbQNI5ckW2G-CThN4Ew6XAmSnojYBMpAIr-Qz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSox_vZU2xprGNVi-fi_3cwwkLvAo6qfuYhITdgSawNbQNI5ckW2G-CThN4Ew6XAmSnojYBMpAIr-Qz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 </iframe>
 
