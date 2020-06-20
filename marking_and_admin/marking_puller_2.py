@@ -225,6 +225,7 @@ def update_repos(row: PandasSeries) -> str:
     except git.GitCommandError as e:
         if CHATTY:
             print(f"We already have {owner}, trying a pull. ({e})")
+
         if "already exists and is not an empty directory" in e.stderr:
             try:
                 repo = git.cmd.Git(path)
@@ -241,8 +242,10 @@ def update_repos(row: PandasSeries) -> str:
                 if CHATTY:
                     print(f"pull error: {row.name} {row.contactEmail}", e)
                 return str(e)
+        else:
+            return f"unexpected error: {e}"
     except Exception as e:
-        message = "clone error other than existing repo"
+        message = f"clone error other than existing repo: {e}"
         if CHATTY:
             print(message, f"{row.name} {row.contactEmail}", e)
         return message
