@@ -534,7 +534,7 @@ mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
 mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
 mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2, 5), axis=1)
 mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3, 25), axis=1)
-# mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4, 45), axis=1)
+mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4, 45), axis=1)
 # mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), axis=1)
 # mark_sheet["exam"]  = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
 
