@@ -56,8 +56,8 @@ We'll go through this together, but if you need to setup a new dev environment t
    1.
    1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
    1. Be patient
-   1. Open Anaconda navigator
-   1. Click install on the VS Code box, be patient again
+   <!-- 1. Open Anaconda navigator -->
+   <!-- 1. Click install on the VS Code box, be patient again -->
 
 1. Git:
 
@@ -66,12 +66,15 @@ We'll go through this together, but if you need to setup a new dev environment t
 
 #### Pull in the course resources
 
-I've you've been doing this before the class as prep, stop here!
+I've you've been doing this before the class as prep, stop here! (We might still be working on them!)
 
 1. Open VS Code, bask in its glory
-1. Inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of `1` on most keyboards. That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
+1. Inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of `1` on most keyboards.
 
     ![](https://macautomationtips.com/wp-content/uploads/2015/08/backtick-key-e1439405041467.jpg)
+
+    That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
+
 1. Your prompt should say something like:
 
 `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
@@ -80,8 +83,8 @@ Whatever it is, now we need to write some magic spells. 🧙‍♂️
 
 1. Getting your content
    1. Make sure you're in a good place. If you're in Windows you'll be in your user `C:\Users\ben>`, if you're on a mac it might look like this: `MacBook-Pro:~ ben$` but, you know, check.
-   1. Type `mkdir 1161` &Larr; This **m**a**k**es a new **dir**ectory called _1161_
-   1. Then `cd 1161` &Larr; This **c**hanges the **d**irectory to _1161_
+   1. Type `mkdir 1161` &larr; This **m**a**k**es a new **dir**ectory called _1161_
+   1. Then `cd 1161` &larr; This **c**hanges the **d**irectory to _1161_
    1. Then `git clone https://github.com/Design-Computing/CODE1161-2019 course` This pulls down the course repository
 1. Clone
 
@@ -105,7 +108,7 @@ Whatever it is, now we need to write some magic spells. 🧙‍♂️
       C:\Users\ben\1161>
       ```
 
-   1. Now use cd (change directory) to move into the 'me' repo - type `cd me`
+   1. Now use `cd` (change directory) to move into the 'me' repo - type `cd me`
    1. Last thing here: Associate your fork with it's upstream version; that's the one you forked from. This means that if we make a change, you can pull it into your repo.
 
       ```
@@ -117,7 +120,7 @@ Whatever it is, now we need to write some magic spells. 🧙‍♂️
 
 1. Finish up
 
-   1. Last thing: type `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a mac, call someone over to help.
+   1. Last thing: type `cd ..` and then `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a mac, call someone over to help.
 
 1. Prepare your workspace.
 
@@ -190,6 +193,8 @@ Now you do the work! This is going to be a back and forth with Google, What we t
 
 Save your work, it won't do anything otherwise.
 
+You can tell if it's saved because the tab at the top of the file will show a &times; if it's saved and a `⚪` if it's not.
+
 #### Test
 
 Again, write, at the terminal:
@@ -231,7 +236,7 @@ We're going to talk about git and commits a lot more in the coming weeks, but fo
 
 #### Push
 
-Once you've made a commit (or lots of commits), click the `...` three dots to get the menu. Find _Push_ and click it.
+Once you've made a commit (or lots of commits), click the `...` three dots to get the menu. Find _Push_ and click it. Frustratingly, there are two sets of `...` three dots, and the one we want is invisible until you put your cursor over it. It's just underneath the set of dots that's actually visible. _ARGH!_
 
 Wait for the incredibly subtle indicator to stop moving, then...
 
@@ -265,7 +270,7 @@ Put a link to your trinket results into your lab book (readme.md file).
 
   Check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) for an intro to how formatting works in markdown (`.md`) files.
 
-- That means that if you kept up in class, no homework this week! It's a great chance to read some of the articles below. They won't teach you python, but they _will_ broaden your mind.
+- That means that if you kept up in class, no coding homework this week! It's a great chance to read some of the articles below. They won't teach you python, but they _will_ broaden your mind. Each week there are some suggested readings, pick one, read it, and write some thoughts in your journal.
 
 In theory, you can't get a full set of green ticks without everything going right. If you get all the ticks, then you have finished your homework. _Don't_ leave class if you don't have a full set of green ticks
 
@@ -273,8 +278,7 @@ In theory, you can't get a full set of green ticks without everything going righ
 
 - **Graham, P.** (2009). _[Maker’s Schedule, Manager’s Schedule.](http://paulgraham.com/makersschedule.html)_
 - **Case, N.** (2016). _[Simulating The World (In Emoji 😘).](http://ncase.me/simulating/)_
-- **Davis, D.** (2015). _[Why Architects Can’t Be Automated.](http://www.architectmagazine.com/technology/why-architects-cant-be-automated_o)_
-- **Doherty, B.** (2015). _[Architects getting automated?](https://notionparallax.co.uk/2015/architects-getting-automated)_
+- **Davis, D.** (2015). _[Why Architects Can’t Be Automated.](http://www.architectmagazine.com/technology/why-architects-cant-be-automated_o)_ and **Doherty, B.** (2015). _[Architects getting automated?](https://notionparallax.co.uk/2015/architects-getting-automated)_
 - **Noll, A. M.** (1967). _[The digital computer as a creative medium](http://noll.uscannenberg.org/Art%20Papers/Creative%20Medium.pdf)_. IEEE Spectrum, 4(10), 89–95.
 
 # Slides
