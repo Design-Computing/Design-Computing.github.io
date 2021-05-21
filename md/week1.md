@@ -22,11 +22,11 @@ You'll hear us use the word _local_ to mean _on your computer_ and _remote_ to m
 
 **But first:** You might have an email address that's like `unicorn.sparkles@gmail.com` or `i_am_so_cool03@hotmail.com`. If you do, think about writing that on your CV. Do you want Norman Foster to read that?
 
-Your email address, for better or worse, is your central identity. Don't use your university or work email address to sign up for things, you'll still be using your GitHub account long after you've severed ties with that organisation. Get a good personal email address, and look after it.
+Your email address, for better or worse, is your central identity. **Don't** use your university or work email address to sign up for things, you'll still be using your GitHub account long after you've severed ties with that organisation. Get a good personal email address, and look after it.
 
 #### Get a GitHub account!
 
-1. Go to [github.com](https://github.com/) and **Sign Up**.
+1. Go to [github.com](https://github.com/) and **Sign Up**. The same advice about not making your email address embarrassing applies to your github username. Imagine that you're 40, you're the CEO of a major company and having to tell someone that your github user name is <code>eat_a_bag_of_clicks</code> or, even worse <code>z123456</code>. 🤮☹️😾😡😖
 2. Fill in your real name
 3. Upload a photo of your face as your profile picture. We need this so that we can work out who you are.
 
@@ -36,7 +36,7 @@ Once you've done those steps, you can refresh _this_ page and you should see you
 
 1. Go to [stackoverflow.com](https://stackoverflow.com/) and **Sign Up**.
 
-You'll need this to help you out. As a way of 'paying' for that help, it's good manners to upvote the questions and answers that you find useful. Being a programmer without SO is unthinkable!
+You'll need this to help you out. As a way of 'paying' for that help, it's good manners to upvote the questions and answers that you find useful. Being a programmer without <abbr title="Stack Overflow">SO</abbr> is unthinkable!
 
 ### Steps to set up your dev environment
 
@@ -52,7 +52,8 @@ We'll go through this together, but if you need to setup a new dev environment t
 
 1. Anaconda:
 
-   1. Download Anaconda from [anaconda.com](https://www.anaconda.com/products/individual#Downloads) get the **Python 3.7** version
+   1. Download the Anaconda installer from [anaconda.com](https://www.anaconda.com/products/individual#Downloads)
+   1.
    1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
    1. Be patient
    1. Open Anaconda navigator
@@ -69,6 +70,8 @@ I've you've been doing this before the class as prep, stop here!
 
 1. Open VS Code, bask in its glory
 1. Inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of `1` on most keyboards. That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
+
+    ![](https://macautomationtips.com/wp-content/uploads/2015/08/backtick-key-e1439405041467.jpg)
 1. Your prompt should say something like:
 
 `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?

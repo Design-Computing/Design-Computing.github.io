@@ -33,7 +33,7 @@ You'll learn these ideas and skills two sections.
 
 [design-computing.github.io](https://design-computing.github.io/)
 
-This has everything you need to know. We update it a lot, so keep looking. [ctrl]+[d] will bookmark it.
+This has everything you need to know. We update it a lot, so keep looking. \[ctrl\]+\[d\] will bookmark it.
 
 This is where you are right now!
 
@@ -42,7 +42,7 @@ This is where you are right now!
 We've broken the course into three repos. (Who wants to say _repository_ when all the cool people say _repo_?)
 
 1. [course](https://github.com/Design-Computing/course) This is where the active bit of the course lives. This contains the code that checks your answers, that means that you can see what's going on under the covers.
-1. [me](https://github.com/Design-Computing/me) This is where _you_ write code, except it isn't! Sounds tricky doesn't it. If everyone wrote their code in the same place then it'd get messy. You write your code in _your own_ personal copy of this repo. In git language, we call copy a _[fork](https://help.github.com/en/articles/fork-a-repo)_.
+1. [me](https://github.com/Design-Computing/me) This is where _you_ write code, except it isn't! Sounds tricky doesn't it. If everyone wrote their code in the same place then it'd get messy. You write your code in _your own_ personal copy of this repo. In git language, we call copy a _[fork](https://help.github.com/en/articles/fork-a-repo)_. We'll cover this is a little bit more detail later today, and a lot more detail in a few weeks.
 1. [Design-Computing.github.io](https://github.com/Design-Computing/Design-Computing.github.io) This has the code that _we_ need to run the course, including the words that you're reading now. You don't ever _need_ to look at the code underneath all this, but it's there if you ever wanted to look. That's the magic of open source!
 
 ### Teams
@@ -61,7 +61,7 @@ Email is uncool, but sometimes it's necessary. If you absolutely need to email t
 
 - Ben Doherty: b.doherty@unsw.edu.au
 
-_BUT_ before you email, if it's something to do with the course, make sure you use [this template](email_template)
+_BUT_ before you email, if it's something to do with the course, make sure you use [this template](email_template). If you don't use the template, there's a good chance that I'll just bounce the email back to you and tell you to use it.
 
 ## Weeks:
 
