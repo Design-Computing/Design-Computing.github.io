@@ -84,6 +84,8 @@ Below are some solutions from a previous year that passed the test. This functio
 
 _Reading_ code is _at least_ as important as writing it, take the time to go through these examples of different ways of doing the same thing and think about which you like. Which is most readable? Which is most elegant? This is a great example of what we mean by choosing a good algorithm. There are almost always _many_ ways to do things, so you need to be able to make a call about which one to pick and why.
 
+You should read these examples and try to make sense of them. Reading code is an aesthetic experience, you'll like some of these better than others. Some will _perform_ better than others in terms of algorithmic complexity, but usually a readable function is better than a fast one.
+
 ### Rizo007 ![](https://github.com/Rizo007/code1161base/raw/master/mugshot.png)
 
 ```python

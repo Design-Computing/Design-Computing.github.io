@@ -2,7 +2,7 @@
 
 ## Lecture
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQkRONPNEDyj3YpSf7LMfGflYj4mnwJJGOllSvPrvXp6xUP8jbGm8gLzugVdwQBWz0cXGFLAXKWO30W/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQkRONPNEDyj3YpSf7LMfGflYj4mnwJJGOllSvPrvXp6xUP8jbGm8gLzugVdwQBWz0cXGFLAXKWO30W/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">Should be a video here</iframe>
 
 ## Lab
 
@@ -48,24 +48,24 @@ Although this reading is optional, it'll make a you a way better CoDe person! Ma
 
 1. Take a look at these. Watch this one:
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/495nCzxM9PI" frameborder="0" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/495nCzxM9PI" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
    You might want to find out more about Alan Kay, he's an interesting character in his own right.
 
    Don't watch all of this, but flick through it. Almost everything demoed here is new in this demo.
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/yJDv-zdhzMY" frameborder="0" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/yJDv-zdhzMY" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
 # How to do...
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y6gGuLbfMLk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y6gGuLbfMLk" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3YHXf8dmoiA" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3YHXf8dmoiA" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2FlCOC2QK4k" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2FlCOC2QK4k" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9U94fy1bQgg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9U94fy1bQgg" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BsJwH-CiOrM" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BsJwH-CiOrM" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
 <iframe width="560" src="https://www.youtube-nocookie.com/embed/9U94fy1bQgg?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>

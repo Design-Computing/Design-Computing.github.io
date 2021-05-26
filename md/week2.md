@@ -1,4 +1,4 @@
-# Week 1 Lab: Everything Python in a few hours
+# Week 2 Lab: Everything Python in a few hours
 
 ## Introduction
 
@@ -166,7 +166,7 @@ In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is
 
 ## Homework
 
-1. Finish this week's exercises: 0&ndash;3. Remember to _push_ to GitHub
+1. Finish this week's exercises: 0&ndash;3. Remember to _push_ to GitHub. If you don't push, I won't know that you've done anything.
 
 1. We're going to teach you python, we promise, but why not make the most of the rest of the world?
 
@@ -174,7 +174,7 @@ In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is
 
    1. [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/#toc:): Do chapters 1&ndash;5
 
-   1. [Codecademy: Learn Python](https://www.codecademy.com/learn/learn-python) (This is python 2, the python 3 course is paid, but the content is basically the same.)
+   1. [Codecademy: Learn Python 3](https://www.codecademy.com/learn/learn-python-3). This is paid content, but you can do it on a free trial. If you decide to stay, students get 35% off. [Learn python 2](https://www.codecademy.com/learn/learn-python) (This is python 2 it's free, but the content is basically the same.)
 
    These will give you different perspectives on this python stuff. The more times you cover the material, the better it'll bed down in your brain.
 
@@ -194,15 +194,17 @@ In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is
 
 # The answers to this week's exercises
 
-I made these videos for Atom, which is the editor we used before we switched to VS Code, but the ideas are the same, mainly it just looks different.
+I made these videos for Atom, which is the editor we used before we switched to VS Code, but the ideas are the same, it just looks different.
 
-The way of solving these problems is not _the_ correct way, it's just _a_ correct way.
+The way of solving these problems is not _the_ correct way, it's _a_ correct way.
 
-Don't just copy the results of these, think about what I'm doing, and why. For example, if you watch the first video, don't just play along and roll straight into the second, see if you can use what you've learned to figure out the next problem _before_ watching the next video.
+Don't mindlessly copy the results of these, think about what I'm doing, and why. For example, if you watch the first video, don't play along and roll straight into the second, see if you can use what you've learned to figure out the next problem _before_ watching the next video.
+
+The aim here is for you to learn. It's pretty easy to cheat in this course and get a high mark, but that'll torpedo your chances of getting the base you need to succeed in future courses. You're here to _learn_, marks are there to keep your parents happy.
 
 <iframe height="400" src="https://www.youtube-nocookie.com/embed/uEf4zcsdpek?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
-<iframe height="400" src="https://www.youtube-nocookie.com/embed/hEk7YZ42NSU?rel=0" frameborder="0" allowfullscreenShould be a video here> </iframe>
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/hEk7YZ42NSU?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
 <iframe height="400" src="https://www.youtube-nocookie.com/embed/HcG-KNYF6Iw?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
@@ -220,10 +222,10 @@ Don't just copy the results of these, think about what I'm doing, and why. For e
 
 <iframe height="400" src="https://www.youtube-nocookie.com/embed/vmwL84h0FF4?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
-<iframe height="400" src="https://www.youtube-nocookie.com/embed/8B8zK55emaM?rel=0" frameborder="0" allowfullscreenShould be a video here> </iframe>
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/8B8zK55emaM?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
 <iframe height="400" src="https://www.youtube-nocookie.com/embed/heyFEgCl5vA?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
 <iframe height="400" src="https://www.youtube-nocookie.com/embed/v3fjYZq3-jQ?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
-<iframe height="400" src="https://www.youtube-nocookie.com/embed/wsHflhgIGpg?rel=0" frameborder="0" allowfullscreenShould be a video here> </iframe>
+<iframe height="400" src="https://www.youtube-nocookie.com/embed/wsHflhgIGpg?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
