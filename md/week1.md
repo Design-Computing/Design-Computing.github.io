@@ -92,7 +92,7 @@ First we need to download some software:
 I've you've been doing this before the class as prep, stop here! (We might still be working on them!)
 
 1. Open VS Code, bask in its glory
-1. Inside VS Code, type [ctrl]+[`] that's a backtick, it's to the left of `1` on most keyboards.
+1. Inside VS Code, type [ctrl]+[\`] that's a backtick, it's to the left of `1` on most keyboards.
 
     ![](https://macautomationtips.com/wp-content/uploads/2015/08/backtick-key-e1439405041467.jpg)
 
