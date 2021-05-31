@@ -1,16 +1,36 @@
+# Week 1 Lecture
+
+_incoming_
+
+## Questions!
+
+These questions are all anonymous. They're separate forms so that we can't tie the responses together. We'll talk about this kind of thing in one of the later lectures in this course.
+
+Fill these in before we all come together in the lab please.
+
+[Learning about you](https://docs.google.com/forms/d/e/1FAIpQLSdBZjEULRJh4CVWgfJhsGqQLNv7efpV82TxxyJpDrhYi5PpTg/viewform?usp=sf_link)
+
+[What does _programming_ mean to you?](https://docs.google.com/forms/d/e/1FAIpQLSetpJp8n1CvvqSuZKs6YH-VQ0fRFGYx3jonDt-eHCMI9A85Ng/viewform?usp=sf_link)
+
+[Why did you do this course?](https://docs.google.com/forms/d/e/1FAIpQLScwSwCPxFWixn_ioJM_YiR0DyKMAKsn0oqYEwH1Ad4Kia_sIQ/viewform?usp=sf_link)
+
 # Week 1 Lab: Python and Your Dev Environment
 
 ## Introduction
 
 This week's lab is in two parts. One's administrative and the other's creative. But don't let that lull you into thinking that the first part is boring! Managing your dev environment is something you'll keep doing for your whole career. (_dev_ is short for _development_.) You can think of it like a chef choosing and sharpening their knives&mdash;it's a never ending process.
 
-Part one will involve a lot of doing things without really knowing why. It'll be confusing, but it will get you going, then you can look back and understand.
+Part one will involve a lot of doing things without really knowing why. It'll be confusing, but it will get you going, then you can look back and understand. This part is a _lot_ of work, if it all goes well you might be done in 20 minutes, if not, it might take the whole session. It's important that you get this working because it's the core of the whole course. Don't leave until it's done, be persistent in asking for help if you're not sure or if it isn't working.
 
 Part two is a low-barrier-to-entry way to start flexing your computational thinking.
+
+There will be some bits where you're waiting around for something to download, so you can do both parts in parallel.
 
 ---
 
 # Part 1
+
+**IMPORTANT! DON'T LEAVE THE LAB UNTIL YOU HAVE FINISHED THIS SECTION!**
 
 ## Your dev environment
 
@@ -30,8 +50,6 @@ Your email address, for better or worse, is your central identity. **Don't** use
 2. Fill in your real name
 3. Upload a photo of your face as your profile picture. We need this so that we can work out who you are.
 
-Once you've done those steps, you can refresh _this_ page and you should see yourself at the bottom!
-
 #### Get a StackOverflow account!
 
 1. Go to [stackoverflow.com](https://stackoverflow.com/) and **Sign Up**.
@@ -44,25 +62,30 @@ First we need to download some software:
 
 #### Get software
 
-We'll go through this together, but if you need to setup a new dev environment then these are the steps:
-
 1. VS Code
+
+    This is the main tool you'll be using in this course. Almost everything happens from within VS Code, so learn to love it.
 
    1. Download VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
 
-1. Anaconda:
+1. Anaconda
+
+    Anaconda is a python installer that comes with a lot of the packages that we need to use already baked in. This means we don't need to install them separately.
 
    1. Download the Anaconda installer from [anaconda.com](https://www.anaconda.com/products/individual#Downloads)
-   1.
+
    1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
+
    1. Be patient
    <!-- 1. Open Anaconda navigator -->
    <!-- 1. Click install on the VS Code box, be patient again -->
 
-1. Git:
+1. Git
+
+    Git is a version control tool, we're going to use it to make sure that your work is saved, backed up, and versioned (this means that you can go back to this morning without needing to save lots of copies with names like `my_work_final.py` and `my_work_final_final.py`).
 
    1. Go to [git-scm.com](https://git-scm.com/downloads) and download the latest git
-   1. Install git with all the default values, except make **VS Code** be the default editor
+   1. Install git with all the default values, except make **VS Code** be the default editor if you're asked.
 
 #### Pull in the course resources
 
@@ -75,24 +98,37 @@ I've you've been doing this before the class as prep, stop here! (We might still
 
     That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
 
+    **Note**: when I say [key]+[other key] I mean to press both of those keys. Like to copy [ctrl]+[c].
+
 1. Your prompt should say something like:
 
-`C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
+    `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
 
-Whatever it is, now we need to write some magic spells. 🧙‍♂️
+    Whatever it is, now we need to write some magic spells. 🧙‍♂️
 
 1. Getting your content
    1. Make sure you're in a good place. If you're in Windows you'll be in your user `C:\Users\ben>`, if you're on a mac it might look like this: `MacBook-Pro:~ ben$` but, you know, check.
+
    1. Type `mkdir 1161` &larr; This **m**a**k**es a new **dir**ectory called _1161_
+
    1. Then `cd 1161` &larr; This **c**hanges the **d**irectory to _1161_
-   1. Then `git clone https://github.com/Design-Computing/CODE1161-2019 course` This pulls down the course repository
+
+   1. Then `git clone https://github.com/Design-Computing/course.git` This pulls down the course repository. Typing this is going to suck, so go [here](https://github.com/Design-Computing/course) and use the green button.
+
 1. Clone
 
    1. Go to [https://github.com/Design-Computing/me](https://github.com/Design-Computing/me) and [fork](https://help.github.com/en/articles/fork-a-repo) yourself a copy of the _me_ repo.
 
+      🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
       **TIME OUT:** I make a lot of fuss about this in the lecture, but every year lots of people get stuck here. You _need_ to clone _your_ fork of the `me` repo, not the Design-Computing version. Be extra careful when you're doing this step. It'll pay off in the long term. I promise.
 
-   1. Then, back in the terminal `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation.
+      In previous years I've done a bunch of magic to fix your upstream, but I'm just going to burn it to the ground and start you again this year, so make sure you do this right this or you'll need to redo work.
+
+      🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+   1. Then, back in the terminal `git clone https://github.com/`_your name_`/me.git` We talked about it in the presentation. Again, don't type this, use the green button
+
    1. Now type `dir` you should get something that looks like:
 
       ```

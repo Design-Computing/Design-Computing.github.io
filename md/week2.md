@@ -178,15 +178,17 @@ In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is
 
    These will give you different perspectives on this python stuff. The more times you cover the material, the better it'll bed down in your brain.
 
+1. Optional: Read _[The Oregon Trail Game: Crossing Rivers](http://www.died-of-dysentery.com/stories/crossing-rivers.html)_ and see if you can write the flow control (`if`, `elif` and `else`) statements that would give you the results in this image: ![](http://www.died-of-dysentery.com/images/chap13-doc-ford-algorithm.png). It's not going to be tested, it's more about stretching your thinking process.
+
 ## Optional Reading:
+
+These aren't a part of your marks, but they'll give you a sense of the culture of this kind of work.
+
+- **Bouchard, R. Philip**, _[The Oregon Trail Game: Crossing Rivers](http://www.died-of-dysentery.com/stories/crossing-rivers.html)_.
 
 - **Victor, B.** (2011). _[Up and Down the Ladder of Abstraction](http://worrydream.com/LadderOfAbstraction/)_.
 
   A great read that will help you _think_ like a programmer.
-
-- **Doherty, B.** (2016). _[A thinking trick for beginner programmers - Ghetto TDD](https://notionparallax.co.uk/2016/a-thinking-trick-for-beginner-programmers)_.
-
-  Another way of explaining the test process.
 
 - **Noll, A. M.** (1967). _[The digital computer as a creative medium](http://noll.uscannenberg.org/Art%20Papers/Creative%20Medium.pdf)_. IEEE Spectrum, 4(10), 89–95.
 
