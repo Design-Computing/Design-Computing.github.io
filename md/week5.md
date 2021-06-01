@@ -1,4 +1,12 @@
-### Week 5
+### Week 5 History and I/O
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQkRONPNEDyj3YpSf7LMfGflYj4mnwJJGOllSvPrvXp6xUP8jbGm8gLzugVdwQBWz0cXGFLAXKWO30W/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">Should be a video here</iframe>
+
+## Lab
+
+1. There are some running examples in `IOexamples.py`, read them, step through them, and you should have a pretty good idea of what to do in `exercise1.py`. You should be feeling pretty comfortable with how this process works by now.
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSxdowE5V8LmQtbDO8iXKPh9BuNUzPwiqYN7ytxbYuQsXGc1lbt-EJGTkX9CoYdhKg06CpEToLQ8wnz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

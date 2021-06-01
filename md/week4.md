@@ -1,4 +1,4 @@
-# Week 4: History and I/O
+# Week 4: 🐼 Pandas 🐼 and starting the data project for real!
 
 ## Lecture
 
@@ -8,7 +8,7 @@
 
 1. There are some running examples in `IOexamples.py`, read them, step through them, and you should have a pretty good idea of what to do in `exercise1.py`. You should be feeling pretty comfortable with how this process works by now.
 
-1. Talk to a tutor about your open data project idea. You are in no way committed to that idea, we want you to have a place to start.
+1. Talk to a tutor about your open data project idea. Get started on the data audit process described below.
 
 Here's the example from the lecture if you want to try it out:
 
