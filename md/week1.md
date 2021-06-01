@@ -1,6 +1,33 @@
 # Week 1 Lecture
 
-_incoming_
+Welcome to the first week of 1161. Instead of a big chunk of lecture, it's broken up into little bits. This should make it easier to come back to if you need to.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NMbHLzQPYE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Self forgiveness
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8mUojKcoHNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Lab Book
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qy6vv-wbtng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CAFm-WMUngg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Healthy
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZLbMVox_J60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+CCC
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pJapwX2ZX-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Who am I: Ben
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### These are the slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRdspBdIJjboJldPB4KTL-HtZ6sCtNkBvgfuUsd0d50ZNb7fheGMSuTAZ8MGVeMi3QDbXEvWa5troYh/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Questions!
 
@@ -15,6 +42,10 @@ Fill these in before we all come together in the lab please.
 [Why did you do this course?](https://docs.google.com/forms/d/e/1FAIpQLScwSwCPxFWixn_ioJM_YiR0DyKMAKsn0oqYEwH1Ad4Kia_sIQ/viewform?usp=sf_link)
 
 # Week 1 Lab: Python and Your Dev Environment
+
+## Lab
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQFMw9WsAuZ43GoF3OGs1pCJq1NzEEgpp1GknWwRrFq1_qizdkPGAPZ-5Ar2mkDwkpflIWv0n2n6KLj/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Introduction
 
