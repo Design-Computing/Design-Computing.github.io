@@ -1,7 +1,5 @@
 ### Week 5
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSxdowE5V8LmQtbDO8iXKPh9BuNUzPwiqYN7ytxbYuQsXGc1lbt-EJGTkX9CoYdhKg06CpEToLQ8wnz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# Non-teaching week (that doesn't mean non-working week)
 
-# ML assignment
-
-The assignment is fully described [in its own repo, here](https://github.com/Design-Computing/tf-pose-estimation).
+There's lots to do this week, but coming to class isn't one of those things.
