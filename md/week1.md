@@ -190,6 +190,8 @@ This is how I set up my workspace for doing this kind of work. To split the scre
 
 #### Think
 
+![A leather bound notepad with "THINK" embossed on it in gold](https://www.ibm.com/ibm/history/ibm100/images/icp/A153666X76146S48/us__en_us__ibm100__cult_think__replica_thinkpad__620x350.jpg)
+
 This is the _most_ important thing. Spending a long time doing the wrong thing is painful. So thinking means discussing with your peers, drawing diagrams, closing your eyes and dancing out the steps, whatever helps you understand.
 
 Each week has a folder. It'll show up in the tree view on the left. We're in week 1, so look in the folder `week1`.
@@ -208,6 +210,10 @@ TODO: write a python script that prints Hello world!
 Now do some thinking.
 
 #### Test
+
+<div style="float: right; display: block; width: 40%; padding: 1em; border: 12px solid yellow; background: aliceblue; margin-left: 1em;">
+TIP: You can type a `../c` and then press [tab] and the terminal will _auto complete_ it to `../course/` then add a _w_ and it'll finish that until the next unambiguous option: `../course/week`. If you keep going like this you can type all of that in just a few keystrokes. Learn how to do this, it's a superpower.
+</div>
 
 In this course, at least to begin with, the tests are already written for you. They check if your code does what it's supposed to do. To run the tests, you write, at the terminal:
 
