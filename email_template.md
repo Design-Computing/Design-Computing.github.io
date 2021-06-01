@@ -2,7 +2,7 @@
 
 It's a template email for you to use so that your issues get dealt with quickly and with minimal back-and-forth. Filling it in carefully will make it so much easier for me to get through lots of emails while still giving each of them the attention it deserves.
 
-Another way to think about this is that if you _don't_ fill it in well then you are stealing time away from your peers, and that's not very cool.
+Another way to think about this is that if you _don't_ fill it in well then you are stealing time away from your peers, and that's not cool.
 
 Copy this template, change it so that it fits your situation, paste it into your email and off you go.
 
