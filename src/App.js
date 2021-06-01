@@ -68,15 +68,23 @@ You can still get to the content through these links:
       <div>
         <ReactMarkdown source={this.state.general} className="writing" />
         <div className="facebook">
-          {this.state.repos.map(r => {
-            if ("owner" in r) {
-              return <Person key={r.id} forkData={r.owner} />;
-            }
-          })}
+          {this.renderPeople(this.state)}
         </div>
         {/* <pre>{JSON.stringify(this.state.repos, null, 2)}</pre> */}
       </div>
     );
+  }
+
+  renderPeople(state) {
+    if (state && state.repos && state.repos.map){
+      return state.repos.map(r => {
+        if ("owner" in r) {
+          return <Person key={r.id} forkData={r.owner} />;
+        }
+      });
+    }else{
+      return "<div>😬</div>"
+    }
   }
 }
 
