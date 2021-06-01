@@ -64,25 +64,25 @@ First we need to download some software:
 
 1. VS Code
 
-    This is the main tool you'll be using in this course. Almost everything happens from within VS Code, so learn to love it.
+   This is the main tool you'll be using in this course. Almost everything happens from within VS Code, so learn to love it.
 
    1. Download VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
 
 1. Anaconda
 
-    Anaconda is a python installer that comes with a lot of the packages that we need to use already baked in. This means we don't need to install them separately.
+   Anaconda is a python installer that comes with a lot of the packages that we need to use already baked in. This means we don't need to install them separately.
 
    1. Download the Anaconda installer from [anaconda.com](https://www.anaconda.com/products/individual#Downloads)
 
    1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
 
    1. Be patient
-   <!-- 1. Open Anaconda navigator -->
-   <!-- 1. Click install on the VS Code box, be patient again -->
+      <!-- 1. Open Anaconda navigator -->
+      <!-- 1. Click install on the VS Code box, be patient again -->
 
 1. Git
 
-    Git is a version control tool, we're going to use it to make sure that your work is saved, backed up, and versioned (this means that you can go back to this morning without needing to save lots of copies with names like `my_work_final.py` and `my_work_final_final.py`).
+   Git is a version control tool, we're going to use it to make sure that your work is saved, backed up, and versioned (this means that you can go back to this morning without needing to save lots of copies with names like `my_work_final.py` and `my_work_final_final.py`).
 
    1. Go to [git-scm.com](https://git-scm.com/downloads) and download the latest git
    1. Install git with all the default values, except make **VS Code** be the default editor if you're asked.
@@ -94,19 +94,20 @@ I've you've been doing this before the class as prep, stop here! (We might still
 1. Open VS Code, bask in its glory
 1. Inside VS Code, type [ctrl]+[\`] that's a backtick, it's to the left of `1` on most keyboards.
 
-    ![](https://macautomationtips.com/wp-content/uploads/2015/08/backtick-key-e1439405041467.jpg)
+   ![](https://macautomationtips.com/wp-content/uploads/2015/08/backtick-key-e1439405041467.jpg)
 
-    That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
+   That will pop up a section at the bottom of the screen. We'll call that your _terminal_.
 
-    **Note**: when I say [key]+[other key] I mean to press both of those keys. Like to copy [ctrl]+[c].
+   **Note**: when I say [key]+[other key] I mean to press both of those keys. Like to copy [ctrl]+[c].
 
 1. Your prompt should say something like:
 
-    `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
+   `C:\Users\ben>` except where mine says `ben` yours will say something else, maybe it'll be your name, maybe it'll be something boring?
 
-    Whatever it is, now we need to write some magic spells. 🧙‍♂️
+   Whatever it is, now we need to write some magic spells. 🧙‍♂️
 
 1. Getting your content
+
    1. Make sure you're in a good place. If you're in Windows you'll be in your user `C:\Users\ben>`, if you're on a mac it might look like this: `MacBook-Pro:~ ben$` but, you know, check.
 
    1. Type `mkdir 1161` &larr; This **m**a**k**es a new **dir**ectory called _1161_
@@ -145,18 +146,19 @@ I've you've been doing this before the class as prep, stop here! (We might still
       ```
 
    1. Now use `cd` (`c`hange `d`irectory) to move into the 'me' repo: type `cd me`
-   <!-- 1. Last thing here: Associate your fork with it's upstream version; that's the one you forked from. This means that if we make a change, you can pull it into your repo.
 
-      ```
-      git remote add upstream https://github.com/Design-Computing/me.git
+      <!-- 1. Last thing here: Associate your fork with it's upstream version; that's the one you forked from. This means that if we make a change, you can pull it into your repo.
 
-      ```
+         ```
+         git remote add upstream https://github.com/Design-Computing/me.git
 
-      Now you've done that, you can do a `git pull upstream master` to get the latest changes. If you need to do this, we'll tell you about it, it's not a usual thing that you'll need to do. -->
+         ```
+
+         Now you've done that, you can do a `git pull upstream master` to get the latest changes. If you need to do this, we'll tell you about it, it's not a usual thing that you'll need to do. -->
 
 1. Finish up
 
-   1. Last thing: type `cd ..` and then `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a mac, call someone over to help.
+   1. Last thing: type `cd ..` and then `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a Mac, call someone over to help.
 
 1. Prepare your workspace.
 
@@ -229,7 +231,7 @@ Most of your tests will fail. This is good because you haven't done any work yet
 
 #### Do
 
-Now you do the work! This is going to be a back and forth with Google, What we tell you in the lab, and conversations with yourself, your peers and your notebook.
+Now you do the work! This is going to be a back and forth with Google, what we tell you in the lab, and conversations with yourself, your peers and your notebook.
 
 #### Save
 
@@ -274,7 +276,9 @@ We're going to talk about git and commits a lot more in the coming weeks, but fo
 
 1. ![step 3 to making a commit](../pictures/Commit_add.png) Click the `+` to add the file to the staging area.
 
-1. ![step 4 to making a commit](../pictures/Commit_message.png) Once you've added all the files, write a commit message.
+1. ![step 4 to making a commit](../pictures/Commit_message.png)
+
+   Once you've added all the files, write a commit message.
 
 #### Push
 
@@ -292,15 +296,39 @@ Then press enter.
 
 What happens? Do you need to go back a few steps and have another go? If you can get a full suite of green ticks, then move onto Trinket
 
+### `aboutme.yml`
+
+One of the tests checks that you have filled in your `aboutme.yml`. I need this so that I can join up your GitHub account and your student number. So when you push your work to GitHub and we mark it, we know who has done the work. If you don't give us the information, the _repo_ has marks, but _you_ don't.
+
+The information is in your `me` repo, the file is `aboutMe.yml`. Mine looks like:
+
+```yml
+name: Ben Doherty
+studentNumber: z1234567
+officialEmail: b.doherty@unsw.edu.au
+contactEmail: # don't add anything to this line
+  firstBit: ben # the indent is important, as is the space after the :
+  otherBit: notionparallax.co.uk # this avoids spam, the @ is implied
+# accounts
+stackOverflowLink: https://stackoverflow.com/users/1835727/ben
+github: notionparallax
+```
+
+The `contactEmail:` line is blank because it's before an indented block. That'll all make sense by the end of this week, but for now, go with it. (if you want to read more about YAML, [here's a link](https://en.wikipedia.org/wiki/YAML))
+
+Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/). Then run your tests again and check that that test passes now.
+
 ## Then: Trinket
 
 Computing is mainly a mindset, not a typing skill. That mindset doesn't really care about languages. Programmers love to argue about which language is better, but in reality they have more in common than you'd think. The ideas cross boundaries.
 
 Syntax, the way we type letters to make words and symbols, easy to get wrong. Let's start with an environment that makes the syntax easier.
 
-Have a play with [trinket.io](https://hourofpython.trinket.io/from-blocks-to-code-with-trinket#/blocks/dragging-and-dropping) , follow the tutorial, or just try making the first letter of your name with a turtle, or even both!
+Have a play with [trinket.io](https://hourofpython.trinket.io/from-blocks-to-code-with-trinket#/blocks/dragging-and-dropping), follow the tutorial, or just try making the first letter of your name with a turtle, or even both!
 
 Put a link to your trinket results into your lab book (readme.md file).
+
+You'll need to sign in, and then make a new trinket, using the _blocks_ option.
 
 ### Homework
 
@@ -318,20 +346,12 @@ In theory, you can't get a full set of green ticks without everything going righ
 
 ### Readings
 
+These aren't a part of your marks, but they'll give you a sense of the culture of this kind of work.
+
 - **Graham, P.** (2009). _[Maker’s Schedule, Manager’s Schedule.](http://paulgraham.com/makersschedule.html)_
 - **Case, N.** (2016). _[Simulating The World (In Emoji 😘).](http://ncase.me/simulating/)_
 - **Davis, D.** (2015). _[Why Architects Can’t Be Automated.](http://www.architectmagazine.com/technology/why-architects-cant-be-automated_o)_ and **Doherty, B.** (2015). _[Architects getting automated?](https://notionparallax.co.uk/2015/architects-getting-automated)_
 - **Noll, A. M.** (1967). _[The digital computer as a creative medium](http://noll.uscannenberg.org/Art%20Papers/Creative%20Medium.pdf)_. IEEE Spectrum, 4(10), 89–95.
-
-# Slides
-
-## Lecture
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRdspBdIJjboJldPB4KTL-HtZ6sCtNkBvgfuUsd0d50ZNb7fheGMSuTAZ8MGVeMi3QDbXEvWa5troYh/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-## Lab
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQFMw9WsAuZ43GoF3OGs1pCJq1NzEEgpp1GknWwRrFq1_qizdkPGAPZ-5Ar2mkDwkpflIWv0n2n6KLj/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # Are you a Mac user?
 
