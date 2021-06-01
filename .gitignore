@@ -17,3 +17,5 @@ log.txt
 temp_results.json
 marks.csv
 2021_emails.csv
+dependencyGraph.dot
+dependencyGraph.svg
