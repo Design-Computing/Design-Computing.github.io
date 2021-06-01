@@ -29,6 +29,9 @@ officialEmail: b.doherty@unsw.edu.au
 contactEmail: # don't add anything to this line
   firstBit: ben # the indent is important, as is the space after the :
   otherBit: notionparallax.co.uk # this avoids spam, the @ is implied
+# accounts
+stackOverflowLink: https://stackoverflow.com/users/1835727/ben
+github: notionparallax
 ```
 
 The `contactEmail:` line is blank because it's before an indented block. That'll all make sense by the end of this week, but for now, go with it. (if you want to read more about YAML, [here's a link](https://en.wikipedia.org/wiki/YAML))
