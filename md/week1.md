@@ -35,10 +35,24 @@ Fill these in before we all come together in the lab please.
 
 ### Who are we?
 
-| Ben                                                                                                                                                                                                                                                               | Alex                                                                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> | <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
-| I've been working in the _computational design_ world for about 15 years now. You can [read more about me here](https://notionparallax.co.uk/me).                                                                                                                 | Alex is going to make a PR against this repo to update this section.                                                                                                                                                                                              |
+<table>
+<thead>
+<tr>
+<th>Ben Doherty</th>
+<th>Alex Tohidi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+<td><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+</tr>
+<tr>
+<td>I've been working in the _computational design_ world for about 15 years now. You can <a href="https://notionparallax.co.uk/me">read more about me here</a>.</td>
+<td>Alex is going to make a PR against this repo to update this section.</td>
+</tr>
+</tbody>
+</table>
 
 ### These are the slides
 
