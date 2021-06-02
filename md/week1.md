@@ -1,9 +1,3 @@
-### TODO:
-
-- Pull in the course resources TODO: video
-- My first programming TODO: video
-- `aboutme.yml` TODO: video
-
 # Week 1 Lecture
 
 Welcome to the first week of 1161!
@@ -78,7 +72,7 @@ Fill these in before we all come together in the lab please.
 
 This week's lab is in two parts. One's administrative and the other's creative. But don't let that lull you into thinking that the first part is boring! Managing your dev environment is something you'll keep doing for your whole career. (_dev_ is short for _development_.) You can think of it like a chef choosing and sharpening their knives&mdash;it's a never ending process.
 
-Part one will involve a lot of doing things without really knowing why. It'll be confusing, but it will get you going, then you can look back and understand. This part is a _lot_ of work, if it all goes well you might be done in 20 minutes, if not, it might take the whole session. It's important that you get this working because it's the core of the whole course. Don't leave until it's done, be persistent in asking for help if you're not sure or if it isn't working.
+Part one will involve a lot of doing things without really knowing why. It'll be confusing, but it will get you going, then you can look back and understand. This part is a _lot_ of work, if it all goes well you might finish in 20 minutes, if not, it might take the whole session. It's important that you get this working because it's the core of the whole course. Don't leave until it's done, be persistent in asking for help if you're not sure or if it isn't working.
 
 Part two is a low-barrier-to-entry way to start flexing your computational thinking.
 
@@ -100,7 +94,7 @@ You'll hear us use the word _local_ to mean _on your computer_ and _remote_ to m
 
 **But first:** You might have an email address that's like `unicorn.sparkles@gmail.com` or `i_am_so_cool03@hotmail.com`. If you do, think about writing that on your CV. Do you want Norman Foster to read that?
 
-Your email address, for better or worse, is your central identity. **Don't** use your university or work email address to sign up for things, you'll still be using your GitHub account long after you've severed ties with that organisation. Get a good personal email address, and look after it.
+Your email address, for better or worse, is your central identity. **Don't** use your university or work email address to sign up for things! You will still be using your GitHub account long after you've severed ties with that organisation. Get a good personal email address, and look after it.
 
 If you're not sure if you've got a good email address, (or GitHub user name) ask me or Alex what we think.
 
@@ -142,7 +136,7 @@ First we need to download some software:
 
 1. Git
 
-   Git is a version control tool, we're going to use it to make sure that your work is saved, backed up, and versioned (this means that you can go back to this morning without needing to save lots of copies with names like `my_work_final.py` and `my_work_final_final.py`).
+   Git is a version control tool. We're going to use it to make sure that your work is saved, backed up, and versioned. This means that you can go back to this morning without needing to save lots of copies with names like `my_work_final.py` and `my_work_final_final.py`.
 
    1. Go to [git-scm.com](https://git-scm.com/downloads) and download the latest git
    1. Install git with all the default values, except make **VS Code** be the default editor if you're asked.
@@ -184,7 +178,7 @@ I've you've been doing this before the class as prep, stop here! (We might still
 
       **TIME OUT:** I make a lot of fuss about this in the lecture, but every year lots of people get stuck here. You _need_ to clone _your_ fork of the `me` repo, not the Design-Computing version. Be extra careful when you're doing this step. It'll pay off in the long term. I promise.
 
-      In previous years I've done a bunch of magic to fix your upstream, but I'm just going to burn it to the ground and start you again this year, so make sure you do this right this or you'll need to redo work.
+      In previous years I've done a bunch of magic to fix your upstream, but that took a lot of time that I could be helping other people. This year I'm going to burn it to the ground and start you again, so make sure you do this right this or you'll need to redo work.
 
       🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
@@ -245,7 +239,7 @@ This is how I set up my workspace for doing this kind of work. To split the scre
 
 ![A leather bound notepad with "THINK" embossed on it in gold](https://www.ibm.com/ibm/history/ibm100/images/icp/A153666X76146S48/us__en_us__ibm100__cult_think__replica_thinkpad__620x350.jpg)
 
-This is the _most_ important thing. Spending a long time doing the wrong thing is painful. So thinking means discussing with your peers, drawing diagrams, closing your eyes and dancing out the steps, whatever helps you understand.
+This is the _most_ important thing. Spending a long time doing the wrong thing is painful. _Thinking_ means discussing with your peers, drawing diagrams, closing your eyes and dancing out the steps. It's whatever helps you understand.
 
 Each week has a folder. It'll show up in the tree view on the left. We're in week 1, so look in the folder `week1`.
 
@@ -334,7 +328,7 @@ We're going to talk about git and commits a lot more in the coming weeks, but fo
 
 1. ![step 1 to making a commit](../pictures/Commit_bare.png) Once you've got the test that relates to printing _Hello world!_ to pass you'll see that you get a number on the left toolbar, it'll probably be 4. That's the number of files that have changed. 3 of them are generated by me to check that your python is installed properly.
 
-1. ![step 2 to making a commit](../pictures/Commit_icon.png) `Exercise1.py` is your file, so if you click on the _version control_ icon, and then on `Exercise1.py` it'll show you your change, highlighted in green (green for additions, red for deletions)
+1. ![step 2 to making a commit](../pictures/Commit_icon.png) `Exercise1.py` is your file. Click on the _version control_ icon, and then on `Exercise1.py`. It'll show you your change, highlighted in green (green for additions, red for deletions)
 
 1. ![step 3 to making a commit](../pictures/Commit_add.png) Click the `+` to add the file to the staging area.
 
