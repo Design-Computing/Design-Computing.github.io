@@ -1,6 +1,10 @@
 # Week 1 Lecture
 
-Welcome to the first week of 1161. Instead of a big chunk of lecture, it's broken up into little bits. This should make it easier to come back to if you need to.
+Welcome to the first week of 1161!
+
+This year, the lectures are online, so instead of a big chunk of lecture, it's broken up into little bits. This should make it easier to come back to if you need to.
+
+we revisit a lot of the ideas mentioned in the lecture in the text below too, so try and absorb this page in one go. I know it's a lot, but you can do it!
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NMbHLzQPYE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
