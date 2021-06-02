@@ -1,3 +1,9 @@
+### TODO:
+
+- Pull in the course resources TODO: video
+- My first programming TODO: video
+- `aboutme.yml` TODO: video
+
 # Week 1 Lecture
 
 Welcome to the first week of 1161!
@@ -95,6 +101,8 @@ You'll hear us use the word _local_ to mean _on your computer_ and _remote_ to m
 **But first:** You might have an email address that's like `unicorn.sparkles@gmail.com` or `i_am_so_cool03@hotmail.com`. If you do, think about writing that on your CV. Do you want Norman Foster to read that?
 
 Your email address, for better or worse, is your central identity. **Don't** use your university or work email address to sign up for things, you'll still be using your GitHub account long after you've severed ties with that organisation. Get a good personal email address, and look after it.
+
+If you're not sure if you've got a good email address, (or GitHub user name) ask me or Alex what we think.
 
 #### Get a GitHub account!
 
@@ -298,6 +306,13 @@ What did the tests say? What passed? What didn't?
 
 The last two tests this week can't pass until you've pushed.
 
+You'll usually want to actually run your code and see what happens, there are a couple of ways to do that.
+
+![step 2 to making a commit](../pictures/run_buttons.png)
+
+1. The green ▶️ on the right runs the file you've got open in a simple way
+1. The green ▶️ on the left runs the file you've got open with a debugger attached. You can get the same thing by pressing F5. We are going to talk a lot more about how to do this next week. This is just in case you're interested.
+
 #### Commit
 
 Once you've made some changes you can _commit_. It's like a save game that you can come back to. Deciding what a meaningful unit of change is to commit is up to you, but I commit a lot. I wouldn't usually go more than half an hour without committing.
@@ -394,6 +409,12 @@ You'll need to sign in, and then make a new trinket, using the _blocks_ option.
 - That means that if you kept up in class, no coding homework this week! It's a great chance to read some of the articles below. They won't teach you python, but they _will_ broaden your mind. Each week there are some suggested readings, pick one, read it, and write some thoughts in your journal.
 
 In theory, you can't get a full set of green ticks without everything going right. (If you can prove me wrong, I'd love to know about it!) If you get all the ticks, then you have finished your homework. _Don't_ leave class if you don't have a full set of green ticks
+
+# Clinic
+
+<img src="https://media.giphy.com/media/11rIergnpiYpvW/source.gif" style="float:right; margin-left: 1em;">Getting the basics right is the key to being able to do this course. It's vital that you finish week 1's work or you'll struggle with the rest of the course.
+
+What if you didn't manage to get everything working? **_Clinic time_** I'll be hosting a clinic on Teams at 8pm on Tuesday evening (the 8th). I'll post details on Monday.
 
 ### Readings
 
