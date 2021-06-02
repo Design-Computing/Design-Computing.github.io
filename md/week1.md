@@ -266,7 +266,7 @@ Now do some thinking.
 #### Test
 
 <div style="float: right; display: block; width: 40%; padding: 1em; border: 12px solid yellow; background: aliceblue; margin-left: 1em;">
-TIP: You can type a `../c` and then press [tab] and the terminal will _auto complete_ it to `../course/` then add a _w_ and it'll finish that until the next unambiguous option: `../course/week`. If you keep going like this you can type all of that in just a few keystrokes. Learn how to do this, it's a superpower.
+TIP: You can type a <code>../c</code> and then press [tab] and the terminal will _auto complete_ it to <code>../course/</code> then add a _w_ and it'll finish that until the next unambiguous option: <code>../course/week</code>. If you keep going like this you can type all of that in just a few keystrokes. Learn how to do this, it's a superpower.
 </div>
 
 In this course, at least to begin with, the tests are already written for you. They check if your code does what it's supposed to do. To run the tests, you write, at the terminal:
