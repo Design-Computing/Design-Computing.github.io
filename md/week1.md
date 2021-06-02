@@ -199,15 +199,6 @@ I've you've been doing this before the class as prep, stop here! (We might still
 
    1. Now use `cd` (`c`hange `d`irectory) to move into the 'me' repo: type `cd me`
 
-      <!-- 1. Last thing here: Associate your fork with it's upstream version; that's the one you forked from. This means that if we make a change, you can pull it into your repo.
-
-         ```
-         git remote add upstream https://github.com/Design-Computing/me.git
-
-         ```
-
-         Now you've done that, you can do a `git pull upstream master` to get the latest changes. If you need to do this, we'll tell you about it, it's not a usual thing that you'll need to do. -->
-
 1. Finish up
 
    1. Last thing: type `cd ..` and then `cd course` and then `./startup.bat` and press [enter] this will install some libraries and extensions that will make your life easier/more fun. If you've got a Mac, call someone over to help.
