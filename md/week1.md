@@ -333,6 +333,10 @@ Once you've made a commit (or lots of commits), click the `...` three dots to ge
 
 Wait for the incredibly subtle indicator to stop moving, then...
 
+##### Alternatively, push from the command line
+
+I've you can get down with a bit of typing, I think it's _much_ better to type `git push` into the terminal. It's less fiddly, and you also get much more feedback about whether is has worked or not.
+
 #### Test
 
 Hopefully, for the last time, write, at the terminal:
