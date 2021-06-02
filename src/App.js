@@ -3,6 +3,22 @@ import ReactDOM from "react-dom";
 import ReactMarkdown from "react-markdown";
 import Person from "./Person";
 
+const rateLimitMessage = `# Well, this is embarrasing, we're being ratelimited 😬
+
+It happens when a lot of people are trying to hit the GitHub API at the same time from this page.
+
+You can still get to the content through these links:
+
+1. [What's supposed to be on this page](https://design-computing.github.io/md/general)
+1. [Week 1](https://design-computing.github.io/md/week1)
+1. [Week 2](https://design-computing.github.io/md/week2)
+1. [Week 3](https://design-computing.github.io/md/week3)
+1. [Week 4](https://design-computing.github.io/md/week4)
+1. [Week 5](https://design-computing.github.io/md/week5)
+1. [Week 6](https://design-computing.github.io/md/week6)
+1. [Week 7](https://design-computing.github.io/md/week7)
+1. [Week 8+](https://design-computing.github.io/md/theRest)`;
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -40,24 +56,7 @@ class App extends React.Component {
       .then(x => {
         if(x.message && x.message.includes("API rate limit exceeded")){
           // general is looking for a markdown string
-          this.setState({ general:
-`# Well, this is embarrasing, we're being ratelimited 😬
-
-It happens when a lot of people are trying to hit the GitHub API at the same time from this page.
-
-You can still get to the content through these links:
-
-1. [What's supposed to be on this page](https://design-computing.github.io/md/general)
-1. [Week 1](https://design-computing.github.io/md/week1)
-1. [Week 2](https://design-computing.github.io/md/week2)
-1. [Week 3](https://design-computing.github.io/md/week3)
-1. [Week 4](https://design-computing.github.io/md/week4)
-1. [Week 5](https://design-computing.github.io/md/week5)
-1. [Week 6](https://design-computing.github.io/md/week6)
-1. [Week 7](https://design-computing.github.io/md/week7)
-1. [Week 8+](https://design-computing.github.io/md/theRest)
-` });
-        }else{
+          this.setState({ general: rateLimitMessage });
           this.setState({ general: atob(x.content) });
         }
       });
