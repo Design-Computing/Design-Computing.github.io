@@ -8,9 +8,7 @@
 
 - How to ask questions and the three step process to general problem solving.
 
-# Clinic
-
-Getting the basics right is the key to being able to do this course. It's vital that you finish week 1's work or you'll struggle with the rest of the course.
+# Issues:
 
 If you didn't get a suite of beautiful green ticks last week, then you need to talk to a tutor as soon as you can.
 
@@ -37,8 +35,6 @@ github: notionparallax
 The `contactEmail:` line is blank because it's before an indented block. That'll all make sense by the end of this week, but for now, go with it. (if you want to read more about YAML, [here's a link](https://en.wikipedia.org/wiki/YAML))
 
 Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/).
-
-### Can't get a wall of ticks?
 
 #### Mac person?
 
