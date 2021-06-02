@@ -54,9 +54,10 @@ class App extends React.Component {
     })
       .then(x => x.json())
       .then(x => {
-        if(x.message && x.message.includes("API rate limit exceeded")){
+        if (x.message && x.message.includes("API rate limit exceeded")) {
           // general is looking for a markdown string
           this.setState({ general: rateLimitMessage });
+        } else {
           this.setState({ general: atob(x.content) });
         }
       });
@@ -66,23 +67,21 @@ class App extends React.Component {
     return (
       <div>
         <ReactMarkdown source={this.state.general} className="writing" />
-        <div className="facebook">
-          {this.renderPeople(this.state)}
-        </div>
+        <div className="facebook">{this.renderPeople(this.state)}</div>
         {/* <pre>{JSON.stringify(this.state.repos, null, 2)}</pre> */}
       </div>
     );
   }
 
   renderPeople(state) {
-    if (state && state.repos && state.repos.map){
+    if (state && state.repos && state.repos.map) {
       return state.repos.map(r => {
         if ("owner" in r) {
           return <Person key={r.id} forkData={r.owner} />;
         }
       });
-    }else{
-      return "<div>😬</div>"
+    } else {
+      return "<div>😬</div>";
     }
   }
 }
