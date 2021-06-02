@@ -284,6 +284,10 @@ You can tell if it's saved because the tab at the top of the file will show a &t
 
 #### Test
 
+<div style="float: right; display: block; width: 40%; padding: 1em; border: 12px solid yellow; background: aliceblue; margin-left: 1em;">
+TIP: if you're on Windows, file paths have back slashes <code>\</code> but if you're on a mac, they have forward slashes <code>/</code>. This is really annoying because in programming, <code>\n</code> means newline, so paths that look like <code>..\nick\stuff\cool.py</code> get confusing. This is another example of choices made 40&ndash;50 years ago coming back to bite us in the bum. So you'll just have to be aware that it's going to be a problem whichever way you put the slash if you're in Windows.
+</div>
+
 Again, write, at the terminal:
 
 > `python ../course/week1/tests.py`
