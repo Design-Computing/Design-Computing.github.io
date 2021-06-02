@@ -257,10 +257,10 @@ Now do some thinking.
 #### Test
 
 <div style="float: right; display: block; width: 40%; padding: 1em; border: 12px solid yellow; background: aliceblue; margin-left: 1em;">
-TIP: You can type a <code>../c</code> and then press [tab] and the terminal will _auto complete_ it to <code>../course/</code> then add a _w_ and it'll finish that until the next unambiguous option: <code>../course/week</code>. If you keep going like this you can type all of that in just a few keystrokes. Learn how to do this, it's a superpower.
+TIP: You can type a <code>../c</code> and then press [tab] and the terminal will _auto complete_ it to <code>../course/</code> then add a <code>w</code> and it'll finish that until the next unambiguous option: <code>../course/week</code>. If you keep going like this you can type all of that in just a few keystrokes. Learn how to do this, it's a superpower.
 </div>
 
-In this course, at least to begin with, the tests are already written for you. They check if your code does what it's supposed to do. To run the tests, you write, at the terminal:
+In this course the tests are already written for you. They check if your code does what it's supposed to do. To run the tests, you write, at the terminal:
 
 > `python ../course/week1/tests.py`
 
@@ -268,7 +268,7 @@ Then press enter.
 
 Resist the urge to copy and paste this, you're going to be doing it a lot, and it'll be much better if you learn to type it.
 
-The test produce a lot of output, so you'll want to pull up your terminal; there's an up arrow (**^**) on the right that makes it get much bigger.
+The tests produce a lot of output, so you'll want to pull up your terminal; there's an up arrow (**^**) on the right that makes it get much bigger.
 
 Most of your tests will fail. This is good because you haven't done any work yet!
 
@@ -385,7 +385,7 @@ You'll need to sign in, and then make a new trinket, using the _blocks_ option.
 
 - Make sure that you have your dev environment set up.
 
-- In the week1 folder, complete: - `exercise1.py`
+- In the week1 folder, complete: `exercise1.py`
 
 - Write your journal in README.md
 
@@ -393,7 +393,7 @@ You'll need to sign in, and then make a new trinket, using the _blocks_ option.
 
 - That means that if you kept up in class, no coding homework this week! It's a great chance to read some of the articles below. They won't teach you python, but they _will_ broaden your mind. Each week there are some suggested readings, pick one, read it, and write some thoughts in your journal.
 
-In theory, you can't get a full set of green ticks without everything going right. If you get all the ticks, then you have finished your homework. _Don't_ leave class if you don't have a full set of green ticks
+In theory, you can't get a full set of green ticks without everything going right. (If you can prove me wrong, I'd love to know about it!) If you get all the ticks, then you have finished your homework. _Don't_ leave class if you don't have a full set of green ticks
 
 ### Readings
 
