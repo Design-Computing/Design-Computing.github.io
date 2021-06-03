@@ -49,11 +49,11 @@ Fill these in before we all come together in the lab please.
 <tbody>
 <tr>
 <td><iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-<td><iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+<td><iframe width="560" height="315" src="https://www.youtube.com/embed/UfoJT6NZt5k?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
 </tr>
 <tr>
 <td>I've been working in the _computational design_ world for about 15 years now. You can <a href="https://notionparallax.co.uk/me">read more about me here</a>.</td>
-<td>Alex is going to make a PR against this repo to update this section.</td>
+<td>Talk with me about Data, Geometry, 3D printing & Robotic </td>
 </tr>
 </tbody>
 </table>
