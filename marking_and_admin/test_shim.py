@@ -57,7 +57,6 @@ OWNER = sys.argv[3]
 
 print("\n\n\n\n", "in the shim", TEST_PATH, REPO_PATH, OWNER, "\n", sep="\n")
 
-temp_results = open("temp_results.json", "w")
-results = results_as_json(REPO_PATH)
-temp_results.write(results)
-temp_results.close()
+with open("temp_results.json", "w") as temp_results:
+    results = results_as_json(REPO_PATH)
+    temp_results.write(results)
