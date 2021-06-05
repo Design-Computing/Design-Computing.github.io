@@ -406,12 +406,11 @@ def test_in_clean_environment(
         RunCmd(test_args, timeout).Run()  # this is unessarily complicated
 
         # full_path = os.path.join(LOCAL, temp_file_path)
-        temp_results = open(temp_file_path, "r")
-        contents = temp_results.read()
-        results_dict = json.loads(contents)
-        results_dict["bigerror"] = ":)"
-        temp_results.close()
-        log_progress(f" good for w{week_number}\n", logfile_name)
+        with open(temp_file_path, "r") as temp_results:
+            contents = temp_results.read()
+            results_dict = json.loads(contents)
+            results_dict["bigerror"] = ":)"
+        log_progress(f" good for w{set_number}\n", logfile_name)
     except Exception as e:
         results_dict = {
             "bigerror": str(e).replace(",", "~"),
