@@ -40,7 +40,7 @@ def results_as_json(repo_path):
     """Save the results to a temporary json file."""
     results = do_the_test(repo_path)
     results["name"] = OWNER
-    print("results:", results)
+    print("\nresults:", results, "\n")
     return json.dumps(results)
 
 
@@ -48,12 +48,10 @@ TEST_PATH = os.path.normpath(sys.argv[1])
 REPO_PATH = os.path.normpath(sys.argv[2])
 OWNER = sys.argv[3]
 
-
-# 0:'C:\\Users\\ben\\Anaconda3\\python.exe'
-# TEST_PATH = "C:\\Users\\ben\\code1161\\course\\week1\\tests.py"
-# REPO_PATH = "C:\\Users\\ben\\code1161\\StudentRepos\\notionparallax"
-# OWNER = "notionparallax"
-
+# # 0:'C:\\Users\\ben\\Anaconda3\\python.exe'
+# TEST_PATH = "C:\\Users\\ben\\Documents\\UNSW\\1161\\course\\set1\\tests.py"
+# REPO_PATH = "C:\\Users\\ben\\Documents\\UNSW\\1161\\StudentRepos\\XiaocanLin"
+# OWNER = "XiaocanLin"
 
 print("\n\n\n\n", "in the shim", TEST_PATH, REPO_PATH, OWNER, "\n", sep="\n")
 
