@@ -9,12 +9,12 @@ and where the repo is. In almost all cases the tests are the teacher tests, and
 the repo changes for each student.
 
 """
-from importlib import import_module
 import importlib.util
-
 import json
-import sys
 import os
+import sys
+from importlib import import_module
+from time import sleep
 
 
 def do_the_test(repo_path):
