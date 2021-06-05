@@ -171,8 +171,7 @@ def getDFfromCSVURL(url, columnNames=False):
 
 
 def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
-    """Get a list of dicts of the user names and the git url for all the forks.
-    """
+    """Get a list of dicts of the user names and the git url for all the forks."""
     api = "https://api.github.com"
     limit = 100
     client_id = "040e86e3feed633710a0"
