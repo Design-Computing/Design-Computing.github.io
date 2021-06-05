@@ -241,7 +241,7 @@ This is how I set up my workspace for doing this kind of work. To split the scre
 
 This is the _most_ important thing. Spending a long time doing the wrong thing is painful. _Thinking_ means discussing with your peers, drawing diagrams, closing your eyes and dancing out the steps. It's whatever helps you understand.
 
-Each week has a folder. It'll show up in the tree view on the left. We're in week 1, so look in the folder `week1`.
+Each week has a folder. It'll show up in the tree view on the left. We're in week 1, so look in the folder `set1`.
 
 We're interested in `exercise1.py` and `readme.md` I like to have them both open at the same time.
 
@@ -259,12 +259,12 @@ Now do some thinking.
 #### Test
 
 <div style="float: right; display: block; width: 40%; padding: 1em; border: 12px solid yellow; background: aliceblue; margin-left: 1em;">
-TIP: You can type a <code>../c</code> and then press [tab] and the terminal will _auto complete_ it to <code>../course/</code> then add a <code>w</code> and it'll finish that until the next unambiguous option: <code>../course/week</code>. If you keep going like this you can type all of that in just a few keystrokes. Learn how to do this, it's a superpower.
+TIP: You can type a <code>../c</code> and then press [tab] and the terminal will _auto complete_ it to <code>../course/</code> then add a <code>s</code> and it'll finish that until the next unambiguous option: <code>../course/set</code>. If you keep going like this you can type all of that in just a few keystrokes. Learn how to do this, it's a superpower.
 </div>
 
 In this course the tests are already written for you. They check if your code does what it's supposed to do. To run the tests, you write, at the terminal:
 
-> `python ../course/week1/tests.py`
+> `python ../course/set1/tests.py`
 
 Then press enter.
 
@@ -292,7 +292,7 @@ TIP: if you're on Windows, file paths have back slashes <code>\</code> but if yo
 
 Again, write, at the terminal:
 
-> `python ../course/week1/tests.py`
+> `python ../course/set1/tests.py`
 
 Then press enter.
 
@@ -350,7 +350,7 @@ I've you can get down with a bit of typing, I think it's _much_ better to type `
 
 Hopefully, for the last time, write, at the terminal:
 
-> `python ../course/week1/tests.py`
+> `python ../course/set1/tests.py`
 
 Then press enter.
 
@@ -394,7 +394,7 @@ You'll need to sign in, and then make a new trinket, using the _blocks_ option.
 
 - Make sure that you have your dev environment set up.
 
-- In the week1 folder, complete: `exercise1.py`
+- In the set1 folder, complete: `exercise1.py`
 
 - Write your journal in README.md
 
@@ -454,9 +454,9 @@ To open a folder in Mac VS Code, there isn't a separate menu option, you just cl
    - Type `python --version` it should say `Python 3.7.3` or at least `3.`.
    - If it does say that, then you are set!
 
-1. run your tests by opening the `me` folder in your mac terminal (the white one) and typing `python ../course/week1/tests.py` in the terminal.
+1. run your tests by opening the `me` folder in your mac terminal (the white one) and typing `python ../course/set1/tests.py` in the terminal.
 
-   If that doesn't work, try `python`**_`3`_**`../course/week1/tests.py` to call the tests explicitly with python 3
+   If that doesn't work, try `python`**_`3`_**`../course/set1/tests.py` to call the tests explicitly with python 3
 
 ### Why is this a problem anyway?
 
@@ -468,7 +468,7 @@ Macs come with python already, but it's 2.7, not 3.7. Going from 3.7 to 3.8 is a
 
 To get a good grasp of how to use version control in VS Code, [this is a pretty good place to start](https://code.visualstudio.com/docs/editor/versioncontrol).
 
-If your version control tab isn't showing a provider, check that you have your `Me` folder open.
+If your version control tab isn't showing a provider, check that you have your `me` folder open.
 
 ![highlighting the me title](../pictures/meFolderOpen.png)
 
