@@ -338,12 +338,12 @@ def log_progress(message, logfile_name):
 
 def get_readmes(row, output="mark"):
     """Get the text, or the mark, or both related to log books."""
-    intro = "TODO: Reflect on what you learned this week and what is still unclear."
+    intro = "TODO: Reflect on what you learned this set and what is still unclear."
     path = os.path.join(rootdir, row.owner)
     mark = 0
     all_readme = ""
     for i in range(1, 11):
-        p = os.path.join(path, f"week{i}", "readme.md")
+        p = os.path.join(path, f"set{i}", "readme.md")
         if os.path.isfile(p):
             try:
                 with open(p, "r") as f:
@@ -366,7 +366,7 @@ def get_readmes(row, output="mark"):
 
 def test_in_clean_environment(
     row: PandasSeries,
-    week_number: int,
+    set_number: int,
     timeout: int = 5,
     logfile_name: str = "log.txt",
     temp_file_path: str = "temp_results.json",
@@ -397,7 +397,7 @@ def test_in_clean_environment(
 
     python = sys.executable
     path_to_test_shim = get_safe_path("marking_and_admin", test_file_path)
-    path_to_tests = get_safe_path("..", "course", f"week{week_number}", "tests.py")
+    path_to_tests = get_safe_path("..", "course", f"set{set_number}", "tests.py")
     path_to_repo = get_safe_path(rootdir, row.owner)
 
     test_args = [python, path_to_test_shim, path_to_tests, path_to_repo, row.owner]
@@ -417,7 +417,7 @@ def test_in_clean_environment(
             "name": row.owner,
         }  # the comma messes with the csv
 
-        log_progress(f" bad {e} w{week_number}\n", logfile_name)
+        log_progress(f" bad {e} w{set_number}\n", logfile_name)
 
     elapsed_time = time.time() - start_time
     results_dict["time"] = elapsed_time
@@ -437,8 +437,8 @@ def prepare_log(logfile_name, firstLine="here we go:\n"):
     completed_students_list.close()
 
 
-def mark_work(dirList, week_number, root_dir, dfPlease=True, timeout=5):
-    """Mark the week's exercises."""
+def mark_work(dirList, set_number, root_dir, dfPlease=True, timeout=5):
+    """Mark the set's exercises."""
     logfile_name = "temp_completion_log"
     prepare_log(logfile_name)
     r = len(dirList)  # for repeat count
@@ -448,14 +448,14 @@ def mark_work(dirList, week_number, root_dir, dfPlease=True, timeout=5):
             test_in_clean_environment,  # Function name
             dirList,  # student_repo
             repeat(root_dir, r),  # root_dir
-            repeat(week_number, r),  # week_number
+            repeat(set_number, r),  # set_number
             repeat(logfile_name, r),  # logfile_name
             repeat(timeout, r),  # timeout
         )
     )
 
     resultsDF = pd.DataFrame(results)
-    csv_path = f"csv/week{week_number}marks.csv"
+    csv_path = f"csv/set{set_number}marks.csv"
     resultsDF.to_csv(os.path.join(CWD, csv_path), index=False)
     for _ in [1, 2, 3]:
         # this is pretty dirty, but it gets tricky when you have
@@ -503,48 +503,63 @@ def get_last_commit(row: PandasSeries) -> str:
     return d
 
 
-if not os.path.exists(rootdir):
-    os.makedirs(rootdir)
-print("listdir(rootdir):\n", os.listdir(rootdir))
+def do_the_marking():
+    start_time = time.time()
 
-start_time = time.time()
+    if not os.path.exists(rootdir):
+        os.makedirs(rootdir)
+    print("listdir(rootdir):\n", os.listdir(rootdir))
 
-# TODO: instead of loading the pickle, load the marks.csv file so that
-# the dataframe is preloaded with values. Then it doesn't need to mark students
-# that haven't updated their work.
-students = None
-if os.path.exists("student.pickle"):
-    with open("student.pickle", "rb") as sp:
-        students = pickle.load(sp)
-else:
-    students = get_forks()
-    with open("student.pickle", "wb") as sp:
-        pickle.dump(students, sp)
+    # TODO: instead of loading the pickle, load the marks.csv file so that
+    # the dataframe is preloaded with values. Then it doesn't need to mark students
+    # that haven't updated their work.
+    students = None
+    if os.path.exists("student.pickle"):
+        with open("student.pickle", "rb") as sp:
+            students = pickle.load(sp)
+    else:
+        students = get_forks()
+        with open("student.pickle", "wb") as sp:
+            pickle.dump(students, sp)
 
-mark_sheet = pd.DataFrame(students)
+    mark_sheet = pd.DataFrame(students)
+
+    deets = pd.DataFrame(list(mark_sheet.apply(get_details, axis=1)))
+    mark_sheet = mark_sheet.merge(deets, on="owner")
+
+    mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
+    mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
+
+    mark_sheet["set1"] = mark_sheet.apply(
+        # args are (weekNumber, TimeoutInSeconds)
+        test_in_clean_environment,
+        args=(1, 10),
+        axis=1,
+    )
+    # mark_sheet["set2"] = mark_sheet.apply(
+    #     test_in_clean_environment, args=(2, 10), axis=1
+    # )
+    # mark_sheet["set3"] = mark_sheet.apply(
+    #     test_in_clean_environment, args=(3, 25), axis=1
+    # )
+    # mark_sheet["set4"] = mark_sheet.apply(
+    #     test_in_clean_environment, args=(4, 45), axis=1
+    # )
+    # mark_sheet["set5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), axis=1)
+    # mark_sheet["exam"]  = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
+
+    # mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
+    # mark_sheet["readme_text"] = mark_sheet.apply(get_readmes, args=("textList",), axis=1)
+
+    mark_sheet.to_csv("marks.csv")
+
+    data = [list(x) for x in mark_sheet.to_numpy()]
+    service = build_spreadsheet_service()
+    write(service, data=data)
+
+    print("that took", (time.time() - start_time) / 60, "minutes")
 
 
-deets = pd.DataFrame(list(mark_sheet.apply(get_details, axis=1)))
-mark_sheet = mark_sheet.merge(deets, on="owner")
-
-mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
-mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
-
-mark_sheet["week1"] = mark_sheet.apply(test_in_clean_environment, args=(1, 5), axis=1)
-mark_sheet["week2"] = mark_sheet.apply(test_in_clean_environment, args=(2, 5), axis=1)
-mark_sheet["week3"] = mark_sheet.apply(test_in_clean_environment, args=(3, 25), axis=1)
-mark_sheet["week4"] = mark_sheet.apply(test_in_clean_environment, args=(4, 45), axis=1)
-# mark_sheet["week5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), axis=1)
-# mark_sheet["exam"]  = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
-
-# mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
-# mark_sheet["readme_text"] = mark_sheet.apply(get_readmes, args=("textList",), axis=1)
-
-mark_sheet.to_csv("marks.csv")
-
-
-data = [list(x) for x in mark_sheet.to_numpy()]
-service = build_spreadsheet_service()
-write(service, data=data)
-
-print("that took", (time.time() - start_time) / 60, "minutes")
+if __name__ == "__main__":
+    do_the_marking()
+    # build_spreadsheet_service()
