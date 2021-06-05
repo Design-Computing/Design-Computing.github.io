@@ -20,7 +20,5 @@ The file `marking_puller_2.py` is the entry point.
 
 TODO:
 
-- contact students who are missing data from their about me files
-- check test, why are there so many bad ones
 - congratulate everyone who has a full set of passing tests
 - show Alex how to do a pull
