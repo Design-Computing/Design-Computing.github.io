@@ -30,6 +30,7 @@ from googleapiclient.discovery import build
 PandasDataFrame = TypeVar("pandas.core.frame.DataFrame")
 PandasSeries = TypeVar("pandas.core.series.Series")
 
+THIS_YEAR = "2021"
 rootdir = "../StudentRepos"
 CHATTY = False
 
@@ -189,7 +190,7 @@ def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
         repos = [
             {"owner": f["owner"]["login"], "git_url": f["git_url"]}
             for f in forks
-            if f["created_at"][:4] == "2020"  # filter for this year's repos
+            if f["created_at"][:4] == THIS_YEAR  # filter for this year's repos
         ]
         return repos
     else:
