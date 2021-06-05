@@ -184,7 +184,7 @@ def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
     )
     print("get forks from:\n", url)
     r = requests.get(url)
-    if r.status_code is 200:
+    if r.status_code == 200:
         forks = r.json()
         repos = [
             {"owner": f["owner"]["login"], "git_url": f["git_url"]}
