@@ -58,3 +58,6 @@ print("\n\n\n\n", "in the shim", TEST_PATH, REPO_PATH, OWNER, "\n", sep="\n")
 with open("temp_results.json", "w") as temp_results:
     results = results_as_json(REPO_PATH)
     temp_results.write(results)
+    sleep(0.50)
+
+sleep(0.50)
