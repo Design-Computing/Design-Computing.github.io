@@ -139,7 +139,7 @@ def process_for_notes(data):
     for i, row in enumerate(data):
         for j, item in enumerate(row):
             if type(item) is dict:
-                comments.append(set_comment(j, i, json.dumps(item)))
+                comments.append(set_comment(j, i, json.dumps(item, indent=2)))
     return comments
 
 
