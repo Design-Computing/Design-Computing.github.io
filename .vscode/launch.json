@@ -10,7 +10,7 @@
       "request": "launch",
       "program": "${file}",
       "console": "integratedTerminal",
-      "env": { "PYDEVD_WARN_EVALUATION_TIMEOUT": "500" }
+      "env": { "PYDEVD_WARN_EVALUATION_TIMEOUT": "25000" }
     },
     {
       "type": "pwa-chrome",
