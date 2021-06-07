@@ -537,20 +537,41 @@ def do_the_marking():
         args=(1, 10),
         axis=1,
     )
-    # mark_sheet["set2"] = mark_sheet.apply(
-    #     test_in_clean_environment, args=(2, 10), axis=1
-    # )
-    # mark_sheet["set3"] = mark_sheet.apply(
-    #     test_in_clean_environment, args=(3, 25), axis=1
-    # )
-    # mark_sheet["set4"] = mark_sheet.apply(
-    #     test_in_clean_environment, args=(4, 45), axis=1
-    # )
-    # mark_sheet["set5"] = mark_sheet.apply(test_in_clean_environment, args=(5, 45), axis=1)
-    # mark_sheet["exam"]  = mark_sheet.apply(test_in_clean_environment, args=(8, 45), axis=1)
+    if False:
+        mark_sheet["set2"] = mark_sheet.apply(
+            test_in_clean_environment, args=(2, 10), axis=1
+        )
+    else:
+        mark_sheet["set2"] = 0
+    if False:
+        mark_sheet["set3"] = mark_sheet.apply(
+            test_in_clean_environment, args=(3, 25), axis=1
+        )
+    else:
+        mark_sheet["set3"] = 0
+    if False:
+        mark_sheet["set4"] = mark_sheet.apply(
+            test_in_clean_environment, args=(4, 45), axis=1
+        )
+    else:
+        mark_sheet["set4"] = 0
+    if False:
+        mark_sheet["set5"] = mark_sheet.apply(
+            test_in_clean_environment, args=(5, 45), axis=1
+        )
+    else:
+        mark_sheet["set5"] = 0
+    if False:
+        mark_sheet["exam"] = mark_sheet.apply(
+            test_in_clean_environment, args=(8, 45), axis=1
+        )
+    else:
+        mark_sheet["exam"] = 0
 
-    # mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
-    # mark_sheet["readme_text"] = mark_sheet.apply(get_readmes, args=("textList",), axis=1)
+    mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
+    mark_sheet["readme_text"] = mark_sheet.apply(
+        get_readmes, args=("textList",), axis=1
+    )
 
     mark_sheet.to_csv("marks.csv")
 
