@@ -12,7 +12,7 @@
 
 If you didn't get a suite of beautiful green ticks last week, then you need to talk to a tutor as soon as you can.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=1583654128&amp;format=interactive"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=1583654128&amp;format=interactive" style="width: 100%; height: 85vh;"></iframe>
 
 This chart will show how many exercises you've got the tests passing for. If you're not on this list, then come and see me, if your name is in as a GitHub username and not a real name, then it's because your `aboutMe.yml` isn't fully filled in.
 
