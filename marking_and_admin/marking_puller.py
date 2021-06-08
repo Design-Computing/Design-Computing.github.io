@@ -484,11 +484,9 @@ def get_details(row: PandasSeries) -> dict:
         details = yaml.load(details, yaml.RoundTripLoader)
         details["error"] = False
         details["owner"] = row.owner
-        details["contactEmail"] = (
-            details["contactEmail"]["firstBit"]
-            + "@"
-            + details["contactEmail"]["otherBit"]
-        )
+        details[
+            "contactEmail"
+        ] = f"""{details["contactEmail"]["firstBit"]}@{details["contactEmail"]["otherBit"]}"""
         # if details["mediumUsername"][:4] != "^AT^":
         #     details["mediumUsername"] = "^AT^" + details["mediumUsername"]
         return dict(details)
