@@ -42,7 +42,23 @@ The `contactEmail:` line is blank because it's before an indented block. That'll
 
 Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/).
 
-#### Mac person?
+I've added a new test to check if your picture is updated. To get it, you need to open your me repo as if you're doing normal work (in `me`), then in the terminal:
+
+```
+cd ../course
+git pull
+pip install -r requirements.txt
+cd ../me
+python ../course/set1/tests.py
+```
+
+you should be able to paste that as a block and the terminal will just figure it out.
+
+### `Readme.md`/Lab book
+
+Each set/week has a lab book file already made for you. All you need to do is fill it in. It already has `w1: TODO: Reflect on what you learned this week and what is still unclear.` in it, you can delete that.
+
+Then you can write in the things you've tried and what happened. The instructions on how you use the debugger, or how to open a folder, or the nuances of a particular algorithm. Or just how you feel today!
 
 We feel your pain, as far as I can tell, [these tips will fix you up](https://design-computing.github.io/md/week1#are-you-a-mac-user).
 
