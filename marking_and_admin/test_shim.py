@@ -53,7 +53,7 @@ OWNER = sys.argv[3]
 # REPO_PATH = "C:\\Users\\ben\\Documents\\UNSW\\1161\\StudentRepos\\XiaocanLin"
 # OWNER = "XiaocanLin"
 
-print("\n\n\n\n", "in the shim", TEST_PATH, REPO_PATH, OWNER, "\n", sep="\n")
+print("\n\n", "in the shim", TEST_PATH, REPO_PATH, OWNER, "\n", sep="\n")
 
 with open("temp_results.json", "w") as temp_results:
     results = results_as_json(REPO_PATH)
