@@ -60,9 +60,9 @@ Each set/week has a lab book file already made for you. All you need to do is fi
 
 Then you can write in the things you've tried and what happened. The instructions on how you use the debugger, or how to open a folder, or the nuances of a particular algorithm. Or just how you feel today!
 
-We feel your pain, as far as I can tell, [these tips will fix you up](https://design-computing.github.io/md/week1#are-you-a-mac-user).
+## Lecture
 
-There might be a more elegant fix, but at least to begin with, it should fix the biggest problems. If you've tried all of that and you're still stuck, post on Teams.
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEJTgnVfMDxqhq_GLux0lw4X3rWLM3cZk19otcxFgimTomh7dTq0Aq-D8aQuKqzaUMcE_01_ua-xpI/pub?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # How to do the exercises: vocabulary and concepts
 
@@ -73,7 +73,7 @@ Each file starts with a section of writing, wrapped in """triple quotes""". It t
 
 The command to run the tests this week is:
 
-python ../course/week2/tests.py
+python ../course/set2/tests.py
 
 
 In each function, where you see:
@@ -157,7 +157,7 @@ Functions can have any number of arguments, including zero.
 
 ### `"""docstring"""`
 
-The text in `"""triple quotes"""` is called the docstring; it's important in python functions because it explains to auto-documenters what your function does, and it also shows as context help in your editor.
+The text in `"""triple quotes"""` is called the docstring; it's important in python functions because it explains what the function does, in human-readable language. to auto-documenters what your function does, and it also shows as context help in your editor.
 
 ### Code
 
@@ -174,10 +174,6 @@ half_a_dozen = double(3)
 `half_a_dozen` will end up as `6` because `double` has `return`ed that to it.
 
 ---
-
-## Lecture
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEJTgnVfMDxqhq_GLux0lw4X3rWLM3cZk19otcxFgimTomh7dTq0Aq-D8aQuKqzaUMcE_01_ua-xpI/pub?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Engineering Flowchart
 
