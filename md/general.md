@@ -12,7 +12,7 @@ In the same way that being able to hold a pen doesn't make you a writer, being a
 
 You'll learn these ideas and skills two sections.
 
-1. The first will be becoming proficient in the [Python](<https://en.wikipedia.org/wiki/Python_(programming_language)>).
+1. The first will be becoming proficient in [Python](<https://en.wikipedia.org/wiki/Python_(programming_language)>).
 1. The second will be the Open Data Project: a data exploration, analysis and story telling task.
 
 ## Course Communication
