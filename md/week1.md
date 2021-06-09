@@ -509,7 +509,7 @@ To update the course to the latest version:
 ```
 cd ..\course
 git pull
-pip install -r requirements.txt
+pip install -r .\requirements.txt
 cd ..\me
 python ..\course\set1\tests.py
 ```
