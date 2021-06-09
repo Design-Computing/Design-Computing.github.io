@@ -15,9 +15,7 @@ class Person extends React.Component {
 
   componentDidMount() {
     // GET /repos/:owner/:repo/contents/:path
-    const url = `https://api.github.com/repos/${
-      this.props.forkData.login
-    }/me/contents/aboutMe.yml`;
+    const url = `https://api.github.com/repos/${this.props.forkData.login}/me/contents/aboutMe.yml`;
     fetch(url, {
       method: "GET",
       headers: {
@@ -81,9 +79,7 @@ class Person extends React.Component {
           <div className="person">
             <img
               alt={`${this.state.name}'s face`}
-              src={`https://avatars.githubusercontent.com/${
-                this.props.forkData.login
-              }`}
+              src={`https://avatars.githubusercontent.com/${this.props.forkData.login}`}
             />
             <div className="info">{this.state.name ? goodInfo : badInfo}</div>
           </div>
