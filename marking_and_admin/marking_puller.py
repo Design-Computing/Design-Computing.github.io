@@ -347,7 +347,7 @@ def get_readmes(row, output="mark"):
         p = os.path.join(path, f"set{i}", "readme.md")
         if os.path.isfile(p):
             try:
-                with open(p, "r") as f:
+                with open(p, "r", encoding="utf-8", errors="ignore") as f:
                     contents = f.read()
                     new = contents.replace(intro, "").strip()
                     # print(i,"|", new, "|", len(new))
@@ -407,7 +407,9 @@ def test_in_clean_environment(
         RunCmd(test_args, timeout).Run()  # this is unessarily complicated
 
         # full_path = os.path.join(LOCAL, temp_file_path)
-        with open(temp_file_path, "r") as temp_results:
+        with open(
+            temp_file_path, "r", encoding="utf-8", errors="ignore"
+        ) as temp_results:
             contents = temp_results.read()
             results_dict = json.loads(contents)
             results_dict["bigerror"] = ":)"
