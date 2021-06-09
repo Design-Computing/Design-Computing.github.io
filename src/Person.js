@@ -53,14 +53,14 @@ class Person extends React.Component {
   render() {
     const goodInfo = (
       <div>
+        <p>{this.state.studentNumber}</p>
+        <p>{this.state.officialEmail}</p>
+        <p>{this.state.contactEmail}</p>
         <h1>
           <a href={this.props.forkData.html_url}>
             {this.state.name || this.props.forkData.html_url}
           </a>
         </h1>
-        <p>{this.state.studentNumber}</p>
-        <p>{this.state.officialEmail}</p>
-        <p>{this.state.contactEmail}</p>
       </div>
     );
     const badInfo = (

@@ -25,6 +25,13 @@
   position: absolute;
   width: calc(100% - (var(--edge) * 2));
 }
+.person .info p,
+.person .info h1 {
+  margin: 0;
+}
+.person .info p {
+  font-size: 70%;
+}
 
 .person img {
   width: 100%;
