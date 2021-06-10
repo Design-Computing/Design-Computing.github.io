@@ -252,7 +252,7 @@ half_a_dozen = double(3)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9_pcdGOyZi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[VS Code shortcuts pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+Here's the [VS Code shortcuts pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) for Windows. If you're serious about being hardcore, print it out on an A3 page and put it up above your screen.
 
 ## Abstraction
 
@@ -284,7 +284,7 @@ In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is
 
    1. [Codecademy: Learn Python 3](https://www.codecademy.com/learn/learn-python-3). This is paid content, but you can do it on a free trial. If you decide to stay, students get 35% off. [Learn python 2](https://www.codecademy.com/learn/learn-python) (This is python 2 it's free, but the content is basically the same.)
 
-   These will give you different perspectives on this python stuff. The more times you cover the material, the better it'll bed down in your brain.
+   These will give you different perspectives on this python stuff. The more times you cover the material, the better it'll bed down in your brain. Each person has different learning styles, and the more times you cover the material from different perspectives, the more robustly it'll stick in your brain.
 
 1. Optional: Read _[The Oregon Trail Game: Crossing Rivers](http://www.died-of-dysentery.com/stories/crossing-rivers.html)_ and see if you can write the flow control (`if`, `elif` and `else`) statements that would give you the results in this image: ![](http://www.died-of-dysentery.com/images/chap13-doc-ford-algorithm.png). It's not going to be tested, it's more about stretching your thinking process.
 
@@ -304,13 +304,15 @@ These aren't a part of your marks, but they'll give you a sense of the culture o
 
 # The answers to this week's exercises
 
-I made these videos for Atom, which is the editor we used before we switched to VS Code, but the ideas are the same, it just looks different.
+I made these videos for Atom, which is the editor we used before we switched to VS Code, but the ideas are the same, but it looks different.
 
 The way of solving these problems is not _the_ correct way, it's _a_ correct way.
 
 Don't mindlessly copy the results of these, think about what I'm doing, and why. For example, if you watch the first video, don't play along and roll straight into the second, see if you can use what you've learned to figure out the next problem _before_ watching the next video.
 
 The aim here is for you to learn. It's pretty easy to cheat in this course and get a high mark, but that'll torpedo your chances of getting the base you need to succeed in future courses. You're here to _learn_, marks are there to keep your parents happy.
+
+P.S. one of these videos has a mistake in it. I'll know if you're copying without thinking because that mistake will show up in your code. It's simple to avoid if you're paying attention.
 
 <iframe height="400" src="https://www.youtube-nocookie.com/embed/uEf4zcsdpek?rel=0" frameborder="0" allowfullscreen>Should be a video here</iframe>
 
