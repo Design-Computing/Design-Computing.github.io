@@ -20,6 +20,22 @@ This chart will show how many exercises you've got the tests passing for. If you
 
 You will need to hover for all the names because embedded charts are annoying.
 
+### Updating the tests
+
+As we go through, there are new cases that we need to test for. For example, at the moment you can pass the lab book test by deleting everything in the `readme.md` file and saving it. It's not checking for empty files, only that you've changed the file. _However_ that won't always be the case, we'll update the tests when we find new reasons to. So what does this mean to you? Well, there's only one set of tests, the repo that holds your tests is the same one that holds my set. So if you want to make sure you're using the same tests as I am, you need to pull them down sometimes.
+
+Assuming that you're in the `me` directory, to update the course to the latest version, you can copy and paste these commands into your terminal:
+
+```powershell
+cd ..\course                       # changes directory to the course directory
+git pull                           # pulls the latest code down
+pip install -r .\requirements.txt  # Installs the latest python modules
+cd ..\me                           # puts you back into your me directory
+python ..\course\set1\tests.py     # runs the tests to make sure you still pass everything
+```
+
+This week's change checks that you've [changed your profile picture on GitHub](https://github.com/settings/profile).
+
 ### `Your Name`
 
 Some people are still called _Your Name_. Let's fix that first!
