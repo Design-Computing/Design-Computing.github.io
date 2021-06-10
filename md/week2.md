@@ -10,15 +10,15 @@
 
 # Issues:
 
-If you didn't get a suite of beautiful green ticks last week, then you need to talk to a tutor as soon as you can.
+If you didn't get a suite of beautiful green ticks last week, then you need to talk to a tutor as soon as you can. That isn't many of you, so we're looking good for this week!
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=1583654128&amp;format=interactive" style="width: 610px; height: 380px; float: right; margin-left: 2em;"></iframe>
 
 This chart will show how many exercises you've got the tests passing for. If you're not on this list, then come and see me, if your name is in as a GitHub username and not a real name, then it's because your `aboutMe.yml` isn't fully filled in.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=1583654128&amp;format=interactive" style="width: 610px; height: 380px;"></iframe>
+You will need to hover for all the names because embedded charts are annoying.
 
-You will need to hover for all the names because embedded charts are a bit annoying.
-
-### _Your Name_
+### `Your Name`
 
 Some people are still called _Your Name_. Let's fix that first!
 
@@ -42,25 +42,50 @@ The `contactEmail:` line is blank because it's before an indented block. That'll
 
 Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/).
 
-I've added a new test to check if your picture is updated. To get it, you need to open your me repo as if you're doing normal work (in `me`), then in the terminal:
+I've added a new test to check if you've uploaded a picture to your GitHub profile. To get it, you need to open your me repo as if you're doing normal work (in `me`), then in the terminal:
 
 ```
-cd ../course
+cd ..\course
 git pull
-pip install -r requirements.txt
-cd ../me
-python ../course/set1/tests.py
+pip install -r .\requirements.txt
+cd ..\me
+python ..\course\set1\tests.py
 ```
 
-you should be able to paste that as a block and the terminal will just figure it out.
+you should be able to paste that as a block and the terminal will just figure it out. (flip the \ to a / if you're on a mac.)
+
+**One last tip**: Most of you have put your student number in as your email address. You also have the email address `firstname.lastname@unsw.edu.au` which is much nicer. You can find out what yours is by looking in your Outlook. It's not guaranteed, for example, Bronte Doherty isn't `b.doherty@unsw.edu.au` because that's me, ha, suck it Bronte! Feel free to update your about me whenever you like.
 
 ### `Readme.md`/Lab book
 
-Each set/week has a lab book file already made for you. All you need to do is fill it in. It already has `w1: TODO: Reflect on what you learned this week and what is still unclear.` in it, you can delete that.
+Each set/week has a lab book file already made for you. All you need to do is fill it in. It already has `TODO: Reflect on what you learned this week and what is still unclear.` in it, delete that and start writing.
 
-Then you can write in the things you've tried and what happened. The instructions on how you use the debugger, or how to open a folder, or the nuances of a particular algorithm. Or just how you feel today!
+Then you can write in the things you've tried and what happened. The instructions on how you use the debugger, or how to open a folder, or the nuances of a particular algorithm. Or how you feel today!
 
 ## Lecture
+
+Let's learn some python!
+
+### Python Syntax
+
+### Getting stuck into the exercises
+
+### Tests
+
+### Git and GitHub
+
+### How to ask questions
+
+### Editor Fu
+
+[VS Code shortcuts pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
+### Abstraction
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DnjyiTL_oxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### The slides
+
+You can flick through these at your own speed:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEJTgnVfMDxqhq_GLux0lw4X3rWLM3cZk19otcxFgimTomh7dTq0Aq-D8aQuKqzaUMcE_01_ua-xpI/pub?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
