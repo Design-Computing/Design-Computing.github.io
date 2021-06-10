@@ -8,6 +8,8 @@
 
 - How to ask questions and the three step process to general problem solving.
 
+Also, I've started a list of [useful commands](useful_commands.md). If you want to add to it, you can make a pull request, or ask me to add to the list.
+
 # Issues:
 
 If you didn't get a suite of beautiful green ticks last week, then you need to talk to a tutor as soon as you can. That isn't many of you, so we're looking good for this week!
@@ -38,7 +40,7 @@ stackOverflowLink: https://stackoverflow.com/users/1835727/ben
 github: notionparallax
 ```
 
-The `contactEmail:` line is blank because it's before an indented block. That'll all make sense by the end of this week, but for now, go with it. (if you want to read more about YAML, [here's a link](https://en.wikipedia.org/wiki/YAML))
+The `contactEmail:` line is blank because it's before an indented block. If you want to read more about YAML, [here's a link](https://en.wikipedia.org/wiki/YAML).
 
 Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/).
 
