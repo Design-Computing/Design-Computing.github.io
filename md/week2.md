@@ -70,6 +70,8 @@ Let's learn some python!
 
 ### Getting stuck into the exercises
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8Nx-r5Vebys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Tests
 
 ### Git and GitHub
