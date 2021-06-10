@@ -127,7 +127,7 @@ Test yourself in an interactive session; how would you get `'Delicious'` out of 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8Nx-r5Vebys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# How to do the exercises: vocabulary and concepts
+### How to do the exercises: vocabulary and concepts
 
 Each file starts with a section of writing, wrapped in """triple quotes""". It tells you what the we want you to do. There's another one in each function that is more specific.
 
