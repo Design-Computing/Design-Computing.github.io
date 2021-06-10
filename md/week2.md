@@ -68,11 +68,15 @@ Let's learn some python!
 
 ### Python Syntax
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wRLYYTGMXAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Getting stuck into the exercises
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8Nx-r5Vebys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Tests
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6NCj4_tcroA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Git and GitHub
 
@@ -91,6 +95,7 @@ Let's learn some python!
 ### Abstraction
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DnjyiTL_oxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### The slides
 
 You can flick through these at your own speed:
