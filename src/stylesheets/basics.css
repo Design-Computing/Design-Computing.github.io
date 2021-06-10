@@ -20,7 +20,7 @@
   --edge: 0.5em;
 
   --tile-dim: calc(98vw / 6);
-  --tile-dim-min: 8em;
+  --tile-dim-min: 7em;
 }
 
 body,
