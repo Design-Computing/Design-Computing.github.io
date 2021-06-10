@@ -531,42 +531,12 @@ def do_the_marking():
     mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
     mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
 
-    mark_sheet["set1"] = mark_sheet.apply(
-        # args are (weekNumber, TimeoutInSeconds)
-        test_in_clean_environment,
-        args=(1, 10),
-        axis=1,
-    )
-    if False:
-        mark_sheet["set2"] = mark_sheet.apply(
-            test_in_clean_environment, args=(2, 10), axis=1
-        )
-    else:
-        mark_sheet["set2"] = 0
-    if False:
-        mark_sheet["set3"] = mark_sheet.apply(
-            test_in_clean_environment, args=(3, 25), axis=1
-        )
-    else:
-        mark_sheet["set3"] = 0
-    if False:
-        mark_sheet["set4"] = mark_sheet.apply(
-            test_in_clean_environment, args=(4, 45), axis=1
-        )
-    else:
-        mark_sheet["set4"] = 0
-    if False:
-        mark_sheet["set5"] = mark_sheet.apply(
-            test_in_clean_environment, args=(5, 45), axis=1
-        )
-    else:
-        mark_sheet["set5"] = 0
-    if False:
-        mark_sheet["exam"] = mark_sheet.apply(
-            test_in_clean_environment, args=(8, 45), axis=1
-        )
-    else:
-        mark_sheet["exam"] = 0
+    mark_sheet["set1"] = mark_week(mark_sheet, set_number=1, timeout=10, active=True)
+    mark_sheet["set2"] = mark_week(mark_sheet, set_number=2, timeout=10, active=False)
+    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=False)
+    mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=False)
+    mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=45, active=False)
+    mark_sheet["exam"] = mark_week(mark_sheet, set_number=8, timeout=45, active=False)
 
     mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
     mark_sheet["readme_text"] = mark_sheet.apply(
@@ -580,6 +550,28 @@ def do_the_marking():
     write(service, data=data)
 
     print("that took", (time.time() - start_time) / 60, "minutes")
+
+
+def mark_week(mark_sheet, set_number=1, timeout=10, active=True):
+    """Mark a single week for all students.
+
+    Args:
+        mark_sheet (Dataframe): A dataframe that describes who's going to get marked
+        set_number (int, optional): The number of the set that we're marking. Defaults to 1.
+        timeout (int, optional): number of seconds to try for before we cut this student off. Defaults to 10.
+        active (bool, optional): Is this week being marked yet?. Defaults to True.
+
+    Returns:
+        Series: A series of the marks, or if not active yet, 0
+    """
+    if active:
+        return mark_sheet.apply(
+            test_in_clean_environment,
+            args=(set_number, timeout),
+            axis=1,
+        )
+    else:
+        return 0
 
 
 if __name__ == "__main__":
