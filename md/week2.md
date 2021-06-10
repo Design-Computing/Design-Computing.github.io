@@ -80,6 +80,8 @@ Let's learn some python!
 
 ### How to ask questions
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/T1_W9sPKpgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Editor Fu
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9_pcdGOyZi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
