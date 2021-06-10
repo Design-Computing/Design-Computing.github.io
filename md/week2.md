@@ -34,6 +34,8 @@ cd ..\me                           # puts you back into your me directory
 python ..\course\set1\tests.py     # runs the tests to make sure you still pass everything
 ```
 
+You should be able to paste that as a block and the terminal will figure it out. (flip the \ to a / if you're on a mac.)
+
 This week's change checks that you've [changed your profile picture on GitHub](https://github.com/settings/profile).
 
 ### `Your Name`
@@ -60,18 +62,6 @@ The `contactEmail:` line is blank because it's before an indented block. If you 
 
 Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/).
 
-I've added a new test to check if you've uploaded a picture to your GitHub profile. To get it, you need to open your me repo as if you're doing normal work (in `me`), then in the terminal:
-
-```
-cd ..\course
-git pull
-pip install -r .\requirements.txt
-cd ..\me
-python ..\course\set1\tests.py
-```
-
-you should be able to paste that as a block and the terminal will just figure it out. (flip the \ to a / if you're on a mac.)
-
 **One last tip**: Most of you have put your student number in as your email address. You also have the email address `firstname.lastname@unsw.edu.au` which is much nicer. You can find out what yours is by looking in your Outlook. It's not guaranteed, for example, Bronte Doherty isn't `b.doherty@unsw.edu.au` because that's me, ha, suck it Bronte! Feel free to update your about me whenever you like.
 
 ### `Readme.md`/Lab book
@@ -80,45 +70,62 @@ Each set/week has a lab book file already made for you. All you need to do is fi
 
 Then you can write in the things you've tried and what happened. The instructions on how you use the debugger, or how to open a folder, or the nuances of a particular algorithm. Or how you feel today!
 
-## Lecture
+# Lecture&mdash;Let's learn some python!
 
-Let's learn some python!
+You should probably watch these in the order I've posted them, but I'm not your dad, you do whatever you want.
 
-### Python Syntax
+## Python Syntax
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wRLYYTGMXAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Getting stuck into the exercises
+### Brackets! `{ } ( ) [ ]` 🦕🌿 🤜🤛 🤯
+
+There are lots of brackets in programming. They all do different things, and you're going to have to learn them. Luckily there are only a few to get your head around.
+
+| Type  | Names                           | Use                                                                                   |
+| ----- | ------------------------------- | ------------------------------------------------------------------------------------- |
+| `( )` | **Round brackets**, parentheses | Calling functions, defining tupels, wrapping line breaks, defining function arguments |
+| `[ ]` | **Square brackets**, staples    | defining lists, indexing into all collections                                         |
+| `{ }` | **Curly braces**, crab claws 🦀 | defining dictionaries, defining sets                                                  |
+
+So, if we take the example from the lecture, and extend it a bit:
+
+```python
+my_List = [1, 2, 3, 4, 5]
+my_dict = {"name": "Cake", "taste": "Delicious"}
+my_tupel = (9, 8, "hello")
+another_list = [my_dict, my_List, my_tupel]
+```
+
+Then if we print `another_list`, we get:
+
+```python
+print(another_list)
+[
+  {'taste': 'Delicious', 'name': 'Cake'},
+  [1, 2, 3, 4, 5],
+  (9, 8, "hello")
+]
+```
+
+It's all very well making heterogeneous collections, but how do we get elements out of them? That's where indexing comes in handy.
+
+All of the following examples are going to get things out of `another_list`:
+
+| Target            | Code                      | Comment                                                                                                                |
+| ----------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `[1, 2, 3, 4, 5]` | `another_list[1]`         | The whole list is the 1th thing in `another_list`.                                                                     |
+| `5`               | `another_list[1][4]`      | We can stack indexing to get deeper into nested collections.                                                           |
+| `"Cake"`          | `another_list[0]["name"]` | We use an integer to get the first item out of a list, then a string key to get a particular item out of a dictionary. |
+| `"hello"`         | `another_list[1][2]`      | You use integer indexing to get elements out of tupels too.                                                            |
+
+This is technically easy, but tricksy, it takes a while to remember the difference between integer and string indices for different collections, and 0 indexing still trips me up sometimes. Be patient, you'll get there.
+
+Test yourself in an interactive session; how would you get `'Delicious'` out of `another_list`?
+
+## Getting stuck into the exercises
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8Nx-r5Vebys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Tests
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6NCj4_tcroA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Git and GitHub
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lTggFrwhL_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### How to ask questions
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/T1_W9sPKpgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Editor Fu
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9_pcdGOyZi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-[VS Code shortcuts pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-
-### Abstraction
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DnjyiTL_oxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### The slides
-
-You can flick through these at your own speed:
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEJTgnVfMDxqhq_GLux0lw4X3rWLM3cZk19otcxFgimTomh7dTq0Aq-D8aQuKqzaUMcE_01_ua-xpI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # How to do the exercises: vocabulary and concepts
 
@@ -228,6 +235,34 @@ half_a_dozen = double(3)
 ```
 
 `half_a_dozen` will end up as `6` because `double` has `return`ed that to it.
+
+## Tests
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6NCj4_tcroA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Git and GitHub
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lTggFrwhL_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## How to ask questions
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/T1_W9sPKpgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Editor Fu
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9_pcdGOyZi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[VS Code shortcuts pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
+## Abstraction
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DnjyiTL_oxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## The slides
+
+You can flick through these at your own speed:
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEJTgnVfMDxqhq_GLux0lw4X3rWLM3cZk19otcxFgimTomh7dTq0Aq-D8aQuKqzaUMcE_01_ua-xpI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ---
 
