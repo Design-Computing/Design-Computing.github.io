@@ -504,6 +504,28 @@ def get_last_commit(row: PandasSeries) -> str:
     return d
 
 
+def mark_week(mark_sheet, set_number=1, timeout=10, active=True):
+    """Mark a single week for all students.
+
+    Args:
+        mark_sheet (Dataframe): A dataframe that describes who's going to get marked
+        set_number (int, optional): The number of the set that we're marking. Defaults to 1.
+        timeout (int, optional): number of seconds to try for before we cut this student off. Defaults to 10.
+        active (bool, optional): Is this week being marked yet?. Defaults to True.
+
+    Returns:
+        Series: A series of the marks, or if not active yet, 0
+    """
+    if active:
+        return mark_sheet.apply(
+            test_in_clean_environment,
+            args=(set_number, timeout),
+            axis=1,
+        )
+    else:
+        return 0
+
+
 def do_the_marking():
     start_time = time.time()
 
@@ -550,28 +572,6 @@ def do_the_marking():
     write(service, data=data)
 
     print("that took", (time.time() - start_time) / 60, "minutes")
-
-
-def mark_week(mark_sheet, set_number=1, timeout=10, active=True):
-    """Mark a single week for all students.
-
-    Args:
-        mark_sheet (Dataframe): A dataframe that describes who's going to get marked
-        set_number (int, optional): The number of the set that we're marking. Defaults to 1.
-        timeout (int, optional): number of seconds to try for before we cut this student off. Defaults to 10.
-        active (bool, optional): Is this week being marked yet?. Defaults to True.
-
-    Returns:
-        Series: A series of the marks, or if not active yet, 0
-    """
-    if active:
-        return mark_sheet.apply(
-            test_in_clean_environment,
-            args=(set_number, timeout),
-            axis=1,
-        )
-    else:
-        return 0
 
 
 if __name__ == "__main__":
