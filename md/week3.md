@@ -10,7 +10,7 @@ What I _really_ want you to do with this graph is to use it as an opportunity to
 
 This is the weighted graph, but it's not really worth looking at yet.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=17662914&amp;format=interactive"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=17662914&amp;format=interactive" style="width: 610px; height: 380px; float: right; margin-left: 2em;"></iframe>
 
 ## Lecture
 
