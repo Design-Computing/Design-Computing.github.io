@@ -339,7 +339,10 @@ def log_progress(message, logfile_name):
 
 def get_readmes(row, output="mark"):
     """Get the text, or the mark, or both related to log books."""
-    intro = "TODO: Reflect on what you learned this set and what is still unclear."
+    # intro_set  = "TODO: Reflect on what you learned this set and what is still unclear."
+    # intro_week = "TODO: Reflect on what you learned this week and what is still unclear."
+    regex = r"TODO: Reflect.+unclear\."
+    subst = ""
     path = os.path.join(rootdir, row.owner)
     mark = 0
     all_readme = ""
@@ -349,12 +352,14 @@ def get_readmes(row, output="mark"):
             try:
                 with open(p, "r", encoding="utf-8", errors="ignore") as f:
                     contents = f.read()
-                    new = contents.replace(intro, "").strip()
+                    new = re.sub(regex, subst, contents, 0, re.MULTILINE).strip()
                     # print(i,"|", new, "|", len(new))
                     if len(new) > 0:
                         mark += 1
                         all_readme += f"w{i}: {new}\n"
+                        print(f"{row.owner}, w{i}: {new}")
             except UnicodeDecodeError:
+                # if there's strange unicode in here, something must be going on!
                 mark += 1
 
     if output == "mark":
