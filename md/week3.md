@@ -16,8 +16,6 @@ This is the weighted graph, but it's not really worth looking at yet.
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSox_vZU2xprGNVi-fi_3cwwkLvAo6qfuYhITdgSawNbQNI5ckW2G-CThN4Ew6XAmSnojYBMpAIr-Qz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-</iframe>
-
 ## The Open Data Project
 
 This is the major project of this course. The first half of the course is about learning a skill, the second is about refining that skill by using it to explore the world.
@@ -56,11 +54,13 @@ You can do that either:
 | And then find an interesting question to answer. | And then find the dataset[s] that will help you answer it. |
 | Tell us what you found and how you got there.    | Tell us what you found and how you got there.              |
 
+### What have people done before?
+
 ### But where do you find data?
 
 Governments are getting a lot better at collecting data about the world and then sharing it with their citizens. An early example of this is [Booth's Life and Labour Survey](https://www.bbc.co.uk/sounds/play/m000wsxf) from 1889 to 1903. More recently, we've been able to access data in much more productive ways, through computers, databases, spreadsheets, and most recently, APIs. Gone are the days of hand tabulating carefully, now we can query for anything we like.
 
-You can go to [data.gov.au](https://data.gov.au/)🇦🇺, [data NSW](https://data.nsw.gov.au/), [data Victoria](https://data.melbourne.vic.gov.au/), [data.gov](https://www.data.gov/)🇺🇸, [the Australian Bureau of Statistics](https://www.abs.gov.au/), [Inside AirBnB](http://insideairbnb.com/), and a whole bunch more.
+You can go to [data.gov.au](https://data.gov.au/)🇦🇺, [data NSW](https://data.nsw.gov.au/), [data Victoria](https://data.melbourne.vic.gov.au/), [data.gov](https://www.data.gov/)🇺🇸, [the Australian Bureau of Statistics](https://www.abs.gov.au/), [Inside AirBnB](http://insideairbnb.com/), and a whole bunch more. Don't go to Kaggle, I'm really bored of people doing projects on who the best video game character is, that's not the point of this course!
 
 Once you've found some, you'll need to do a data audit:
 
@@ -73,17 +73,25 @@ The file that I used to give the lecture is a template for how to do this chunk 
   - What does this dataset explain?
 
 
-    **Pause here**: There is a pretty good chance at this point that you'll find out that your data is garbage.
+    **Pause here**: There is a pretty good chance at this point that you'll find out that your data is garbage. Look for a file that's in one of these file formats: `.xls`, `.xlsx`, `.csv`, `.json`, `.tsv`. If it's not, run it past me or Alex.
+
+    You'll want a file with at least 200 rows, ideally a thousand or more. Even more ideally, a dataset that has some geographic data, e.g. coordinates or suburb names, because we're going to be making some maps a bit later on.
 
 - Why was it collected?
 - Who paid for it?
 - Where did you get it from?
-- for each column in your dataset:
+
+* for each column in your dataset:
+
   - Describe it by recording/measuring/graphing:
+
     - Name
     - What the column describes
     - How that data was measured
     - Is it continuous or categorical data? Continuous is `[1, 2, 4.6, -5]` and categorical is `["cat", "dog", "mouse", "dog" , "dog"]`
+
+      **🤓 Another Pause**: The rest of this is for next week, but I want you to read this anyway so that you can have these questions in your mind as you're picking a dataset.
+
     - If categorical:
       - do a `df["column_name"].value_counts()` and get an idea of the counts that you'll be working with.
       - do a `df["column_name"].value_counts().plot(kind="bar")` to get an idea of the distribution of the counts
@@ -100,6 +108,7 @@ The file that I used to give the lecture is a template for how to do this chunk 
       - What's the median value (median)?
       - What's the most common value (mode)?
     - make some general comments about this column, based on what we see.
+
   - make some general comments about the dataframe, based on what we see.
 
 That seems like quite a lot of work. It is, but it'll be very useful in exploring your dataset. It'll give you a strong sense of what you're dealing with.
@@ -110,6 +119,7 @@ All the way through, keep a keen eye out for moments where you say to yourself "
 
 Do these things in order, it'll be better that way, I promise.
 
+1. Find a dataset and a question. Do the first part of the data audit on that dataset, up to 🤓.
 1. Do the Khan Academy Algorithms Course: **Cormen, T. & Balkcom, D.**, [_Algorithms._](https://www.khanacademy.org/computing/computer-science/algorithms)
 
    Go through the Intro to algorithms, Binary search and Asymptotic notation sections, these guys have made it really simple to understand and it'll reinforce everything we've said in the lecture.
@@ -118,9 +128,13 @@ Do these things in order, it'll be better that way, I promise.
 
    It looks like there's nothing to do to exercise 2, but actually that's a big deal! You need to work out a way to make a diagram of the code. It needs to be easy to understand, and help you keep track of what it's doing. There are lots of formal ways to diagram code ([UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), flow charts) but don't let that constrain you. Think about what makes the most sense to _you_ and also about how you could use it to explain it to someone else. Make sure that your diagram goes into your lab book. It will really help you to do the same thing for exercise 3 and 4 too.
 
+   To get a diagram into your lab book, you need an image that's online, you can use a hosting service or put the image file into your repo. Then you can make the image show with this markup: `![alt text](image url)`
+
 1. listen to this podcast: **Galef, J.** (2016). [_Tom Griffiths and Brian Christian on "Algorithms to Live By"_. 🎧 Rationally Speaking](http://rationallyspeakingpodcast.org/show/rs-161-tom-griffiths-and-brian-christian-on-algorithms-to-li.html).
 
 1. Read the _code reading experience_ section below. Write some thoughts in your lab book about why some of these solutions are better than others. Performance, readability, what else makes a function better.
+
+This is a lot to do, so you've for this week and next to do it (including finishing the data audit that we'll cover how to do next week).
 
 ---
 
@@ -128,10 +142,12 @@ Do these things in order, it'll be better that way, I promise.
 
 <style>
   h3 img {
-    width: 10vw;
+    width: 15vw;
     float: right;
   }
-  .language-python {}
+  .language-python {
+    font-size: 140%;
+  }
 </style>
 
 With that out of the way, [let's talk about](https://www.youtube.com/watch?v=ydrtF45-y-g) week 2 exercise 3 `loops_7`. You probably struggled a fair bit with this one. These are the instruction:

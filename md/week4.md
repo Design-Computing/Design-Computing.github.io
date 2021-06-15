@@ -28,6 +28,8 @@ if r.status_code is 200:
 
 ## Homework
 
+Finish the data audit on the dataset that you have decided to go with. Make sure that you've run that dataset past Ben or Alex to check that it' OK.
+
 # This week's optional reading 📚
 
 Although this reading is optional, it'll make a you a way better CoDe person! Maybe re-read the early readings, they might make more sense now.
