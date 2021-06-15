@@ -73,7 +73,7 @@ The file that I used to give the lecture is a template for how to do this chunk 
   - What does this dataset explain?
 
 
-    **Pause here**: There is a pretty good chance at this point that you'll find out that your data is garbage. Look for a file that's in one of these file formats: `.xls`, `.xlsx`, `.csv`, `.json`, `.tsv`. If it's not, run it past me or Alex.
+    **⏸️ Pause here**: There is a pretty good chance at this point that you'll find out that your data is garbage. Look for a file that's in one of these file formats: `.xls`, `.xlsx`, `.csv`, `.json`, `.tsv`. If it's not, run it past me or Alex.
 
     You'll want a file with at least 200 rows, ideally a thousand or more. Even more ideally, a dataset that has some geographic data, e.g. coordinates or suburb names, because we're going to be making some maps a bit later on.
 
@@ -88,7 +88,10 @@ The file that I used to give the lecture is a template for how to do this chunk 
     - Name
     - What the column describes
     - How that data was measured
-    - Is it continuous or categorical data? Continuous is `[1, 2, 4.6, -5]` and categorical is `["cat", "dog", "mouse", "dog" , "dog"]`
+    - Is it continuous or categorical data?
+
+      - Continuous is `[1, 2, 4.6, -5]`
+      - Categorical is `["cat", "dog", "mouse", "dog" , "dog"]`
 
       **🤓 Another Pause**: The rest of this is for next week, but I want you to read this anyway so that you can have these questions in your mind as you're picking a dataset.
 
