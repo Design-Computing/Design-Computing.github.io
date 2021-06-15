@@ -1,8 +1,6 @@
 # Week 3: Useful Programs and Algorithms
 
-If you are interested in your marks as we go, you can [look here](https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubhtml?gid=1672893348&single=true)
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubhtml?gid=1672893348&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="700px" frameless></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=1583654128&amp;format=interactive" style="width: 610px; height: 380px; float: right; margin-left: 2em;"></iframe>
 
 This is updated most days, so if you don't see your values changing, it's probably because you aren't `push`ing to GitHub.
 
@@ -12,13 +10,101 @@ What I _really_ want you to do with this graph is to use it as an opportunity to
 
 This is the weighted graph, but it's not really worth looking at yet.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpx7SE6am9_uszUVCzGmBfKWshvtcTYZp9oilhlKht2-r2YY9wgt-MmIja_20igkoEkeowzuaNQmap/pubchart?oid=17662914&amp;format=interactive" width="100%" height="400px" frameless></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=17662914&amp;format=interactive"></iframe>
 
 ## Lecture
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSox_vZU2xprGNVi-fi_3cwwkLvAo6qfuYhITdgSawNbQNI5ckW2G-CThN4Ew6XAmSnojYBMpAIr-Qz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 </iframe>
+
+## The Open Data Project
+
+This is the major project of this course. The first half of the course is about learning a skill, the second is about refining that skill by using it to explore the world.
+
+> This assignment explores how to make data accessible to everyone. This is the capstone project for this course. You will take an open data set, from a collection such as the NSW government and build a way to represent it to others. You may use any available libraries or frameworks to do so, although matplotlib is recommended.
+
+### Delivarables
+
+### Presentation and code
+
+The presentation will be in week 11 and your GitHub Repository will be marked at its state at 7pm Tuesday of week 12.
+
+#### Git collaboration (week 11)
+
+Working together to achieve greatness, through GitHub collaboration. One of the greatest things about being a student is having a cohort to go through the struggle of your courses with. One of the greatest things about open source culture is that there is a way for you to share the burden by helping each other out. This is a mark that is available to anyone who makes a Pull Request to anyone else’s repository during the Open Data Project and has it accepted.
+
+**Deliverables:** Proof of an accepted pull request, in both directions, described in your lab book.
+
+### What's the deal here then? What do I need to do?
+
+The general model of this assignment is:
+
+1. Pick a dataset
+1. Document it
+1. Explore it
+1. Describe it
+1. Find amazing insights
+1. Visualise the data
+1. Communicate the insights
+
+You can do that either:
+
+| Dataset first                                    | Question first                                             |
+| ------------------------------------------------ | ---------------------------------------------------------- |
+| Find an interesting dataset                      | Have a burning question you want to answer                 |
+| And then find an interesting question to answer. | And then find the dataset[s] that will help you answer it. |
+| Tell us what you found and how you got there.    | Tell us what you found and how you got there.              |
+
+### But where do you find data?
+
+Governments are getting a lot better at collecting data about the world and then sharing it with their citizens. An early example of this is [Booth's Life and Labour Survey](https://www.bbc.co.uk/sounds/play/m000wsxf) from 1889 to 1903. More recently, we've been able to access data in much more productive ways, through computers, databases, spreadsheets, and most recently, APIs. Gone are the days of hand tabulating carefully, now we can query for anything we like.
+
+You can go to [data.gov.au](https://data.gov.au/)🇦🇺, [data NSW](https://data.nsw.gov.au/), [data Victoria](https://data.melbourne.vic.gov.au/), [data.gov](https://www.data.gov/)🇺🇸, [the Australian Bureau of Statistics](https://www.abs.gov.au/), [Inside AirBnB](http://insideairbnb.com/), and a whole bunch more.
+
+Once you've found some, you'll need to do a data audit:
+
+#### Data Audit
+
+The file that I used to give the lecture is a template for how to do this chunk of the project. It shows you the techniques that you need to do preliminary exploration on your dataset. Here's some pseudo code for what you need to do:
+
+- for your whole dataset:
+  - How many rows and columns?
+  - What does this dataset explain?
+
+
+    **Pause here**: There is a pretty good chance at this point that you'll find out that your data is garbage.
+
+- Why was it collected?
+- Who paid for it?
+- Where did you get it from?
+- for each column in your dataset:
+  - Describe it by recording/measuring/graphing:
+    - Name
+    - What the column describes
+    - How that data was measured
+    - Is it continuous or categorical data? Continuous is `[1, 2, 4.6, -5]` and categorical is `["cat", "dog", "mouse", "dog" , "dog"]`
+    - If categorical:
+      - do a `df["column_name"].value_counts()` and get an idea of the counts that you'll be working with.
+      - do a `df["column_name"].value_counts().plot(kind="bar")` to get an idea of the distribution of the counts
+      - Check for things that you might need to _fold_ into each other. Do you have entries for `sydney` and `Syd` and `Sydney` and `SYD` in your data? Should they really be the same thing?
+      - What is the distribution shape of this graph?
+    - If continuous:
+      - do a `df["column_name"].hist()` to get an idea of what your numbers are and how they're distributed.
+      - Is it a time series? A time series is data that changes over time, like the temperature at my desk, or the number of cookies I have left in the packet. If it _is_ a time series
+        - do a `df["column_name"].plot()` to see the trends.
+        - are there any periods of time that are missing data? E.g. did they turn it off over the weekends?
+      - What's the biggest value (max)?
+      - What's the smallest value (min)?
+      - What's the mean value (mean)?
+      - What's the median value (median)?
+      - What's the most common value (mode)?
+    - make some general comments about this column, based on what we see.
+  - make some general comments about the dataframe, based on what we see.
+
+That seems like quite a lot of work. It is, but it'll be very useful in exploring your dataset. It'll give you a strong sense of what you're dealing with.
+
+All the way through, keep a keen eye out for moments where you say to yourself "Oh, that's interesting!". _That_ is the most important thing, and will be what forms the backbone of your data storytelling.
 
 ## Homework
 
