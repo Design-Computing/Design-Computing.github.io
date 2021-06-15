@@ -33,6 +33,7 @@ PandasSeries = TypeVar("pandas.core.series.Series")
 THIS_YEAR = "2021"
 rootdir = "../StudentRepos"
 CHATTY = False
+FORCE_MARKING = False
 
 # The ID and range of a sample spreadsheet.
 # MARKING_SPREADSHEET_ID = "1wtTAM7A--ka7Lnog43L6jjo9kMCnDElCrTOBllEg4dA" # 2019
@@ -378,6 +379,35 @@ def test_in_clean_environment(
     temp_file_path: str = "temp_results.json",
     test_file_path: str = "test_shim.py",
 ) -> dict:
+    pre = f"W{set_number}, {row.owner}:"
+    if (
+        "updated" in row.index
+        and "Already up to date" in row.updated
+        and not FORCE_MARKING
+    ):
+        print(f"{pre} We don't need to mark this one")
+        results_dict = get_existing_marks_from_csv(row, set_number)
+    else:
+        print(
+            f"{pre} We need to mark this one ",
+            "FORCE" if FORCE_MARKING else "🔰",
+        )
+        results_dict = mark_a_specific_person_week(
+            row, set_number, timeout, logfile_name, temp_file_path, test_file_path
+        )
+    return results_dict
+
+
+def get_existing_marks_from_csv(row, set_number):
+    whole_csv_df = pd.read_csv("marks.csv")
+    this_person_df = whole_csv_df[whole_csv_df.owner == row.owner]
+    results_dict = eval(this_person_df.iloc[0][f"set{set_number}"])
+    return results_dict
+
+
+def mark_a_specific_person_week(
+    row, set_number, timeout, logfile_name, temp_file_path, test_file_path
+):
     """Test a single student's work in a clean environment.
 
     This calls a subprocess that opens a fresh python environment, runs the
@@ -389,14 +419,6 @@ def test_in_clean_environment(
     The logging is just to see real time progress as this can run for a long
     time and hang the machine.
     """
-    if "updated" in row.index and "Already up to date" in row.updated:
-        print(
-            "We don't _actually_ need to mark this one,",
-            "but we need to do it for the moment becasue there isn't a place ",
-            "to get the existing value from yet.",
-        )
-    else:
-        print("We need to mark this one")
     results_dict = {}
     log_progress(row.owner, logfile_name)
     start_time = time.time()
