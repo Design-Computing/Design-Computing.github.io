@@ -56,6 +56,8 @@ You can do that either:
 
 ### What have people done before?
 
+These videos are from the 2020 cohort. You can watch them to see the kinds of subjects people picked, and the depth of investigation they went into.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLzHh2dYvM_HkpSmXqlDGIRLPr-a2BWksL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ### But where do you find data?
 
@@ -81,6 +83,7 @@ The file that I used to give the lecture is a template for how to do this chunk 
 - Why was it collected?
 - Who paid for it?
 - Where did you get it from?
+- Does it have a geographical component?
 
 * for each column in your dataset:
 
