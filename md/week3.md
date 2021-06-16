@@ -28,7 +28,7 @@ This is the major project of this course. The first half of the course is about 
 
 The presentation will be in week 11 and your GitHub Repository will be marked at its state at 7pm Tuesday of week 12.
 
-#### Git collaboration (week 11)
+#### Git collaboration (due in week 11)
 
 Working together to achieve greatness, through GitHub collaboration. One of the greatest things about being a student is having a cohort to go through the struggle of your courses with. One of the greatest things about open source culture is that there is a way for you to share the burden by helping each other out. This is a mark that is available to anyone who makes a Pull Request to anyone else’s repository during the Open Data Project and has it accepted.
 
@@ -39,10 +39,12 @@ Working together to achieve greatness, through GitHub collaboration. One of the 
 The general model of this assignment is:
 
 1. Pick a dataset
-1. Document it
+1. Document it, broadly
+1. Describe it, broadly
 1. Explore it
-1. Describe it
-1. Find amazing insights
+1. Find something that makes you say "_hmm, that's interesting_"
+1. Zoom in on that thing
+1. Keep repeating this step until you've squeezed everything interesting out of it.
 1. Visualise the data
 1. Communicate the insights
 
@@ -53,6 +55,10 @@ You can do that either:
 | Find an interesting dataset                      | Have a burning question you want to answer                 |
 | And then find an interesting question to answer. | And then find the dataset[s] that will help you answer it. |
 | Tell us what you found and how you got there.    | Tell us what you found and how you got there.              |
+
+That recursive step of exploration is where the value in this assignment will be realised. I want you to be fascinated by your data, I want that fascination to come across in our discussions about your progress and I want it to come across in your final presentation too.
+
+### What's the point of this assignment?
 
 ### What have people done before?
 
