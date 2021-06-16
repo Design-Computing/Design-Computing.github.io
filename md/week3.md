@@ -44,9 +44,12 @@ The general model of this assignment is:
 1. Explore it
 1. Find something that makes you say "_hmm, that's interesting_"
    1. Zoom in on that thing
+   1. Visualise the data
+   1. Investigate it a bit more
+   1. Communicate the insights. Talk to your peers about it. They might see something that you've missed, or it might inspire them, and remember: you're all in this together!
+   1. Find something that makes you say "_hmm, that's interesting_"
    1. Keep repeating this step until you've squeezed everything interesting out of it.
-1. Visualise the data
-1. Communicate the insights
+1. Communicate the insights. Make a presentation that is really clear and lets the graphs do most of the work.
 
 You can do that either:
 
