@@ -43,8 +43,8 @@ The general model of this assignment is:
 1. Describe it, broadly
 1. Explore it
 1. Find something that makes you say "_hmm, that's interesting_"
-1. Zoom in on that thing
-1. Keep repeating this step until you've squeezed everything interesting out of it.
+   1. Zoom in on that thing
+   1. Keep repeating this step until you've squeezed everything interesting out of it.
 1. Visualise the data
 1. Communicate the insights
 
