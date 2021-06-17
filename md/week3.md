@@ -119,7 +119,10 @@ This is the major project of this course. The first half of the course is about 
 
 > This assignment explores how to make data accessible to everyone. This is the capstone project for this course. You will take an open data set, from a collection such as the NSW government and build a way to represent it to others. You may use any available libraries or frameworks to do so, although matplotlib is recommended.
 
-### Delivarables
+### Deliverables
+
+1. One presentation, done from within a notebook, using RISE (this will all become clear next week).
+1. One repo with all your code and data in it.
 
 ### Presentation and code
 
