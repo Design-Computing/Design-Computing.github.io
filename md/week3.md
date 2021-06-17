@@ -12,6 +12,19 @@ This is the weighted graph, but it's not really worth looking at yet.
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=17662914&amp;format=interactive" style="width: 610px; height: 380px; float: right; margin-left: 2em;"></iframe>
 
+## Some dates:
+
+| Week            | Activity                                             |
+| --------------- | ---------------------------------------------------- |
+| Weeks 1-5       | Exercises 👩🏾‍🏫📏📐                                     |
+| Week 3          | (This week) Introduction to the data project. 📈📊📉 |
+| Week 4          | Data project tutorial                                |
+| Week 6          | Flex week 😴🌴🥥                                     |
+| Week 7          | The Quiz 👩🏾‍💻                                          |
+| Weeks 8, 9 & 10 | Data project tutorials                               |
+| Week 11         | Data project presentations                           |
+| Week 12         | Data project submission (by Monday 9pm)              |
+
 ## Lecture
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSox_vZU2xprGNVi-fi_3cwwkLvAo6qfuYhITdgSawNbQNI5ckW2G-CThN4Ew6XAmSnojYBMpAIr-Qz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -30,6 +43,53 @@ Several people said that they didn't _get_ exercise 2, the one where you step th
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nfhNeIKGf2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The idea is that each line in a program does something. In general it'll do one of two things, make something new, or modify something that exists. The skill here is learning to predict what those modifications will be, and not letting your imagination get carried away with you.
+
+### New Syntax
+
+#### `in`
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gv3bEgskOFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+```python
+for i in [1, 2, 3]:
+    print(i * 2)
+
+print(2 in [2, 3, 4])
+print(8 in [2, 3, 4])
+print("2" in [2, 3, 4])
+print({} in [2, 3, 4])
+print("car" in "carpet")
+
+print(7 in {"key":7, "otherKey":5})
+print("key" in {"key":7, "otherKey":5})
+
+```
+
+#### `try`/`except`
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OxP4NOTxkUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+```python
+def be_silly(top_part, bottom_part):
+    try:
+        return top_part / bottom_part
+    except TypeError as my_error:
+        print(f"you are so silly! {my_error}")
+    except ZeroDivisionError as my_error:
+        print(
+            f"you are so silly! Can't divide {top_part} by {bottom_part} "
+            f"or we get infinity\n{my_error}"
+        )
+    except Exception as general_error:
+        print(general_error)
+
+
+print(be_silly(10, 2))
+print(be_silly("cake", 2))
+be_silly(10, 0)
+
+
+```
 
 ## Exercise tips:
 
