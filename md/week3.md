@@ -16,6 +16,43 @@ This is the weighted graph, but it's not really worth looking at yet.
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSox_vZU2xprGNVi-fi_3cwwkLvAo6qfuYhITdgSawNbQNI5ckW2G-CThN4Ew6XAmSnojYBMpAIr-Qz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+### F-Strings
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6Xe8le9eVR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+I mention a cheatsheet, it's [here](https://myshell.co.uk/blog/2018/11/python-f-string-formatting-cheatsheet/).
+[This one was good too](https://zetcode.com/python/fstring/).
+
+### Debugging and thinking about state
+
+Several people said that they didn't _get_ exercise 2, the one where you step through a file with the debugger. I made this video in the hope that it'll make it a bit clearer.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nfhNeIKGf2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The idea is that each line in a program does something. In general it'll do one of two things, make something new, or modify something that exists. The skill here is learning to predict what those modifications will be, and not letting your imagination get carried away with you.
+
+## Exercise tips:
+
+In set 3, exercise 1, this is how to solve the first question. There are a lot of ways to do it, but this is the one that will have the most applicability to the next question. If you want a challenge, try to solve it without using range at all, you'll need a while loop.
+
+```python
+def lone_ranger(start, stop, step):
+    """Duplicate the functionality of range.
+
+    Look up the docs for range() and wrap it in a 1:1 way
+    """
+    my_range = []
+    for i in range(start, stop, step):
+        my_range.append(i)
+    return my_range
+```
+
+In `stubborn_asker` you're going to need a `while` loop, it's only going to be tested with integers.
+
+In `not_number_rejector` you're going to need a `while` loop and a `try`/`catch` block, it's going to get thrown a bunch of inputs that are not a number, a string, a list, a dictionary, etc.
+
+`exercise2.py` works, you're going to need to read the code, make notes, make diagrams etc. because you're going to make a more robust guessing game in the next exercise that uses your `super_asker` code to process the inputs to make sure they're really numbers. You _can_ import super_asker from ex1, but imports is a question for another day, so you can copy and paste it across, we'll do the penance later in our lives for this technical debt.
+
 ## The Open Data Project
 
 This is the major project of this course. The first half of the course is about learning a skill, the second is about refining that skill by using it to explore the world.
