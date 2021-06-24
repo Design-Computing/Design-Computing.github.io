@@ -2,33 +2,24 @@
 
 ## Lecture
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQkRONPNEDyj3YpSf7LMfGflYj4mnwJJGOllSvPrvXp6xUP8jbGm8gLzugVdwQBWz0cXGFLAXKWO30W/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">Should be a video here</iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xMIAInHgt7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+There's a file to go with this video. I explain how to get it in the first few minutes of the video.
 
 ## Lab
 
-1. There are some running examples in `IOexamples.py`, read them, step through them, and you should have a pretty good idea of what to do in `exercise1.py`. You should be feeling pretty comfortable with how this process works by now.
-
-1. Talk to a tutor about your open data project idea. Get started on the data audit process described below.
-
-Here's the example from the lecture if you want to try it out:
-
-```python
-
-import requests
-import json
-
-url = "https://jsonplaceholder.typicode.com/todos/1"
-
-r = requests.get(url)
-if r.status_code is 200:
-    the_json = json.loads(r.text)
-    print(the_json)
-    print(json.dumps(the_json, indent=4))
-```
+1. Data project
+   1. Talk to a tutor about your open data project idea.
+   1. Load your data into a notebook. If you don't have tabular data (a .csv or an .xlsx talk to Ben or Alex)
+   1. Get started on the data audit process described [here](https://design-computing.github.io/md/week3#data-audit).
+1. Exercises
+   1. Talk to Ben or Alex about anything that you'd like clarity on about any of the exercises we've done so far.
 
 ## Homework
 
-Finish the data audit on the dataset that you have decided to go with. Make sure that you've run that dataset past Ben or Alex to check that it' OK.
+Finish the data audit on the dataset that you have decided to go with. Make sure that you've run that dataset past Ben or Alex to check that it's OK.
+
+Finish all the exercises that have been set so far (so up to the end of the binary search). Go back over the previous exercises and see if you can make them better. I've seen a lot of code that's not doing anything.
 
 # This week's optional reading 📚
 
