@@ -338,7 +338,7 @@ def log_progress(message, logfile_name):
     completed_students_list.close()
 
 
-def get_readmes(row, output="mark"):
+def get_readmes(row, output="mark", print_labbooks=False):
     """Get the text, or the mark, or both related to log books."""
     # intro_set  = "TODO: Reflect on what you learned this set and what is still unclear."
     # intro_week = "TODO: Reflect on what you learned this week and what is still unclear."
@@ -358,7 +358,8 @@ def get_readmes(row, output="mark"):
                     if len(new) > 0:
                         mark += 1
                         all_readme += f"w{i}: {new}\n"
-                        print(f"{row.owner}, w{i}: {new}")
+                        if print_labbooks:
+                            print(f"{row.owner}, w{i}: {new}")
             except UnicodeDecodeError:
                 # if there's strange unicode in here, something must be going on!
                 mark += 1
