@@ -6,6 +6,12 @@
 
 There's a file to go with this video. I explain how to get it in the first few minutes of the video.
 
+Here's a quick example of some analysis in real life:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Tx3BlMSOMNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+This is on my own [Walden Pond](http://waldenpond.press/) project, so if you want to know more about it, ask away.
+
 ## Lab
 
 1. Data project
