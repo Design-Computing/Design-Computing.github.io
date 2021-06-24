@@ -583,7 +583,7 @@ def do_the_marking():
 
     mark_sheet["set1"] = mark_week(mark_sheet, set_number=1, timeout=10, active=True)
     mark_sheet["set2"] = mark_week(mark_sheet, set_number=2, timeout=10, active=True)
-    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=False)
+    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=True)
     mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=False)
     mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=45, active=False)
     mark_sheet["exam"] = mark_week(mark_sheet, set_number=8, timeout=45, active=False)
