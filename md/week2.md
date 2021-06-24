@@ -117,7 +117,7 @@ All of the following examples are going to get things out of `another_list`:
 | `[1, 2, 3, 4, 5]` | `another_list[1]`         | The whole list is the 1th thing in `another_list`.                                                                     |
 | `5`               | `another_list[1][4]`      | We can stack indexing to get deeper into nested collections.                                                           |
 | `"Cake"`          | `another_list[0]["name"]` | We use an integer to get the first item out of a list, then a string key to get a particular item out of a dictionary. |
-| `"hello"`         | `another_list[1][2]`      | You use integer indexing to get elements out of tupels too.                                                            |
+| `"hello"`         | `another_list[2][2]`      | You use integer indexing to get elements out of tupels too.                                                            |
 
 This is technically easy, but tricksy, it takes a while to remember the difference between integer and string indices for different collections, and 0 indexing still trips me up sometimes. Be patient, you'll get there.
 

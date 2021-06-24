@@ -246,7 +246,7 @@ Do these things in order, it'll be better that way, I promise.
 
    To get a diagram into your lab book, you need an image that's online, you can use a hosting service or put the image file into your repo. Then you can make the image show with this markup: `![alt text](image url)`
 
-1. listen to this podcast: **Galef, J.** (2016). [_Tom Griffiths and Brian Christian on "Algorithms to Live By"_. 🎧 Rationally Speaking](http://rationallyspeakingpodcast.org/show/rs-161-tom-griffiths-and-brian-christian-on-algorithms-to-li.html).
+1. listen to this podcast: **Galef, J.** (2016). [_Tom Griffiths and Brian Christian on "Algorithms to Live By"_. 🎧 Rationally Speaking](http://rationallyspeakingpodcast.org/161-algorithms-to-live-by-tom-griffiths-and-brian-christian/).
 
 1. Read the _code reading experience_ section below. Write some thoughts in your lab book about why some of these solutions are better than others. Performance, readability, what else makes a function better.
 
