@@ -586,7 +586,7 @@ def do_the_marking():
     mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=True)
     mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=True)
     mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=45, active=False)
-    mark_sheet["exam"] = mark_week(mark_sheet, set_number=8, timeout=45, active=False)
+    mark_sheet["exam"] = mark_week(mark_sheet, set_number=8, timeout=45, active=True)
 
     mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
     mark_sheet["readme_text"] = mark_sheet.apply(
