@@ -38,13 +38,13 @@ To start the presentation, click the button with the barchart on it (C). You'll 
 
 RISE presentations (really, it's reveal presentations) have sequential slides the same as PowerPoint, but they also have subslides.
 
-| main point | main point | main point | main point | main point |
-| ---------- | ---------- | ---------- | ---------- | ---------- |
-| sub point  | sub point  | sub point  |            | sub point  |
-| sub point  | sub point  | sub point  |            | sub point  |
-|            | sub point  | sub point  |            |            |
-|            | sub point  | sub point  |            |            |
-|            | sub point  |            |            |            |
+| main point &rarr; | main point &rarr; | main point &rarr; | main point &rarr; | main point &rarr; |
+| ----------------- | ----------------- | ----------------- | ----------------- | ----------------- |
+| sub point         | sub point         | sub point         |                   | sub point         |
+| sub point         | sub point         | sub point         |                   | sub point         |
+|                   | sub point         | sub point         |                   |                   |
+|                   | sub point         | sub point         |                   |                   |
+|                   | sub point         |                   |                   |                   |
 
 The best way to think about this is that you have some big points to make, and you also have some details to go into.
 
