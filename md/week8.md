@@ -28,7 +28,7 @@ Now you've got the packages, you can start the notebook. From the terminal, from
 jupyter notebook
 ```
 
-![The top part of the screen of a jupyter notebook](pictures/jupyter_RISE_controls.png)
+![The top part of the screen of a jupyter notebook](../pictures/jupyter_RISE_controls.png)
 
 This will start a notebook server and then open a new tab in your browser. It'll take a couple of seconds to get your bearings, but this is exactly the same as your VS Code environment.
 
