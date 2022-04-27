@@ -39,21 +39,23 @@ Fill these in before we all come together in the lab please.
 
 ### Who are we?
 
+<!-- TODO: fill this in with the new 1161 tutor -->
+
 <table>
 <thead>
 <tr>
 <th>Ben Doherty</th>
-<th>Alex Tohidi</th>
+<!-- <th>Alex Tohidi</th> -->
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-<td><iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/UfoJT6NZt5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+<!-- <td><iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/UfoJT6NZt5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td> -->
 </tr>
 <tr>
-<td>I've been working in the <em>computational design</em> world for about 15 years now. You can <a href="https://notionparallax.co.uk/me">read more about me here</a>.</td>
-<td>Talk with me about Data, Geometry, 3D printing & Robotic </td>
+<td>I've been working in the <em>computational design</em> world for over 15 years. You can <a href="https://notionparallax.co.uk/me">read more about me here</a>.</td>
+<!-- <td>Talk with me about Data, Geometry, 3D printing & Robotic </td> -->
 </tr>
 </tbody>
 </table>
@@ -96,7 +98,8 @@ You'll hear us use the word _local_ to mean _on your computer_ and _remote_ to m
 
 Your email address, for better or worse, is your central identity. **Don't** use your university or work email address to sign up for things! You will still be using your GitHub account long after you've severed ties with that organisation. Get a good personal email address, and look after it.
 
-If you're not sure if you've got a good email address, (or GitHub user name) ask me or Alex what we think.
+If you're not sure if you've got a good email address, (or GitHub user name) ask me what I think.
+<!-- TODO put new tutor name in here -->
 
 #### Get a GitHub account!
 
