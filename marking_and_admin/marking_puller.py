@@ -30,7 +30,7 @@ from googleapiclient.discovery import build
 PandasDataFrame = TypeVar("pandas.core.frame.DataFrame")
 PandasSeries = TypeVar("pandas.core.series.Series")
 
-THIS_YEAR = "2021"
+THIS_YEAR = "2022"
 rootdir = "../StudentRepos"
 CHATTY = False
 FORCE_MARKING = False
@@ -38,7 +38,8 @@ FORCE_MARKING = False
 # The ID and range of a sample spreadsheet.
 # MARKING_SPREADSHEET_ID = "1wtTAM7A--ka7Lnog43L6jjo9kMCnDElCrTOBllEg4dA" # 2019
 # MARKING_SPREADSHEET_ID = "1AjDu51VX26bIcLNMsr2iHq2BtrNEj91krxWKqjDW5aA"  # 2020
-MARKING_SPREADSHEET_ID = "17KKMNIseRSo9IVNp-iaUCyEqbAR9tTYAcegzcvVgJFM"  # 2021
+# MARKING_SPREADSHEET_ID = "17KKMNIseRSo9IVNp-iaUCyEqbAR9tTYAcegzcvVgJFM"  # 2021
+MARKING_SPREADSHEET_ID = "16tESt_4BUf-9-oD04suTprkd1O0oEl6WjzflF_avSKY"  # 2022
 
 
 class RunCmd(threading.Thread):
