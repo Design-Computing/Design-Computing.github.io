@@ -6,7 +6,7 @@ I'm assuming that you're either in the meeting, or that you've been through the 
 
 ## Things to download and install:
 
-you'll need to download and install these three bits of software:
+You'll need to download and install these three bits of software:
 
 1. **VS Code** This is your _editor_. It's where you'll do almost everything.
 
@@ -26,7 +26,7 @@ you'll need to download and install these three bits of software:
 
     This is the only installation that you might get stuck on, so pay attention.
 
-    Open the installer, and tick the box at the bottom that says _Add Python to to PATH_ ✅
+    Open the installer, and tick the box at the bottom that says _Add Python to PATH_ ✅
 
     There are two kinds of installation, _just for you_ and _for everyone_. You don't have enough permissions to do a _for everyone_ instalation. So, choose _Customize installation ->_ and un-tick _for all users_ (at the bottom), then click _next_ and accept all the defaults after that.
 
