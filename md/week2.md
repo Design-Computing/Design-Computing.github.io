@@ -270,7 +270,7 @@ You can flick through these at your own speed:
 
 In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is it:
 
-![](../engineeringFlowchart.png)
+![](../pictures/engineeringFlowchart.png)
 
 ## Homework
 
