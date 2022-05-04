@@ -39,21 +39,23 @@ Fill these in before we all come together in the lab please.
 
 ### Who are we?
 
+<!-- TODO: fill this in with the new 1161 tutor -->
+
 <table>
 <thead>
 <tr>
 <th>Ben Doherty</th>
-<th>Alex Tohidi</th>
+<!-- <th>Alex Tohidi</th> -->
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/K4eTMm4ruCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-<td><iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/UfoJT6NZt5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+<!-- <td><iframe width="400" height="315" src="https://www.youtube-nocookie.com/embed/UfoJT6NZt5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td> -->
 </tr>
 <tr>
-<td>I've been working in the <em>computational design</em> world for about 15 years now. You can <a href="https://notionparallax.co.uk/me">read more about me here</a>.</td>
-<td>Talk with me about Data, Geometry, 3D printing & Robotic </td>
+<td>I've been working in the <em>computational design</em> world for over 15 years. You can <a href="https://notionparallax.co.uk/me">read more about me here</a>.</td>
+<!-- <td>Talk with me about Data, Geometry, 3D printing & Robotic </td> -->
 </tr>
 </tbody>
 </table>
@@ -96,7 +98,8 @@ You'll hear us use the word _local_ to mean _on your computer_ and _remote_ to m
 
 Your email address, for better or worse, is your central identity. **Don't** use your university or work email address to sign up for things! You will still be using your GitHub account long after you've severed ties with that organisation. Get a good personal email address, and look after it.
 
-If you're not sure if you've got a good email address, (or GitHub user name) ask me or Alex what we think.
+If you're not sure if you've got a good email address, (or GitHub user name) ask me what I think.
+<!-- TODO put new tutor name in here -->
 
 #### Get a GitHub account!
 
@@ -116,25 +119,23 @@ First we need to download some software:
 
 #### Get software
 
-1. VS Code
+1. **VS Code**
 
    This is the main tool you'll be using in this course. Almost everything happens from within VS Code, so learn to love it.
 
    1. Download VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
 
-1. Anaconda
+1. **Python**
 
-   Anaconda is a python installer that comes with a lot of the packages that we need to use already baked in. This means we don't need to install them separately.
+    This is the actual programming _language_.
 
-   1. Download the Anaconda installer from [anaconda.com](https://www.anaconda.com/products/individual#Downloads)
+    Go to [python.org/downloads](https://www.python.org/downloads/) and get the version that it reccomends (in the yellow button, right now that's 3.10.4, but get whatever is the newest.)
 
-   1. Install it with default values _except_ tick the option to **Add Anaconda to my PATH**, tick that and the text will go red.
+    This is the only installation that you might get stuck on, so pay attention.
 
-   1. Be patient
-      <!-- 1. Open Anaconda navigator -->
-      <!-- 1. Click install on the VS Code box, be patient again -->
+    Open the installer, and tick the box at the bottom that says _Add Python to PATH_ ✅
 
-1. Git
+1. **Git**
 
    Git is a version control tool. We're going to use it to make sure that your work is saved, backed up, and versioned. This means that you can go back to this morning without needing to save lots of copies with names like `my_work_final.py` and `my_work_final_final.py`.
 
@@ -425,7 +426,7 @@ Some things are different for you. Here's what to do:
 
 ### First, get some things working
 
-Make sure you have VS Code, Git and Anaconda installed and working. You probably do already or you wouldn't know that things are astray.
+Make sure you have VS Code, Git and Python installed and working. You probably do already or you wouldn't know that things are astray.
 
 You need to get a grasp of your file system. [This might be helpful to read](https://www.dummies.com/computers/macs/mac-operating-systems/basics-of-the-os-x-folder-structure/). I'll ask some mac people for advice on where to keep your `1161` folder. It doesn't _really_ matter, as long as you know where to find it.
 
