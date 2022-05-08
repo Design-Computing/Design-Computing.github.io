@@ -16,7 +16,7 @@ def get_or_update(path, url):
         print(e)
         repo = git.cmd.Git("marking/tempMe")
         repo.execute(["git", "fetch", "--all"])
-        repo.execute(["git", "reset", "--hard", "origin/master"])
+        repo.execute(["git", "reset", "--hard", "origin/main"])
         repo.pull()  # probably not needed, but belt and braces
     except Exception as e:
         print(e)
@@ -38,4 +38,3 @@ print("Now we're in", os.getcwd())
 # for i in range(1, 2):
 #     cmd = "python ../course/week{weekNumber}/tests.py".format(weekNumber=i)
 #     os.system(cmd)
-

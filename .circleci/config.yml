@@ -42,7 +42,7 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "test" ]; then
               echo ${REACT_TEST_ENV_FILE} | base64 --decode > .env
-            elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+            elif [ "${CIRCLE_BRANCH}" == "main" ]; then
               echo ${REACT_PROD_ENV_FILE} | base64 --decode > .env
             fi
 
@@ -70,7 +70,7 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "test" ]; then
                 aws s3 cp --recursive ./dist s3://test.flowspace.bvn.works --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate
-            elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+            elif [ "${CIRCLE_BRANCH}" == "main" ]; then
                 aws s3 cp --recursive ./dist s3://flowspace1.bvn.works --metadata-directive REPLACE --cache-control max-age=0,no-cache,no-store,must-revalidate
             fi
 

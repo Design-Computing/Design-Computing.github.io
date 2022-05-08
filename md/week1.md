@@ -399,7 +399,7 @@ You'll need to sign in, and then make a new trinket, using the _blocks_ option.
 
 - Write your journal in README.md
 
-  Check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) for an intro to how formatting works in markdown (`.md`) files.
+  Check out [maining Markdown](https://guides.github.com/features/maining-markdown/) for an intro to how formatting works in markdown (`.md`) files.
 
 - That means that if you kept up in class, no coding homework this week! It's a great chance to read some of the articles below. They won't teach you python, but they _will_ broaden your mind. Each week there are some suggested readings, pick one, read it, and write some thoughts in your journal.
 

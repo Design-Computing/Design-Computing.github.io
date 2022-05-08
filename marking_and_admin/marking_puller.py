@@ -238,7 +238,7 @@ def update_repos(row: PandasSeries) -> str:
                     return str(response)
                 except Exception as e:
                     repo.execute(["git", "fetch", "--all"])
-                    repo.execute(["git", "reset", "--hard", "origin/master"])
+                    repo.execute(["git", "reset", "--hard", "origin/main"])
                     print(e)
                     return "hard reset"
             except Exception as e:
@@ -273,7 +273,7 @@ def pull_all_repos(dirList, CHATTY: bool = False, hardcore_pull: bool = False):
             repo = git.cmd.Git(repo_is_here)
             if hardcore_pull:
                 repo.execute(["git", "fetch", "--all"])
-                repo.execute(["git", "reset", "--hard", "origin/master"])
+                repo.execute(["git", "reset", "--hard", "origin/main"])
             repo.pull()  # probably not needed, but belt and braces
             t = datetime.now().strftime("%H:%M:%S")
             print(f"{t}: {i}/{of_total} pulled {student_repo}'s repo")

@@ -11,24 +11,23 @@ LOCAL = os.path.dirname(os.path.realpath(__file__))
 
 
 def get_the_updates():
-    gh_url = 'https://raw.githubusercontent.com/'
-    repo = 'notionparallax/code1161base/'
+    gh_url = "https://raw.githubusercontent.com/"
+    repo = "notionparallax/code1161base/"
     for i in [1, 2, 3, 4, 5, 6, 8]:  # no week 7
-        file_path = "master/week{}/tests.py".format(i)
+        file_path = "main/week{}/tests.py".format(i)
         url = gh_url + repo + file_path
         save_path = "week{}/tests.py".format(i)
         download_and_save(url, save_path)
-    download_and_save(gh_url + repo + "master/codeHelpers.py",
-                      "codeHelpers.py")
+    download_and_save(gh_url + repo + "main/codeHelpers.py", "codeHelpers.py")
 
 
 def get_file_text(url):
     r = requests.get(url)
-    return r.text.encode('utf-8')
+    return r.text.encode("utf-8")
 
 
 def download_and_save(url, save_path):
-    f = open(os.path.join(LOCAL, save_path), 'w')
+    f = open(os.path.join(LOCAL, save_path), "w")
     f.write(get_file_text(url))
     f.close()
 
