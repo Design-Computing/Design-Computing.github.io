@@ -270,7 +270,7 @@ You can flick through these at your own speed:
 
 In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is it:
 
-![](../pictures/engineeringFlowchart.png)
+![a branching diagram that says how you should fix a problem with either duct tape or WD40](../pictures/engineeringFlowchart.png)
 
 ## Homework
 
