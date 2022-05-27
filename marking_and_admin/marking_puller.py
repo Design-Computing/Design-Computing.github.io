@@ -163,7 +163,7 @@ def set_comment(x, y, comment, y_offset=1):
     return request
 
 
-def getDFfromCSVURL(url, columnNames=False):
+def get_DF_from_CSV_URL(url, columnNames=False):
     """Get a csv of values from google docs."""
     r = requests.get(url)
     data = r.text
@@ -190,9 +190,9 @@ def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
     if r.status_code == 200:
         forks = r.json()
         repos = [
-            {"owner": f["owner"]["login"], "git_url": f["git_url"]}
-            for f in forks
-            if f["created_at"][:4] == THIS_YEAR  # filter for this year's repos
+            {"owner": fork["owner"]["login"], "git_url": fork["git_url"]}
+            for fork in forks
+            if fork["created_at"][:4] == THIS_YEAR  # filter for this year's repos
         ]
         return repos
     else:
@@ -219,17 +219,16 @@ def update_repos(row: PandasSeries) -> str:
     """Git clone a repo, or if already cloned, git pull."""
     url = row["git_url"]
     owner = row["owner"]
-    path = os.path.join(rootdir, owner)
+    path = os.path.normpath(os.path.join(rootdir, owner))
     t = datetime.now().strftime("%H:%M:%S")
     try:
         git.Repo.clone_from(url, path)
         print(f"{t}: new repo for {owner}")
         return ":) new"
     except git.GitCommandError as e:
-        if CHATTY:
-            print(f"We already have {owner}, trying a pull. ({e})")
-
         if "already exists and is not an empty directory" in e.stderr:
+            if CHATTY:
+                print(f"We already have {owner}, trying a pull. ({e})")
             try:
                 repo = git.cmd.Git(path)
                 try:
@@ -246,6 +245,7 @@ def update_repos(row: PandasSeries) -> str:
                     print(f"pull error: {row.name} {row.contactEmail}", e)
                 return str(e)
         else:
+            print(f"unexpected error: {e}")
             return f"unexpected error: {e}"
     except Exception as e:
         message = f"clone error other than existing repo: {e}"
@@ -281,7 +281,7 @@ def pull_all_repos(dirList, CHATTY: bool = False, hardcore_pull: bool = False):
             print(student_repo, e)
 
 
-def csvOfDetails(dirList):
+def csv_of_details(dirList):
     """Make a CSV of all the students."""
     results = []
     for student_repo in dirList:
@@ -382,10 +382,12 @@ def test_in_clean_environment(
     test_file_path: str = "test_shim.py",
 ) -> dict:
     pre = f"W{set_number}, {row.owner}:"
+    marks_csv_exists = os.path.isfile("marks.csv")
     if (
         "updated" in row.index
         and "Already up to date" in row.updated
         and not FORCE_MARKING
+        and marks_csv_exists
     ):
         print(f"{pre} We don't need to mark this one")
         results_dict = get_existing_marks_from_csv(row, set_number)
@@ -400,15 +402,25 @@ def test_in_clean_environment(
     return results_dict
 
 
-def get_existing_marks_from_csv(row, set_number):
+def get_existing_marks_from_csv(row: PandasSeries, set_number: int) -> Dict:
     whole_csv_df = pd.read_csv("marks.csv")
     this_person_df = whole_csv_df[whole_csv_df.owner == row.owner]
-    results_dict = eval(this_person_df.iloc[0][f"set{set_number}"])
+    try:
+        results_dict = eval(this_person_df.iloc[0][f"set{set_number}"])
+        # TODO: should this eval or json.loads?
+    except KeyError as k:
+        print(f"no marks for set{set_number}", k)
+        return {}
     return results_dict
 
 
 def mark_a_specific_person_week(
-    row, set_number, timeout, logfile_name, temp_file_path, test_file_path
+    row,
+    set_number,
+    timeout,
+    logfile_name,
+    temp_file_path,
+    test_file_path,
 ):
     """Test a single student's work in a clean environment.
 
@@ -533,7 +545,12 @@ def get_last_commit(row: PandasSeries) -> str:
     return d
 
 
-def mark_week(mark_sheet, set_number=1, timeout=10, active=True):
+def mark_week(
+    mark_sheet: PandasDataFrame,
+    set_number: int = 1,
+    timeout: int = 10,
+    active: bool = True,
+):
     """Mark a single week for all students.
 
     Args:
@@ -546,11 +563,12 @@ def mark_week(mark_sheet, set_number=1, timeout=10, active=True):
         Series: A series of the marks, or if not active yet, 0
     """
     if active:
-        return mark_sheet.apply(
+        mark = mark_sheet.apply(
             test_in_clean_environment,
             args=(set_number, timeout),
             axis=1,
         )
+        return mark
     else:
         return 0
 
@@ -587,7 +605,7 @@ def do_the_marking():
     mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=True)
     mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=True)
     mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=45, active=False)
-    mark_sheet["exam"] = mark_week(mark_sheet, set_number=8, timeout=45, active=True)
+    mark_sheet["exam"] = mark_week(mark_sheet, set_number=8, timeout=45, active=False)
 
     mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
     mark_sheet["readme_text"] = mark_sheet.apply(
