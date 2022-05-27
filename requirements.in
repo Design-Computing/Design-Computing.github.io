@@ -1,0 +1,17 @@
+GitPython
+black
+colorama
+func_timeout
+google
+google-auth
+google_auth_oauthlib
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+mock
+pandas
+pillow
+pip-tools
+requests
+ruamel.yaml
+wheel
