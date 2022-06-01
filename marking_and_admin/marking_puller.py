@@ -26,9 +26,7 @@ import ruamel.yaml as yaml
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-
-PandasDataFrame = TypeVar("pandas.core.frame.DataFrame")
-PandasSeries = TypeVar("pandas.core.series.Series")
+from pandas._typing import DataFrame, Series
 
 THIS_YEAR = "2022"
 rootdir = "../StudentRepos"
@@ -215,7 +213,7 @@ def rate_limit_message(r):
     )
 
 
-def update_repos(row: PandasSeries) -> str:
+def update_repos(row: Series) -> str:
     """Git clone a repo, or if already cloned, git pull."""
     url = row["git_url"]
     owner = row["owner"]
@@ -374,7 +372,7 @@ def get_readmes(row, output="mark", print_labbooks=False):
 
 
 def test_in_clean_environment(
-    row: PandasSeries,
+    row: Series,
     set_number: int,
     timeout: int = 5,
     logfile_name: str = "log.txt",
@@ -402,7 +400,7 @@ def test_in_clean_environment(
     return results_dict
 
 
-def get_existing_marks_from_csv(row: PandasSeries, set_number: int) -> Dict:
+def get_existing_marks_from_csv(row: Series, set_number: int) -> Dict:
     whole_csv_df = pd.read_csv("marks.csv")
     this_person_df = whole_csv_df[whole_csv_df.owner == row.owner]
     try:
@@ -511,7 +509,7 @@ def mark_work(dirList, set_number, root_dir, dfPlease=True, timeout=5):
         return resultsDF
 
 
-def get_details(row: PandasSeries) -> dict:
+def get_details(row: Series) -> dict:
     try:
         path_to_aboutMe = os.path.abspath(
             os.path.join(rootdir, row.owner, "aboutMe.yml")
@@ -538,7 +536,7 @@ def get_details(row: PandasSeries) -> dict:
         return {"error": "|".join(str(e).splitlines()), "owner": row.owner}
 
 
-def get_last_commit(row: PandasSeries) -> str:
+def get_last_commit(row: Series) -> str:
     path = os.path.join(rootdir, row.owner)
     repo = git.cmd.Git(path)
     d = repo.execute(["git", "log", "-1", "--format=%cd"])
@@ -546,7 +544,7 @@ def get_last_commit(row: PandasSeries) -> str:
 
 
 def mark_week(
-    mark_sheet: PandasDataFrame,
+    mark_sheet: DataFrame,
     set_number: int = 1,
     timeout: int = 10,
     active: bool = True,
