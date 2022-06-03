@@ -140,8 +140,25 @@ def process_for_notes(data):
     for i, row in enumerate(data):
         for j, item in enumerate(row):
             if type(item) is dict:
-                comments.append(set_comment(j, i, json.dumps(item, indent=2)))
+                readable_comment: str = prepare_comment(item)
+                ss_comment_package: dict = set_comment(j, i, readable_comment)
+                comments.append(ss_comment_package)
     return comments
+
+
+def prepare_comment(item: dict) -> str:
+    if "results" not in item.keys():
+        return f"⚠ {item['bigerror']} ⏱ {round(item['time'])}"
+    test_results = []
+    for r in item["results"]:
+        icon = "👏" if r["value"] == 1 else "💩"
+        test_results.append(f"{icon}: {r['name']}")
+    tr = "\n".join(test_results)
+    message = f"""{item['name']}
+⏱ {round(item['time'])}
+{tr}
+{item['mark']}/{item['of_total']}"""
+    return message
 
 
 def set_comment(x, y, comment, y_offset=1):
