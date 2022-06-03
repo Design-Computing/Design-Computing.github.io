@@ -17,7 +17,7 @@ import time
 from datetime import datetime
 from io import StringIO
 from itertools import repeat
-from typing import Dict, List, Optional, Set, Tuple, TypeVar
+from typing import Dict, List, Any, Optional, Set, Tuple, TypeVar
 
 import git
 import pandas as pd
@@ -26,7 +26,7 @@ import ruamel.yaml as yaml
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from pandas._typing import DataFrame, Series
+from pandas import Series, DataFrame
 
 THIS_YEAR = "2022"
 rootdir = "../StudentRepos"
@@ -162,7 +162,7 @@ def prepare_comment(item: dict) -> str:
 
 
 def set_comment(x, y, comment, y_offset=1):
-    request = {
+    request: Dict[str, Any] = {
         "repeatCell": {
             "range": {
                 "sheetId": 1704890600,
@@ -240,10 +240,10 @@ def update_repos(row: Series) -> str:
         git.Repo.clone_from(url, path)
         print(f"{t}: new repo for {owner}")
         return ":) new"
-    except git.GitCommandError as e:
-        if "already exists and is not an empty directory" in e.stderr:
+    except git.GitCommandError as git_command_error:
+        if "already exists and is not an empty directory" in git_command_error.stderr:
             if CHATTY:
-                print(f"We already have {owner}, trying a pull. ({e})")
+                print(f"We already have {owner}, trying a pull. ({git_command_error})")
             try:
                 repo = git.cmd.Git(path)
                 try:
@@ -260,12 +260,12 @@ def update_repos(row: Series) -> str:
                     print(f"pull error: {row.name} {row.contactEmail}", e)
                 return str(e)
         else:
-            print(f"unexpected error: {e}")
-            return f"unexpected error: {e}"
-    except Exception as e:
-        message = f"clone error other than existing repo: {e}"
+            print(f"unexpected error: {git_command_error}")
+            return f"unexpected error: {git_command_error}"
+    except Exception as spare_error:
+        message = f"clone error other than existing repo: {spare_error}"
         if CHATTY:
-            print(message, f"{row.name} {row.contactEmail}", e)
+            print(message, f"{row.name} {row.contactEmail}", spare_error)
         return message
 
 
@@ -531,32 +531,25 @@ def get_details(row: Series) -> dict:
         path_to_aboutMe = os.path.abspath(
             os.path.join(rootdir, row.owner, "aboutMe.yml")
         )
-        details = open(path_to_aboutMe).read()
-        # who knows if I'll need this!?
-        # details = details.replace("@", "^AT^")
-        # details = re.sub(":(\w)", ": \g<1>", details)
-        # details = re.sub(" -", " None", details)
-        # details = details.replace("é", "e")
-        # details = details.replace("w:", "w: ")
-
-        details = yaml.load(details, yaml.RoundTripLoader)
+        details_raw_yaml = open(path_to_aboutMe).read()
+        details: dict = yaml.load(details_raw_yaml, yaml.RoundTripLoader)
         details["error"] = False
         details["owner"] = row.owner
-        details[
-            "contactEmail"
-        ] = f"""{details["contactEmail"]["firstBit"]}@{details["contactEmail"]["otherBit"]}"""
-        # if details["mediumUsername"][:4] != "^AT^":
-        #     details["mediumUsername"] = "^AT^" + details["mediumUsername"]
+        details["contactEmail"] = construct_contact_email(details)
         return dict(details)
     except Exception as e:
         print(row)
         return {"error": "|".join(str(e).splitlines()), "owner": row.owner}
 
 
+def construct_contact_email(details: dict) -> str:
+    return f"""{details["contactEmail"]["firstBit"]}@{details["contactEmail"]["otherBit"]}"""
+
+
 def get_last_commit(row: Series) -> str:
     path = os.path.join(rootdir, row.owner)
     repo = git.cmd.Git(path)
-    d = repo.execute(["git", "log", "-1", "--format=%cd"])
+    d = str(repo.execute(["git", "log", "-1", "--format=%cd"]))
     return d
 
 
@@ -616,9 +609,9 @@ def do_the_marking():
     mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
 
     mark_sheet["set1"] = mark_week(mark_sheet, set_number=1, timeout=10, active=True)
-    mark_sheet["set2"] = mark_week(mark_sheet, set_number=2, timeout=10, active=True)
-    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=True)
-    mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=True)
+    mark_sheet["set2"] = mark_week(mark_sheet, set_number=2, timeout=10, active=False)
+    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=False)
+    mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=False)
     mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=45, active=False)
     mark_sheet["exam"] = mark_week(mark_sheet, set_number=8, timeout=45, active=False)
 
