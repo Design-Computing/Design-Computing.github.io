@@ -260,8 +260,9 @@ def update_repos(row: Series) -> str:
                     print(f"pull error: {row.name} {row.contactEmail}", e)
                 return str(e)
         else:
-            print(f"unexpected error: {git_command_error}")
-            return f"unexpected error: {git_command_error}"
+            message = f"{row['owner']}: unexpected error: {git_command_error}"
+            print(message)
+            return message
     except Exception as spare_error:
         message = f"clone error other than existing repo: {spare_error}"
         if CHATTY:
