@@ -1,13 +1,14 @@
-GitPython
 black
 colorama
 func_timeout
+GitPython
 google
+google_auth_oauthlib
 google-api-python-client
 google-auth
 google-auth-httplib2
 google-auth-oauthlib
-google_auth_oauthlib
+matplotlib
 mock
 mypy
 pandas
