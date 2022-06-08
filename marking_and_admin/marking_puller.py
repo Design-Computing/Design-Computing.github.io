@@ -40,6 +40,7 @@ FORCE_MARKING = False
 MARKING_SPREADSHEET_ID = "16tESt_4BUf-9-oD04suTprkd1O0oEl6WjzflF_avSKY"  # 2022
 
 
+MARKS_CSV = "marks.csv"
 class RunCmd(threading.Thread):
     """Run a subprocess command, if it exceeds the timeout kill it.
 
@@ -398,7 +399,7 @@ def test_in_clean_environment(
     test_file_path: str = "test_shim.py",
 ) -> dict:
     pre = f"W{set_number}, {row.owner}:"
-    marks_csv_exists = os.path.isfile("marks.csv")
+    marks_csv_exists = os.path.isfile(MARKS_CSV)
     if (
         "updated" in row.index
         and "Already up to date" in row.updated
@@ -419,7 +420,7 @@ def test_in_clean_environment(
 
 
 def get_existing_marks_from_csv(row: Series, set_number: int) -> Dict:
-    whole_csv_df = pd.read_csv("marks.csv")
+    whole_csv_df = pd.read_csv(MARKS_CSV)
     this_person_df = whole_csv_df[whole_csv_df.owner == row.owner]
     try:
         results_dict = eval(this_person_df.iloc[0][f"set{set_number}"])
@@ -621,7 +622,7 @@ def do_the_marking():
         get_readmes, args=("textList",), axis=1
     )
 
-    mark_sheet.to_csv("marks.csv")
+    mark_sheet.to_csv(MARKS_CSV)
 
     data = [list(x) for x in mark_sheet.to_numpy()]
     service = build_spreadsheet_service()
