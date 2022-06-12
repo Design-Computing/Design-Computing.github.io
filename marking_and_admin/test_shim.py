@@ -44,16 +44,25 @@ def results_as_json(repo_path):
     return json.dumps(results)
 
 
-TEST_PATH = os.path.normpath(sys.argv[1])
-REPO_PATH = os.path.normpath(sys.argv[2])
-OWNER = sys.argv[3]
+if __name__ == "__main__":
+    # 0:'C:\\Users\\ben\\Anaconda3\\python.exe'
+    TEST_PATH = "C:\\Users\\bdoherty\\repos\\1161_py_course\\course\\set1\\tests.py"
+    REPO_PATH = "C:\\Users\\bdoherty\\repos\\1161_py_course\\StudentRepos\\AlXu111"
+    OWNER = "AlXu111"
+else:
+    TEST_PATH = os.path.normpath(sys.argv[1])
+    REPO_PATH = os.path.normpath(sys.argv[2])
+    OWNER = sys.argv[3]
 
-# # 0:'C:\\Users\\ben\\Anaconda3\\python.exe'
-# TEST_PATH = "C:\\Users\\ben\\Documents\\UNSW\\1161\\course\\set1\\tests.py"
-# REPO_PATH = "C:\\Users\\ben\\Documents\\UNSW\\1161\\StudentRepos\\XiaocanLin"
-# OWNER = "XiaocanLin"
+print(
+    f"""
 
-print("\n\n", "in the shim", TEST_PATH, REPO_PATH, OWNER, "\n", sep="\n")
+in the shim
+TEST_PATH: {TEST_PATH}
+REPO_PATH: {os.path.normpath(os.path.abspath(REPO_PATH))}
+OWNER:     {OWNER}
+"""
+)
 
 with open("temp_results.json", "w") as temp_results:
     results = results_as_json(REPO_PATH)

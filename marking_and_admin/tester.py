@@ -1,29 +1,32 @@
 # -*- coding: UTF-8 -*-
 """Run a lightweight test set on specific students."""
-from .codeHelpers import RunCmd
+from marking_puller import RunCmd
 import os
 import time
 
 LOCAL = os.path.dirname(os.path.realpath(__file__))
-week_number = 4
+week_number = 1
 
 
 repos = ["code1161benFork_fully_working_secret_squirel"]
 times = []
-repos = ["alanw410", "bvn-architecture","alanw410", "bvn-architecture","alanw410", "bvn-architecture","alanw410", "bvn-architecture","alanw410", "bvn-architecture"]  # "bvn-architecture"
+repos = ["AlXu111"]
 results = []
 for name in repos:
+    timeout_cap = 25
+    args = [
+        "python",
+        "marking_and_admin\\test_shim.py",
+        f"..\\course\\set{week_number}\\tests.py",
+        f"..\\StudentRepos\\{name}",
+        name,
+    ]
+    print(args)
     start_time = time.time()
     try:
-        timeout_cap = 25
-        args = ['python',
-                './test_shim.py',
-                "week{}.tests".format(week_number),
-                "../code1161StudentRepos/{}".format(name)]
-        print(args)
         RunCmd(args, timeout_cap).Run()
 
-        temp_results = open(os.path.join(LOCAL, 'temp_results.json'), 'r')
+        temp_results = open(os.path.abspath("temp_results.json"), "r")
         results.append(temp_results.read())
         temp_results.close()
     except Exception as e:
