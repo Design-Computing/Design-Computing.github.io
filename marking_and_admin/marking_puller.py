@@ -382,7 +382,7 @@ def get_readmes(row, output="mark", print_labbooks=False):
                     # print(i,"|", new, "|", len(new))
                     if len(new) > 0:
                         mark += 1
-                        all_readme += f"w{i}: {new}\n"
+                        all_readme += f"w{i}: {new}\n\n"
                         if print_labbooks:
                             print(f"{row.owner}, w{i}: {new}")
             except UnicodeDecodeError:
