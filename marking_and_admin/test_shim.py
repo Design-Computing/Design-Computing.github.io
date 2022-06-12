@@ -13,7 +13,8 @@ import importlib.util
 import json
 import os
 import sys
-from importlib import import_module
+
+# from importlib import import_module
 from time import sleep
 
 
@@ -31,9 +32,8 @@ def do_the_test(repo_path):
         return {
             "of_total": 0,
             "mark": 0,
-            "localError": str(e).replace(",", "~"),  # .encode("utf-8"),
+            "localError": str(e).replace(",", "~"),  # the comma messes with the csv
         }
-        # the comma messes with the csv
 
 
 def results_as_json(repo_path):
