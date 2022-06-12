@@ -189,7 +189,11 @@ def get_DF_from_CSV_URL(url, columnNames=False):
         return pd.read_csv(StringIO(data))
 
 
-def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
+def get_forks(
+    org: str = "design-computing",
+    repo: str = "me",
+    force_inclusion_of_these_repos: list[str] = [],
+) -> list[dict]:
     """Get a list of dicts of the user names and the git url for all the forks."""
     api = "https://api.github.com"
     limit = 100
@@ -208,7 +212,10 @@ def get_forks(org: str = "design-computing", repo: str = "me") -> List[dict]:
         repos = [
             {"owner": fork["owner"]["login"], "git_url": fork["git_url"]}
             for fork in forks
-            if fork["created_at"][:4] == THIS_YEAR  # filter for this year's repos
+            # filter for this year's repos
+            if (fork["created_at"][:4] == THIS_YEAR)
+            # a list of repos to get that aren't this year's, to account for students retaking the course
+            or (fork["owner"]["login"] in force_inclusion_of_these_repos)
         ]
         return repos
     else:
