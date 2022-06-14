@@ -44,7 +44,10 @@ def results_as_json(repo_path):
     return json.dumps(results)
 
 
-if __name__ == "__main__":
+# __name__ == "__main__": <= this is going to be true always because of the way,
+# that this file is loaded, but if it's being loaded in debug, i.e. from this
+# file, then argv will be missing the extra info
+if len(sys.argv) == 1:
     # 0:'C:\\Users\\ben\\Anaconda3\\python.exe'
     TEST_PATH = "C:\\Users\\bdoherty\\repos\\1161_py_course\\course\\set1\\tests.py"
     REPO_PATH = "C:\\Users\\bdoherty\\repos\\1161_py_course\\StudentRepos\\AlXu111"
