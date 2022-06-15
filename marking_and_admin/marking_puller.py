@@ -21,4 +21,10 @@ if __name__ == "__main__":
         force_marking=False,
         marking_spreadsheet_id=MARKING_SPREADSHEET_ID,
         marks_csv="marks.csv",
+        mark_w1=True,
+        mark_w2=True,
+        mark_w3=True,
+        mark_w4=True,
+        mark_w5=False,
+        mark_exam=False,
     )

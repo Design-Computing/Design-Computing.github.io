@@ -587,6 +587,12 @@ def do_the_marking(
     force_marking=False,
     marking_spreadsheet_id="16tESt_4BUf-9-oD04suTprkd1O0oEl6WjzflF_avSKY",  # 2022
     marks_csv="marks.csv",
+    mark_w1=True,
+    mark_w2=False,
+    mark_w3=False,
+    mark_w4=False,
+    mark_w5=False,
+    mark_exam=False,
 ):
 
     global THIS_YEAR
@@ -628,12 +634,14 @@ def do_the_marking(
     mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
     mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
 
-    mark_sheet["set1"] = mark_week(mark_sheet, set_number=1, timeout=10, active=True)
-    mark_sheet["set2"] = mark_week(mark_sheet, set_number=2, timeout=10, active=True)
-    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=True)
-    mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=True)
-    mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=45, active=False)
-    mark_sheet["exam"] = mark_week(mark_sheet, set_number=8, timeout=45, active=False)
+    mark_sheet["set1"] = mark_week(mark_sheet, set_number=1, timeout=10, active=mark_w1)
+    mark_sheet["set2"] = mark_week(mark_sheet, set_number=2, timeout=10, active=mark_w2)
+    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=mark_w3)
+    mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=mark_w4)
+    mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=45, active=mark_w5)
+    mark_sheet["exam"] = mark_week(
+        mark_sheet, set_number=8, timeout=45, active=mark_exam
+    )
 
     mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
     mark_sheet["readme_text"] = mark_sheet.apply(
