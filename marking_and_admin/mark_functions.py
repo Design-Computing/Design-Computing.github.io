@@ -614,17 +614,7 @@ def do_the_marking(
         os.makedirs(ROOTDIR)
     print("listdir(ROOTDIR):\n", os.listdir(ROOTDIR))
 
-    # TODO: instead of loading the pickle, load the marks.csv file so that
-    # the dataframe is preloaded with values. Then it doesn't need to mark students
-    # that haven't updated their work.
-    students = None
-    if os.path.exists("student.pickle"):
-        with open("student.pickle", "rb") as sp:
-            students = pickle.load(sp)
-    else:
-        students = get_forks()
-        with open("student.pickle", "wb") as sp:
-            pickle.dump(students, sp)
+    students = get_student_data()
 
     mark_sheet = pd.DataFrame(students)
 
@@ -655,3 +645,18 @@ def do_the_marking(
     write(service, data=data)
 
     print("that took", (time.time() - start_time) / 60, "minutes")
+
+
+def get_student_data():
+    # TODO: instead of loading the pickle, load the marks.csv file so that
+    # the dataframe is preloaded with values. Then it doesn't need to mark students
+    # that haven't updated their work.
+    students = None
+    if os.path.exists("student.pickle"):
+        with open("student.pickle", "rb") as sp:
+            students = pickle.load(sp)
+    else:
+        students = get_forks()
+        with open("student.pickle", "wb") as sp:
+            pickle.dump(students, sp)
+    return students
