@@ -14,11 +14,6 @@ Also, I've started a list of [useful commands and important words](useful_comman
 
 If you didn't get a suite of beautiful green ticks last week, then you need to talk to a tutor as soon as you can. That isn't many of you, so we're looking good for this week!
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThqcEHjsw4HBuZN5UPRlr7hzJMlVrgtv15u28NkF6ikzTJwILGZm-poYzjJaf3WFMauKjMPwSRRJgT/pubchart?oid=17662914&amp;format=interactive" style="width: 610px; height: 380px; float: right; margin-left: 2em;"></iframe>
-
-This chart will show how many exercises you've got the tests passing for. If you're not on this list, then come and see me, if your name is in as a GitHub username and not a real name, then it's because your `aboutMe.yml` isn't fully filled in.
-
-You will need to hover for all the names because embedded charts are annoying.
 
 ### Updating the tests
 
