@@ -2,12 +2,12 @@
 """Get the latest copy of all the repos.
 
 This pulls the latest copy of all the repos
-It can clone new repos if you set THERE_ARE_NEW_STUDENTS to true
+It can clone new repos if you delete the students pickle
 """
 from mark_functions import do_the_marking
 
 # The ID and range of a sample spreadsheet.
-# MARKING_SPREADSHEET_ID = "1wtTAM7A--ka7Lnog43L6jjo9kMCnDElCrTOBllEg4dA" # 2019
+# MARKING_SPREADSHEET_ID = "1wtTAM7A--ka7Lnog43L6jjo9kMCnDElCrTOBllEg4dA"  # 2019
 # MARKING_SPREADSHEET_ID = "1AjDu51VX26bIcLNMsr2iHq2BtrNEj91krxWKqjDW5aA"  # 2020
 # MARKING_SPREADSHEET_ID = "17KKMNIseRSo9IVNp-iaUCyEqbAR9tTYAcegzcvVgJFM"  # 2021
 MARKING_SPREADSHEET_ID = "16tESt_4BUf-9-oD04suTprkd1O0oEl6WjzflF_avSKY"  # 2022
