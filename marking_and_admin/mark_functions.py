@@ -176,9 +176,25 @@ def get_forks(
     repo: str = "me",
     force_inclusion_of_these_repos: list[str] = [],
 ) -> list[dict]:
-    """Get a list of dicts of the user names and the git url for all the forks."""
+    """Get a list of dicts of the user names and the git url for all the forks.
+
+    Limits to repos created this year (THIS_YEAR as a const)
+
+    Args:
+        org (str, optional): The name of the Github user/organisation to pull the forks from. Defaults to "design-computing".
+        repo (str, optional): The name of the repo to get the forks of. Defaults to "me".
+        force_inclusion_of_these_repos (list[str], optional): _description_. Defaults to [].
+
+    Raises:
+        Exception: _description_
+
+    Returns:
+        list[dict]: _description_
+    """
+
     api = "https://api.github.com"
     limit = 100
+    # TODO: take these out, put them in an env, and reset them
     client_id = "040e86e3feed633710a0"
     secret = "69588d73388091b5ff8635fd1a788ea79177bf69"
     url = (
@@ -652,11 +668,12 @@ def get_student_data():
     # the dataframe is preloaded with values. Then it doesn't need to mark students
     # that haven't updated their work.
     students = None
-    if os.path.exists("student.pickle"):
-        with open("student.pickle", "rb") as sp:
-            students = pickle.load(sp)
+    file_name = "student.json"
+    if os.path.exists(file_name):
+        with open(file_name, "r") as f:
+            students = json.load(f)
     else:
-        students = get_forks()
-        with open("student.pickle", "wb") as sp:
-            pickle.dump(students, sp)
+        students = get_forks(force_inclusion_of_these_repos=["Sallyl0215"])
+        with open("student.json", "w") as f:
+            json.dump(students, f, indent=2)
     return students
