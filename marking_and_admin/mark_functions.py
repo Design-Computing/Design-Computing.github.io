@@ -534,7 +534,7 @@ def mark_work(dirList, set_number, root_dir, dfPlease=True, timeout=5):
     for _ in [1, 2, 3]:
         # this is pretty dirty, but it gets tricky when you have
         # ,,, -> ,-,, because each intance needs to be replaced multiple times
-        # TODO; #makeitnice
+        # TODO: #makeitnice
         fix_up_csv(path=csv_path)
     print("\n+-+-+-+-+-+-+-+\n\n")
     if dfPlease:
