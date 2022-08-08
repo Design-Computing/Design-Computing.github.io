@@ -4,7 +4,8 @@ There's a demo file in course/week10
 
 ## The filter
 
-![](https://media.giphy.com/media/SkQWNwFRLOKCk/giphy.gif)
+![the filter, just in GH components](https://media.giphy.com/media/0UEDIqlODtqIBo2k7d/giphy.gif)
+
 
 This fancy thing is making a subset of points and using them as the centre point for some spheres. It's taking advantage of the cull pattern node in Grasshopper. This actually works a lot like boolean indexing in Pandas; it takes a list of booleans and masks the other list with it. E.g. given
 
