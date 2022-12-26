@@ -144,7 +144,7 @@ uritemplate==4.1.1
     # via google-api-python-client
 urllib3==1.26.9
     # via requests
-wheel==0.37.1
+wheel==0.38.1
     # via
     #   -r requirements.in
     #   pip-tools
