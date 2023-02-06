@@ -73,7 +73,7 @@ numpy==1.22.4
     # via
     #   matplotlib
     #   pandas
-oauthlib==3.2.1
+oauthlib==3.2.2
     # via requests-oauthlib
 packaging==21.3
     # via matplotlib
