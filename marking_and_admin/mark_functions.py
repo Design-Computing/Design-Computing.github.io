@@ -131,7 +131,8 @@ def process_for_notes(data):
 
 def prepare_comment(item: dict) -> str:
     if "results" not in item.keys():
-        return f"⚠ {item['bigerror']} ⏱ {round(item['time'])}"
+        fu = "some kind of major fuck up"
+        return f"⚠ {item.get('bigerror', fu)} ⏱ {round(item.get('time', 0))}"
     test_results = []
     for r in item["results"]:
         icon = "👏" if r["value"] == 1 else "💩"
