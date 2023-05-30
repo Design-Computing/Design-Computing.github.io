@@ -1,4 +1,5 @@
 import jsyaml from "js-yaml";
+// import { parse } from "yaml";
 import React from "react";
 
 class Person extends React.Component {
@@ -26,11 +27,15 @@ class Person extends React.Component {
       .then(x => {
         let a;
         try {
-          a = jsyaml.load(atob(x.content));
-          const e = a.contactEmail;
-          if (e && e.firstBit && e.otherBit) {
+          let fileContent = atob(x.content);
+          // try {
+          a = jsyaml.load(fileContent);
+          // } catch (e) {
+          //   a = parse(fileContent);
+          // }
+          if (a.first_name) {
             this.setState({
-              name: a.name,
+              name: a.first_name,
               studentNumber: a.studentNumber
             });
           } else {
