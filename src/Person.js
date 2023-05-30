@@ -1,5 +1,5 @@
-import React from "react";
 import jsyaml from "js-yaml";
+import React from "react";
 
 class Person extends React.Component {
   constructor(props) {
