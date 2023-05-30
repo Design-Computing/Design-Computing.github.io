@@ -9,7 +9,7 @@ The file `marking_puller_2.py` is the entry point.
 
 ## To mark work for the first time
 
-- if this is a new computer, run `git config --global url."https://".insteadOf git://` or the git library will have a tantrum
+- if this is a new computer, run `git config --global url."https://github.com/".insteadOf git@github.com:` or the git library will have a tantrum
 - update the `THIS_YEAR` const
 - delete `student.pickle` so that it forces a fresh pull
 - if you have a fresh pull of the repo, you'll need a new `credentials.json` file.
