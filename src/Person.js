@@ -7,8 +7,6 @@ class Person extends React.Component {
     this.state = {
       name: undefined,
       studentNumber: "z1234567",
-      officialEmail: "noIdea@unsw.edu.au",
-      contactEmail: "firstName.Lastname@whereIwork.com",
       errorMessage: undefined
     };
   }
@@ -33,9 +31,7 @@ class Person extends React.Component {
           if (e && e.firstBit && e.otherBit) {
             this.setState({
               name: a.name,
-              studentNumber: a.studentNumber,
-              officialEmail: a.officialEmail,
-              contactEmail: `${e.firstBit}@${e.otherBit}`
+              studentNumber: a.studentNumber
             });
           } else {
             this.setState({
@@ -52,8 +48,6 @@ class Person extends React.Component {
     const goodInfo = (
       <div>
         <p>{this.state.studentNumber}</p>
-        <p>{this.state.officialEmail}</p>
-        <p>{this.state.contactEmail}</p>
         <h1>
           <a href={this.props.forkData.html_url}>
             {this.state.name || this.props.forkData.html_url}
