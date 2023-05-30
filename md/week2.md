@@ -31,8 +31,6 @@ python ..\course\set1\tests.py     # runs the tests to make sure you still pass 
 
 You should be able to paste that as a block and the terminal will figure it out. (flip the \ to a / if you're on a mac.)
 
-This week's change checks that you've [changed your profile picture on GitHub](https://github.com/settings/profile).
-
 ### `Your Name`
 
 Some people are still called _Your Name_. Let's fix that first!
@@ -42,26 +40,20 @@ Your name in the faces means that we can learn your names faster. It also means 
 The information is in your `me` repo, the file is `aboutMe.yml`. Mine looks like:
 
 ```yml
-name: Ben Doherty
+first_name: Ben Doherty
 studentNumber: z1234567
-officialEmail: b.doherty@unsw.edu.au
-contactEmail: # don't add anything to this line
-  firstBit: ben # the indent is important, as is the space after the :
-  otherBit: notionparallax.co.uk # this avoids spam, the @ is implied
 # accounts
 stackOverflowLink: https://stackoverflow.com/users/1835727/ben
 github: notionparallax
 ```
 
-The `contactEmail:` line is blank because it's before an indented block. If you want to read more about YAML, [here's a link](https://en.wikipedia.org/wiki/YAML).
-
 Update the file with your info, save, stage, write a good message, commit, and push. Then wait 30 seconds and check if your info shows up on the [website](https://design-computing.github.io/).
 
-**One last tip**: Most of you have put your student number in as your email address. You also have the email address `firstname.lastname@unsw.edu.au` which is much nicer. You can find out what yours is by looking in your Outlook. It's not guaranteed, for example, Bronte Doherty isn't `b.doherty@unsw.edu.au` because that's me, ha, suck it Bronte! Feel free to update your about me whenever you like.
+**One last tip**: You also have the email address `firstname.lastname@unsw.edu.au` which is much nicer. You can find out what yours is by looking in your Outlook. It's not guaranteed, for example, Bronte Doherty isn't `b.doherty@unsw.edu.au` because that's me, ha, suck it Bronte! Feel free to update your about me whenever you like.
 
-### `Readme.md`/Lab book
+### `Readme.md` / Lab book
 
-Each set/week has a lab book file already made for you. All you need to do is fill it in. It already has `TODO: Reflect on what you learned this week and what is still unclear.` in it, delete that and start writing.
+Each set has a lab book file already made for you. All you need to do is fill it in. It already has `TODO: Reflect on what you learned this week and what is still unclear.` in it, delete that and start writing.
 
 Then you can write in the things you've tried and what happened. The instructions on how you use the debugger, or how to open a folder, or the nuances of a particular algorithm. Or how you feel today!
 
