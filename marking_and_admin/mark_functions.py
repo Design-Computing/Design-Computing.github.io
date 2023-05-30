@@ -598,7 +598,7 @@ def mark_week(
 
 
 def do_the_marking(
-    this_year="2022",
+    this_year="2023",
     rootdir="../StudentRepos",
     chatty=False,
     force_marking=False,
