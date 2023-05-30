@@ -20,7 +20,7 @@ import ruamel.yaml as yaml
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from pandas import Series, DataFrame
+from pandas import DataFrame, Series
 
 
 class RunCmd(threading.Thread):
