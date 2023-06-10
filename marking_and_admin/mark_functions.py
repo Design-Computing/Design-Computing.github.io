@@ -548,7 +548,7 @@ def get_details(row: Series) -> dict:
             os.path.join(ROOTDIR, row.owner, "aboutMe.yml")
         )
         details_raw_yaml = open(path_to_aboutMe).read()
-        details: dict = yaml.load(details_raw_yaml, yaml.RoundTripLoader)
+        details: dict = dict(yaml.load(details_raw_yaml, yaml.RoundTripLoader))
         details["error"] = False
         details["owner"] = row.owner
         details["contactEmail"] = construct_contact_email(details)
