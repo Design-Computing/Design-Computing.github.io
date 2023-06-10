@@ -643,11 +643,11 @@ def do_the_marking(
     mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
     mark_sheet["last_commit"] = mark_sheet.apply(get_last_commit, axis=1)
 
-    mark_sheet["set1"] = mark_week(mark_sheet, set_number=1, timeout=10, active=mark_w1)
-    mark_sheet["set2"] = mark_week(mark_sheet, set_number=2, timeout=10, active=mark_w2)
-    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=25, active=mark_w3)
-    mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=45, active=mark_w4)
-    mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=45, active=mark_w5)
+    mark_sheet["set1"] = mark_week(mark_sheet, set_number=1, timeout=15, active=mark_w1)
+    mark_sheet["set2"] = mark_week(mark_sheet, set_number=2, timeout=15, active=mark_w2)
+    mark_sheet["set3"] = mark_week(mark_sheet, set_number=3, timeout=30, active=mark_w3)
+    mark_sheet["set4"] = mark_week(mark_sheet, set_number=4, timeout=50, active=mark_w4)
+    mark_sheet["set5"] = mark_week(mark_sheet, set_number=5, timeout=50, active=mark_w5)
     mark_sheet["exam"] = mark_week(
         mark_sheet, set_number=8, timeout=45, active=mark_exam
     )
