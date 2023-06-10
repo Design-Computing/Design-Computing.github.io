@@ -483,6 +483,7 @@ def mark_a_specific_person_week(
             temp_file_path, "r", encoding="utf-8", errors="ignore"
         ) as temp_results:
             contents = temp_results.read()
+            # TODO: catch empty string contents, and make the error message better
             results_dict = json.loads(contents)
             results_dict["bigerror"] = ":)"
         log_progress(f" good for w{set_number}\n", logfile_name)
@@ -549,12 +550,12 @@ def get_details(row: Series) -> dict:
         )
         details_raw_yaml = open(path_to_aboutMe).read()
         details: dict = dict(yaml.load(details_raw_yaml, yaml.RoundTripLoader))
-        details["error"] = False
+        details["error"] = "👍"
         details["owner"] = row.owner
-        details["contactEmail"] = construct_contact_email(details)
-        return dict(details)
+        return details
     except Exception as e:
         print(row)
+        print(e)
         return {"error": "|".join(str(e).splitlines()), "owner": row.owner}
 
 
@@ -677,7 +678,12 @@ def get_student_data():
         with open(file_name, "r") as f:
             students = json.load(f)
     else:
-        students = get_forks(force_inclusion_of_these_repos=["Sallyl0215"])
+        students = get_forks(force_inclusion_of_these_repos=[])
         with open("student.json", "w") as f:
             json.dump(students, f, indent=2)
     return students
+
+
+if __name__ == "__main__":
+    print("👀" * 30)
+    print("don't be a silly billy, run from marking_puller.py")

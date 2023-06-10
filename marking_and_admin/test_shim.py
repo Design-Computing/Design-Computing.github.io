@@ -40,7 +40,7 @@ def results_as_json(repo_path):
     """Save the results to a temporary json file."""
     results = do_the_test(repo_path)
     results["repo_owner"] = OWNER
-    print("\nresults:", results, "\n")
+    print("\nresults:", json.dumps(results, indent=2), "\n")
     return json.dumps(results)
 
 
@@ -57,10 +57,13 @@ else:
     REPO_PATH = os.path.normpath(sys.argv[2])
     OWNER = sys.argv[3]
 
+print("\n In the shim\n◹◸◹◸◹◸◹◸◹◸◹◸\n\nsys.argv:")
+for i, a in list(enumerate(sys.argv)):
+    print(f"{i}: {a}")
+
 print(
     f"""
 
-in the shim
 TEST_PATH: {TEST_PATH}
 REPO_PATH: {os.path.normpath(os.path.abspath(REPO_PATH))}
 OWNER:     {OWNER}
