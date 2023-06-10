@@ -39,7 +39,7 @@ def do_the_test(repo_path):
 def results_as_json(repo_path):
     """Save the results to a temporary json file."""
     results = do_the_test(repo_path)
-    results["name"] = OWNER
+    results["repo_owner"] = OWNER
     print("\nresults:", results, "\n")
     return json.dumps(results)
 

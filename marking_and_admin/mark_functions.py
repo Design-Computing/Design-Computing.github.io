@@ -136,9 +136,11 @@ def prepare_comment(item: dict) -> str:
     test_results = []
     for r in item["results"]:
         icon = "👏" if r["value"] == 1 else "💩"
-        test_results.append(f"{icon}: {r['name']}")
+        test_results.append(
+            f"{icon}: {r['name']}"
+        )  # TODO: trace this back, and get rid of the "name" key, make it exercise_name, or test_name
     tr = "\n".join(test_results)
-    message = f"""{item['name']}
+    message = f"""{item['repo_owner']}
 ⏱ {round(item['time'])}
 {tr}
 {item['mark']}/{item['of_total']}"""
