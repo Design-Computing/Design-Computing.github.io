@@ -636,6 +636,8 @@ def do_the_marking(
     mark_sheet = pd.DataFrame(students)
 
     deets = pd.DataFrame(list(mark_sheet.apply(get_details, axis=1)))
+    # temp:
+    deets.drop(["officialEmail", "contactEmail"], axis=1, errors="ignore", inplace=True)
     mark_sheet = mark_sheet.merge(deets, on="owner")
 
     mark_sheet["updated"] = mark_sheet.apply(update_repos, axis=1)
@@ -649,6 +651,7 @@ def do_the_marking(
     mark_sheet["exam"] = mark_week(
         mark_sheet, set_number=8, timeout=45, active=mark_exam
     )
+    mark_sheet.drop(["name"], axis=1, errors="ignore", inplace=True)
 
     mark_sheet["readme_mark"] = mark_sheet.apply(get_readmes, args=("mark",), axis=1)
     mark_sheet["readme_text"] = mark_sheet.apply(
