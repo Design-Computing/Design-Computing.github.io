@@ -323,8 +323,6 @@ def csv_of_details(dirList):
             details = yaml.load(details, yaml.RoundTripLoader)
             details["repoName"] = student_repo
             details["error"] = False
-            # if details["mediumUsername"][:4] != "^AT^":
-            #     details["mediumUsername"] = "^AT^" + details["mediumUsername"]
             results.append(details)
 
             if details["studentNumber"] == "z1234567":
