@@ -111,8 +111,8 @@ def write(service, data=[["These"], ["are"], ["some"], ["d", "entries"]]):
 def process_for_writing(data):
     for i, row in enumerate(data):
         for j, item in enumerate(row):
-            if type(item) is dict:
-                data[i][j] = item.get("mark")
+            if type(item) is dict or type(item) is yaml.comments.CommentedMap:
+                data[i][j] = item.get("mark", str(dict(item)))
             elif type(item) is not str and math.isnan(item):
                 data[i][j] = ""
     return data
