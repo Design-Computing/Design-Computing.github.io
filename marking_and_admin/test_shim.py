@@ -49,9 +49,9 @@ def results_as_json(repo_path):
 # file, then argv will be missing the extra info
 if len(sys.argv) == 1:
     # 0:'C:\\Users\\ben\\Anaconda3\\python.exe'
+    OWNER = "nico-dp"
     TEST_PATH = "C:\\Users\\bdoherty\\repos\\1161_py_course\\course\\set1\\tests.py"
-    REPO_PATH = "C:\\Users\\bdoherty\\repos\\1161_py_course\\StudentRepos\\AlXu111"
-    OWNER = "AlXu111"
+    REPO_PATH = f"C:\\Users\\bdoherty\\repos\\1161_py_course\\StudentRepos\\{OWNER}"
 else:
     TEST_PATH = os.path.normpath(sys.argv[1])
     REPO_PATH = os.path.normpath(sys.argv[2])
