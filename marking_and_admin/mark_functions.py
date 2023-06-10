@@ -489,7 +489,7 @@ def mark_a_specific_person_week(
     except Exception as e:
         results_dict = {
             "bigerror": str(e).replace(",", "~"),
-            "name": row.owner,
+            "gh_username": row.owner,
         }  # the comma messes with the csv
 
         log_progress(f" bad {e} w{set_number}\n", logfile_name)
