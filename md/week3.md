@@ -1,16 +1,8 @@
 # Week 3: Useful Programs and Algorithms
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=1583654128&amp;format=interactive" style="width: 610px; height: 380px; float: right; margin-left: 2em;"></iframe>
+Remember! You might be crushing this class, but you're going to spend 3 years with these people and sooner or later, you're going to need their help! Also, more than that, the better the average competence of your cohort is, the better you'll all do when you graduate. This is a _non zero sum game!_
 
-This is updated most days, so if you don't see your values changing, it's probably because you aren't `push`ing to GitHub.
 
-It's important to note that this chart shows **un**weighted marks. I.e. it shows a longer bar for some parts than others. The mark you actually get is weighted, so don't get caught up in who's in what order, just use it to check that you're up to date.
-
-What I _really_ want you to do with this graph is to use it as an opportunity to help people. You might be crushing this class, but you're going to spend 3 years with these people and sooner or later, you're going to need their help! Also, more than that, the better the average competence of your cohort is, the better you'll all do when you graduate. This is a _non zero sum game!_
-
-This is the weighted graph, but it's not really worth looking at yet.
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2cYPx1kRUlOpmEurSQeJJrEAdnUV6a4TQPDsdy4fjssnyRHViZqI2X5KSjPVVQRgZWWLr-DA_azJw/pubchart?oid=17662914&amp;format=interactive" style="width: 610px; height: 380px; float: right; margin-left: 2em;"></iframe>
 
 ## Some dates:
 
