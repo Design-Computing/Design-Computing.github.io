@@ -230,7 +230,7 @@ Do these things in order, it'll be better that way, I promise.
 1. Find a dataset and a question. Do the first part of the data audit on that dataset, up to 🤓.
 1. Do the Khan Academy Algorithms Course: **Cormen, T. & Balkcom, D.**, [_Algorithms._](https://www.khanacademy.org/computing/computer-science/algorithms)
 
-   Go through the Intro to algorithms, Binary search and Asymptotic notation sections, these guys have made it really simple to understand and it'll reinforce everything we've said in the lecture.
+   Go through the Intro to algorithms, Binary search and Asymptotic notation sections, they have made it really simple to understand and it'll reinforce everything we've said in the lecture.
 
 1. Complete the exercises in the week 3 folder.
 
