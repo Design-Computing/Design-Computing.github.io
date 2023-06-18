@@ -177,7 +177,7 @@ The file that I used to give the lecture is a template for how to do this chunk 
   - What does this dataset explain?
 
 
-    **⏸️ Pause here**: There is a pretty good chance at this point that you'll find out that your data is garbage. Look for a file that's in one of these file formats: `.xls`, `.xlsx`, `.csv`, `.json`, `.tsv`. If it's not, run it past me or Alex.
+    **⏸️ Pause here**: There is a pretty good chance at this point that you'll find out that your data is garbage. Look for a file that's in one of these file formats: `.xls`, `.xlsx`, `.csv`, `.json`, `.tsv`. If it's not, run it past me or Scarlett.
 
     You'll want a file with at least 200 rows, ideally a thousand or more. Even more ideally, a dataset that has some geographic data, e.g. coordinates or suburb names, because we're going to be making some maps a bit later on.
 

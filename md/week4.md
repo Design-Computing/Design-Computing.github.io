@@ -16,14 +16,14 @@ This is on my own [Walden Pond](http://waldenpond.press/) project, so if you wan
 
 1. Data project
    1. Talk to a tutor about your open data project idea.
-   1. Load your data into a notebook. If you don't have tabular data (a .csv or an .xlsx talk to Ben or Alex)
+   1. Load your data into a notebook. If you don't have tabular data (a .csv or an .xlsx talk to Ben or Scarlett)
    1. Get started on the data audit process described [here](https://design-computing.github.io/md/week3#data-audit).
 1. Exercises
-   1. Talk to Ben or Alex about anything that you'd like clarity on about any of the exercises we've done so far.
+   1. Talk to Ben or Scarlett about anything that you'd like clarity on about any of the exercises we've done so far.
 
 ## Homework
 
-Finish the data audit on the dataset that you have decided to go with. Make sure that you've run that dataset past Ben or Alex to check that it's OK.
+Finish the data audit on the dataset that you have decided to go with. Make sure that you've run that dataset past Ben or Scarlett to check that it's OK.
 
 Finish all the exercises that have been set so far (so up to the end of the binary search). Go back over the previous exercises and see if you can make them better. I've seen a lot of code that's not doing anything.
 
