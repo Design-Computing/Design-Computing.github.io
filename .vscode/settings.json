@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "course-admin\\Scripts\\python.exe"
+    "python.pythonPath": "course-admin\\Scripts\\python.exe",
+    "python.analysis.typeCheckingMode": "basic"
 }
