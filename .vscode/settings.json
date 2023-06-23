@@ -1,4 +1,8 @@
 {
-    "python.pythonPath": "course-admin\\Scripts\\python.exe",
-    "python.analysis.typeCheckingMode": "basic"
+  "python.pythonPath": "course-admin\\Scripts\\python.exe",
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none"
 }

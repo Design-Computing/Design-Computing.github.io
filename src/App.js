@@ -31,7 +31,7 @@ class App extends React.Component {
   componentDidMount() {
     const api = "https://api.github.com";
     const org = "design-computing";
-    let url = `${api}/repos/${org}/me/forks?per_page=40`;
+    let url = `${api}/repos/${org}/me/forks?per_page=60`;
     fetch(url, {
       method: "GET",
       headers: {
