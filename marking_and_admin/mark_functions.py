@@ -197,7 +197,7 @@ def get_forks(
 
     api = "https://api.github.com"
     limit = 100
-    # TODO: take these out, put them in an env, and reset them
+    # TODO: #29 take these secrets out, put them in an env, and reset them
     client_id = "040e86e3feed633710a0"
     secret = "69588d73388091b5ff8635fd1a788ea79177bf69"
     url = (
@@ -259,15 +259,17 @@ def update_repos(row: Series) -> str:
                     response = repo.pull()
                     print(f"{t}: pulled {owner}'s repo: {response}")
                     return str(response)
-                except Exception as e:
+                except Exception as general_exception:
                     repo.execute(["git", "fetch", "--all"])
                     repo.execute(["git", "reset", "--hard", "origin/main"])
-                    print(e)
+                    print(general_exception)
                     return "hard reset"
-            except Exception as e:
+            except Exception as general_exception:
                 if CHATTY:
-                    print(f"pull error: {row.name} {row.contactEmail}", e)
-                return str(e)
+                    print(
+                        f"pull error: {row.name} {row.contactEmail}", general_exception
+                    )
+                return str(general_exception)
         else:
             message = f"{row['owner']}: unexpected error: {git_command_error}"
             print(message)
@@ -614,7 +616,6 @@ def do_the_marking(
     mark_w5=False,
     mark_exam=False,
 ):
-
     global THIS_YEAR
     THIS_YEAR = this_year
     global ROOTDIR
@@ -687,5 +688,5 @@ def get_student_data():
 
 
 if __name__ == "__main__":
-    print("👀" * 30)
+    print("👀  " * 30)
     print("don't be a silly billy, run from marking_puller.py")
