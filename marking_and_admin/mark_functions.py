@@ -548,15 +548,17 @@ def get_details(row: Series) -> dict:
         path_to_aboutMe = os.path.abspath(
             os.path.join(ROOTDIR, row.owner, "aboutMe.yml")
         )
-        details_raw_yaml = open(path_to_aboutMe).read()
+        with open(path_to_aboutMe, "r", encoding="utf-8") as yf:
+            details_raw_yaml = yf.read()
         details: dict = dict(yaml.load(details_raw_yaml, yaml.RoundTripLoader))
         details["error"] = "👍"
         details["owner"] = row.owner
         return details
-    except Exception as e:
+    except FileNotFoundError as fnf:
         print(row)
-        print(e)
-        return {"error": "|".join(str(e).splitlines()), "owner": row.owner}
+        print(fnf)
+        error_message = {"error": "|".join(str(fnf).splitlines()), "owner": row.owner}
+        return error_message
 
 
 def construct_contact_email(details: dict) -> str:
