@@ -576,8 +576,13 @@ def construct_contact_email(details: dict) -> str:
 def get_last_commit(row: Series) -> str:
     path = os.path.join(ROOTDIR, row.owner)
     repo = git.cmd.Git(path)
-    d = str(repo.execute(["git", "log", "-1", "--format=%cd"]))
-    return d
+    try:
+        last_commit_date = str(repo.execute(["git", "log", "-1", "--format=%cd"]))
+        return last_commit_date
+    except git.GitCommandError as gce:
+        print(gce)
+        return "Fri Jun 23 11:11:11 2023 +1000"
+        # TODO: find out why I was returning a no commits error
 
 
 def mark_week(
