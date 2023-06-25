@@ -242,11 +242,12 @@ def rate_limit_message(r):
 def update_repos(row: Series) -> str:
     """Git clone a repo, or if already cloned, git pull."""
     url = row["git_url"]
+    https_url = url.replace("git://","https://")
     owner = row["owner"]
     path = os.path.normpath(os.path.join(ROOTDIR, owner))
     t = datetime.now().strftime("%H:%M:%S")
     try:
-        git.Repo.clone_from(url, path)
+        git.Repo.clone_from(https_url, path)
         print(f"{t}: new repo for {owner}")
         return ":) new"
     except git.GitCommandError as git_command_error:
@@ -270,6 +271,11 @@ def update_repos(row: Series) -> str:
                         f"pull error: {row.name} {row.contactEmail}", general_exception
                     )
                 return str(general_exception)
+        elif "Connection timed out" in git_command_error.stderr:
+            print(row)
+            message = f"{row['owner']}: timeout error: {git_command_error}"
+            print(message)
+            return message
         else:
             message = f"{row['owner']}: unexpected error: {git_command_error}"
             print(message)
