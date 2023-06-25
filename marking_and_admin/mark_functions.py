@@ -689,12 +689,12 @@ def get_student_data():
     students = None
     file_name = "student.json"
     if os.path.exists(file_name):
-        with open(file_name, "r") as f:
-            students = json.load(f)
+        with open(file_name, "r") as data_file:
+            students = json.load(data_file)
     else:
         students = get_forks(force_inclusion_of_these_repos=[])
-        with open("student.json", "w") as f:
-            json.dump(students, f, indent=2)
+        with open("student.json", "w") as data_file:
+            json.dump(students, data_file, indent=2)
     return students
 
 
