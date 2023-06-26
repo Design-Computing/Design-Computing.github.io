@@ -198,8 +198,8 @@ def get_forks(
     api = "https://api.github.com"
     limit = 100
     # TODO: #29 take these secrets out, put them in an env, and reset them
-    client_id = "040e86e3feed633710a0"
-    secret = "69588d73388091b5ff8635fd1a788ea79177bf69"
+    client_id = os.getenv("CLIENT_ID_GITHUB","") # "040e86e3feed633710a0"
+    secret = os.getenv("SECRET_GITHUB","")#"69588d73388091b5ff8635fd1a788ea79177bf69"
     url = (
         f"{api}/repos/{org}/{repo}/forks?"
         f"per_page={limit}&"
