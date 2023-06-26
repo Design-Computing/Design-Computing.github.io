@@ -11,7 +11,7 @@ import time
 from datetime import datetime
 from io import StringIO
 from itertools import repeat
-from typing import Any, Optional, Set, Tuple, TypeVar
+from typing import Any  # , Optional, Set, Tuple, TypeVar
 
 import git
 import pandas as pd
@@ -35,21 +35,21 @@ class RunCmd(threading.Thread):
         self.timeout = timeout
 
     def run(self):
-        self.p = subprocess.Popen(self.cmd)
-        self.p.wait()
+        self.this_process = subprocess.Popen(self.cmd)
+        self.this_process.wait()
 
     def Run(self):
         self.start()
         self.join(self.timeout)
 
         if self.is_alive():
-            self.p.terminate()  # use self.p.kill() if process needs a kill -9
+            self.this_process.terminate()  # use self.p.kill() if process needs a kill -9
             self.join()
 
 
 def build_spreadsheet_service():
     # If modifying these scopes, delete the file token.pickle.
-    SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+    scopes = ["https://www.googleapis.com/auth/spreadsheets"]
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
@@ -66,12 +66,12 @@ def build_spreadsheet_service():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                "marking_and_admin/credentials.json", SCOPES
+                "marking_and_admin/credentials.json", scopes
             )
             try:
                 creds = flow.run_local_server()
-            except OSError as e:
-                print(e)
+            except OSError as os_e:
+                print(os_e)
                 creds = flow.run_console()
         # Save the credentials for the next run
         with open("token.pickle", "wb") as token:
