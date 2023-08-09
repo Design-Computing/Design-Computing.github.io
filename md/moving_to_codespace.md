@@ -4,6 +4,8 @@ My computer is my favourite place to run code, but somebody else's computer is a
 
 We're going to switch to codespaces for the presentation becasue it's proving too dificult at the moment to get the presentations working on everyone's computer.
 
+https://youtu.be/RwLpFlYQdOc
+
 ## Steps to get set up on a codespace
 
 These are all in this video, I'l try to refer to the numbers below as I'm talking.
