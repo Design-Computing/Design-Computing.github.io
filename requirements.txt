@@ -6,7 +6,7 @@
 #
 beautifulsoup4==4.11.1
     # via google
-black==22.3.0
+black==24.3.0
     # via -r requirements.in
 cachetools==5.1.0
     # via google-auth
@@ -75,8 +75,10 @@ numpy==1.22.4
     #   pandas
 oauthlib==3.2.2
     # via requests-oauthlib
-packaging==21.3
-    # via matplotlib
+packaging==24.0
+    # via
+    #   black
+    #   matplotlib
 pandas==1.4.2
     # via -r requirements.in
 pandas-stubs==1.2.0.58
@@ -107,7 +109,6 @@ pyparsing==3.0.9
     # via
     #   httplib2
     #   matplotlib
-    #   packaging
 python-dateutil==2.8.2
     # via
     #   matplotlib
@@ -146,7 +147,9 @@ types-requests==2.27.30
 types-urllib3==1.26.15
     # via types-requests
 typing-extensions==4.2.0
-    # via mypy
+    # via
+    #   black
+    #   mypy
 uritemplate==4.1.1
     # via google-api-python-client
 urllib3==1.26.18
