@@ -22,7 +22,7 @@ colorama==0.4.4
     # via -r requirements.in
 cycler==0.11.0
     # via matplotlib
-fonttools==4.33.3
+fonttools==4.43.0
     # via matplotlib
 func-timeout==4.3.5
     # via -r requirements.in
