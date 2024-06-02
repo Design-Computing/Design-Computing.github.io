@@ -169,9 +169,9 @@ I've you've been doing this before the class as prep, stop here! (We might still
 
    1. Then `cd 1161` &larr; This **c**hanges the **d**irectory to _1161_
 
-   1. Then `git clone https://github.com/Design-Computing/course.git` This pulls down the course repository. Typing this is going to suck, so go [here](https://github.com/Design-Computing/course) and use the green button.
+   1. Then `git clone https://github.com/Design-Computing/course.git` This pulls down the course repository. Typing this is going to suck, so go [here](https://github.com/Design-Computing/course) and use the green button. Remember We are "NOT" forking the "Course Repo", just clone it. So if we change the repo during the course, you can pull down the changes.
 
-1. Clone
+1. Clone & Fork
 
    1. Go to [https://github.com/Design-Computing/me](https://github.com/Design-Computing/me) and [fork](https://help.github.com/en/articles/fork-a-repo) yourself a copy of the _me_ repo.
 
