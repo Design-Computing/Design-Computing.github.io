@@ -152,7 +152,7 @@ typing-extensions==4.2.0
     #   mypy
 uritemplate==4.1.1
     # via google-api-python-client
-urllib3==1.26.19
+urllib3==2.5.0
     # via requests
 wheel==0.38.1
     # via
