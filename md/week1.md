@@ -320,7 +320,7 @@ We're going to talk about git and commits a lot more in the coming weeks, but fo
 
 1. First thing you need to do is tell git who you are. Type\* these two commands into your terminal.
 
-   ```
+   ```terminal
    git config --global user.email "email@example.com"
    git config --global user.name "Ben Doherty"
    ```
