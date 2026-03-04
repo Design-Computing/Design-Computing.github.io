@@ -10,10 +10,9 @@
 
 Also, I've started a list of [useful commands and important words](useful_commands.md). If you want to add to it, you can make a pull request, or ask me to add to the list.
 
-# Issues:
+# Issues
 
 If you didn't get a suite of beautiful green ticks last week, then you need to talk to a tutor as soon as you can. That isn't many of you, so we're looking good for this week!
-
 
 ### Updating the tests
 
@@ -57,7 +56,7 @@ Each set has a lab book file already made for you. All you need to do is fill it
 
 Then you can write in the things you've tried and what happened. The instructions on how you use the debugger, or how to open a folder, or the nuances of a particular algorithm. Or how you feel today!
 
-# Lecture&mdash;Let's learn some python!
+# Lecture&mdash;Let's learn some python
 
 You should probably watch these in the order I've posted them, but I'm not your dad, you do whatever you want.
 
@@ -278,7 +277,7 @@ In exercise 3, the `fix_it` function asks about an engineeringFlowchart. This is
 
 1. Optional: Read _[The Oregon Trail Game: Crossing Rivers](http://www.died-of-dysentery.com/stories/crossing-rivers.html)_ and see if you can write the flow control (`if`, `elif` and `else`) statements that would give you the results in this image: ![](http://www.died-of-dysentery.com/images/chap13-doc-ford-algorithm.png). It's not going to be tested, it's more about stretching your thinking process.
 
-## Optional Reading:
+## Optional Reading
 
 These aren't a part of your marks, but they'll give you a sense of the culture of this kind of work.
 

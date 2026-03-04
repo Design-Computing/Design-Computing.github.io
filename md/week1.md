@@ -8,7 +8,7 @@ we revisit a lot of the ideas mentioned in the lecture in the text below too, so
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NMbHLzQPYE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Questions!
+## Questions
 
 These questions are all anonymous. They're separate forms so that we can't tie the responses together. We'll talk about this kind of thing in one of the later lectures in this course.
 
@@ -101,13 +101,13 @@ Your email address, for better or worse, is your central identity. **Don't** use
 If you're not sure if you've got a good email address, (or GitHub user name) ask me what I think.
 <!-- TODO put new tutor name in here -->
 
-#### Get a GitHub account!
+#### Get a GitHub account
 
 1. Go to [github.com](https://github.com/) and **Sign Up**. The same advice about not making your email address embarrassing applies to your github username. Imagine that you're 40, you're the CEO of a major company and having to tell someone that your github user name is <code>eat_a_bag_of_clicks</code> or, even worse <code>z123456</code>. 🤮☹️😾😡😖
 2. Fill in your real name
 3. Upload a photo of your face as your profile picture. We need this so that we can work out who you are.
 
-#### Get a StackOverflow account!
+#### Get a StackOverflow account
 
 1. Go to [stackoverflow.com](https://stackoverflow.com/) and **Sign Up**.
 
@@ -265,7 +265,7 @@ TIP: You can type a <code>../c</code> and then press [tab] and the terminal will
 
 In this course the tests are already written for you. They check if your code does what it's supposed to do. To run the tests, you write, at the terminal:
 
-> `cd ../course && pytest set1/`
+> `pytest ../course/set1/`
 
 Then press enter.
 
@@ -321,8 +321,8 @@ We're going to talk about git and commits a lot more in the coming weeks, but fo
 1. First thing you need to do is tell git who you are. Type\* these two commands into your terminal.
 
    ```
-   $ git config --global user.email "email@example.com"
-   $ git config --global user.name "Ben Doherty"
+   git config --global user.email "email@example.com"
+   git config --global user.name "Ben Doherty"
    ```
 
    Three things:
