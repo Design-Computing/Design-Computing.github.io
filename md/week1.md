@@ -265,9 +265,13 @@ TIP: You can type a <code>../c</code> and then press [tab] and the terminal will
 
 In this course the tests are already written for you. They check if your code does what it's supposed to do. To run the tests, you write, at the terminal:
 
-> `python ../course/set1/tests.py`
+> `cd ../course && pytest set1/`
 
 Then press enter.
+
+Or if you want to stay in the `me` directory:
+
+> `pytest ../course/set1/`
 
 Resist the urge to copy and paste this, you're going to be doing it a lot, and it'll be much better if you learn to type it.
 
@@ -293,7 +297,7 @@ TIP: if you're on Windows, file paths have back slashes <code>\</code> but if yo
 
 Again, write, at the terminal:
 
-> `python ../course/set1/tests.py`
+> `cd ../course && pytest set1/`
 
 Then press enter.
 
@@ -351,7 +355,7 @@ I've you can get down with a bit of typing, I think it's _much_ better to type `
 
 Hopefully, for the last time, write, at the terminal:
 
-> `python ../course/set1/tests.py`
+> `cd ../course && pytest set1/`
 
 Then press enter.
 
@@ -455,9 +459,9 @@ To open a folder in Mac VS Code, there isn't a separate menu option, you just cl
    - Type `python --version` it should say `Python 3.7.3` or at least `3.`.
    - If it does say that, then you are set!
 
-1. run your tests by opening the `me` folder in your mac terminal (the white one) and typing `python ../course/set1/tests.py` in the terminal.
+1. run your tests by opening the `me` folder in your mac terminal (the white one) and typing `pytest ../course/set1/` in the terminal.
 
-   If that doesn't work, try `python`**_`3`_**`../course/set1/tests.py` to call the tests explicitly with python 3
+   If that doesn't work, make sure pytest is installed: `pip install pytest pytest-sugar pytest-clarity pytest-timeout pytest-mock`
 
 ### Why is this a problem anyway?
 

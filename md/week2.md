@@ -25,8 +25,8 @@ Assuming that you're in the `me` directory, to update the course to the latest v
 cd ..\course                       # changes directory to the course directory
 git pull                           # pulls the latest code down
 pip install -r .\requirements.txt  # Installs the latest python modules
+pytest set1/ set2/                 # runs the tests to make sure you still pass everything
 cd ..\me                           # puts you back into your me directory
-python ..\course\set1\tests.py     # runs the tests to make sure you still pass everything
 ```
 
 You should be able to paste that as a block and the terminal will figure it out. (flip the \ to a / if you're on a mac.)
@@ -123,7 +123,10 @@ Each file starts with a section of writing, wrapped in """triple quotes""". It t
 
 The command to run the tests this week is:
 
-python ../course/set2/tests.py
+cd ../course && pytest set2/
+
+# Or from the me directory:
+pytest ../course/set2/
 
 
 In each function, where you see:

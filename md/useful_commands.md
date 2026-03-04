@@ -14,18 +14,19 @@ cd ..\me
 
 To run the tests this week:
 
-```
-python ..\course\set1\tests.py
+```powershell
+# From your me directory:
+pytest ..\course\set1\
 ```
 
 To update the course to the latest version:
 
-```
+```powershell
 cd ..\course
 git pull
 pip install -r .\requirements.txt
+pytest set1/ set2/  # run tests for completed sets
 cd ..\me
-python ..\course\set1\tests.py
 ```
 
 To check the state of your git commits:
@@ -39,7 +40,6 @@ To push to github with some useful feedback:
 ```
 git push
 ```
-
 
 # Important words
 
