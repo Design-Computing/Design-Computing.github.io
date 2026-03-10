@@ -79,6 +79,7 @@ packaging==24.0
     # via
     #   black
     #   matplotlib
+    #   wheel
 pandas==1.4.2
     # via -r requirements.in
 pandas-stubs==1.2.0.58
@@ -154,7 +155,7 @@ uritemplate==4.1.1
     # via google-api-python-client
 urllib3==2.6.0
     # via requests
-wheel==0.38.1
+wheel==0.46.2
     # via
     #   -r requirements.in
     #   pip-tools
