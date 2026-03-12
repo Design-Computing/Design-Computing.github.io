@@ -6,7 +6,7 @@
 #
 beautifulsoup4==4.11.1
     # via google
-black==24.3.0
+black==26.3.1
     # via -r requirements.in
 cachetools==5.1.0
     # via google-auth
@@ -83,7 +83,7 @@ pandas==1.4.2
     # via -r requirements.in
 pandas-stubs==1.2.0.58
     # via -r requirements.in
-pathspec==0.9.0
+pathspec==1.0.4
     # via black
 pep517==0.12.0
     # via pip-tools
@@ -113,6 +113,8 @@ python-dateutil==2.8.2
     # via
     #   matplotlib
     #   pandas
+pytokens==0.4.1
+    # via black
 pytz==2022.1
     # via pandas
 requests==2.32.4
